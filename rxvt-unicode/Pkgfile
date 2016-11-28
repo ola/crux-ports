@@ -1,0 +1,33 @@
+# Description: rxvt fork with unicode and xft support
+# URL: http://software.schmorp.de/#rxvt-unicode
+# Maintainer: Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on: xorg-libxft, xorg-libxpm, perl
+
+name=rxvt-unicode
+version=9.22
+release=1
+source=(http://dist.schmorp.de/$name/Attic/$name-$version.tar.bz2)
+
+build() {
+   cd $name-$version
+
+   ./configure --prefix=/usr \
+               --mandir=/usr/man \
+               --enable-utmp \
+               --enable-wtmp \
+               --enable-transparency \
+               --enable-fading \
+               --enable-mousewheel \
+               --enable-xft \
+               --enable-font-styles \
+               --enable-combining \
+               --enable-pixbuf \
+               --enable-startup-notification \
+               --enable-perl \
+               --enable-unicode3 \
+               --enable-256-color
+   make
+
+   mkdir -p $PKG/usr/share/terminfo
+   make TERMINFO=$PKG/usr/share/terminfo DESTDIR=$PKG install
+}
