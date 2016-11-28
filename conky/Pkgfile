@@ -1,0 +1,42 @@
+# Description: Displays arbitrary information to the root window in X11
+# URL: https://github.com/brndnmtthws/conky
+# Maintainer: Ola Håkansson <ola dot hakansson at gmail dot com>
+#
+# Depends on: xorg curl imlib2 lua
+
+name=conky
+version=1.10.5
+release=1
+source=(https://github.com/brndnmtthws/conky/archive/v$version.tar.gz)
+
+build() {
+    cd $name-$version
+
+    mkdir build
+    cd build
+
+    cmake -Wno-dev \
+          -DCMAKE_BUILD_TYPE=Release \
+          -DCMAKE_INSTALL_PREFIX=/usr \
+          -DSYSTEM_CONFIG_FILE=/usr/etc/conky/conky.conf \
+          -DDEFAULTNETDEV=eno1 \
+          -DBUILD_APCUPSD=OFF \
+          -DBUILD_CURL=ON \
+          -DBUILD_IBM=ON \
+          -DBUILD_IMLIB2=ON \
+          -DBUILD_MOC=OFF \
+          -DBUILD_MPD=OFF \
+          -DBUILD_OLD_CONFIG=OFF \
+          -DBUILD_XDBE=ON \
+          -DBUILD_XSHAPE=ON \
+          ..
+
+    make
+    make DESTDIR=$PKG install
+
+    mkdir -p $PKG/usr/etc/conky
+    #mv $PKG/usr/share/doc/conky-1.10.0/conky.conf $PKG/usr/etc/conky
+    #mv $PKG/usr/share/doc/conky-1.10.0/conky_no_x11.conf $PKG/usr/etc/conky
+
+    rm -rf $PKG/usr/share
+}
