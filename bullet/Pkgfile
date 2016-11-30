@@ -1,0 +1,33 @@
+# Description: Continuous Collision Detection and Physics Library.
+# URL: http://www.bulletphysics.com/
+# Maintainer: Ola Håkansson <ola dot hakansson at gmail dot com> 
+# Depends on: cmake 
+
+name=bullet
+version=2.85.1
+release=1
+source=(https://github.com/${name}physics/${name}3/archive/$version.tar.gz)
+
+build() {
+  cd ${name}3-$version
+
+  cmake \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DBUILD_BULLET2_DEMOS=OFF \
+    -DBUILD_BULLET3=ON \
+    -DBUILD_SHARED_LIBS=ON \
+    -DBUILD_CPU_DEMOS=OFF \
+    -DBUILD_EXTRAS=ON \
+    -DBUILD_OPENGL3_DEMOS=OFF \
+    -DBUILD_DEMOS=OFF \
+    -DBUILD_UNIT_TESTS=OFF \
+    -DUSE_DOUBLE_PRECISION=ON \
+    -DUSE_GLUT=OFF \
+    -DUSE_GRAPHICAL_BENCHMARK=OFF \
+    -DINSTALL_LIBS=ON \
+    -DINSTALL_EXTRA_LIBS=ON .
+
+  make
+  make DESTDIR=$PKG install
+}
