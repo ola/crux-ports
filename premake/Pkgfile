@@ -1,0 +1,18 @@
+# Description: Reads a scripted definition of a software project to generate project files for build tools.
+# URL:         https://premake.github.io/
+# Maintainer:  Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on:  
+
+name=premake
+version=5.0.0-alpha11
+release=1
+source=(https://github.com/premake/premake-core/releases/download/v$version/premake-$version-src.zip)
+
+build() {
+  cd $name-$version/build/gmake.unix
+
+  make config=release
+
+  mkdir -p $PKG/usr/bin
+  install -m 755 ../../bin/release/premake5 $PKG/usr/bin
+}
