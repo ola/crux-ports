@@ -112,6 +112,7 @@ drwxr-xr-x	root/root	usr/share/vim/compiler/
 -rw-r--r--	root/root	usr/share/vim/compiler/g95.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/gcc.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/gfortran.vim
+-rw-r--r--	root/root	usr/share/vim/compiler/ghc.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/gnat.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/go.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/haml.vim
