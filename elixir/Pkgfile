@@ -1,0 +1,16 @@
+# Description: Elixir is a dynamic, functional language designed for building scalable and maintainable applications
+# URL: http://elixir-lang.org/
+# Maintainer: Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on: erlang
+
+name=elixir
+version=1.4.2
+release=1
+source=(https://github.com/elixir-lang/$name/archive/v$version.tar.gz)
+
+build() {
+  cd $name-$version
+  
+  make
+  make PREFIX=$PKG/usr install
+}
