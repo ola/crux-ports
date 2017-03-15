@@ -1,0 +1,27 @@
+# Description: Google's C++ test framework. 
+# URL: https://github.com/google/googletest
+# Maintainer: Ola Håkansson <ola dot hakansson at gmail dot com>
+#
+# Depends on: cmake
+
+name=googletest
+version=1.8.0
+release=1
+source=(https://github.com/google/googletest/archive/release-$version.tar.gz)
+
+build() {
+    cd $name-release-$version
+
+    mkdir build
+    cd build
+
+    cmake -DCMAKE_BUILD_TYPE=Release \
+          -DCMAKE_INSTALL_PREFIX=/usr \
+          -DBUILD_GMOCK=ON \
+          -DBUILD_GTEST=ON \
+          -DBUILD_SHARED_LIBS=ON \
+          ..
+
+    make
+    make DESTDIR=$PKG install
+}
