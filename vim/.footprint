@@ -48,6 +48,8 @@ drwxr-xr-x	root/root	usr/share/vim/autoload/
 -rw-r--r--	root/root	usr/share/vim/autoload/python3complete.vim
 -rw-r--r--	root/root	usr/share/vim/autoload/pythoncomplete.vim
 -rw-r--r--	root/root	usr/share/vim/autoload/rubycomplete.vim
+-rw-r--r--	root/root	usr/share/vim/autoload/rust.vim
+-rw-r--r--	root/root	usr/share/vim/autoload/rustfmt.vim
 -rw-r--r--	root/root	usr/share/vim/autoload/spellfile.vim
 -rw-r--r--	root/root	usr/share/vim/autoload/sqlcomplete.vim
 -rw-r--r--	root/root	usr/share/vim/autoload/syntaxcomplete.vim
@@ -94,6 +96,7 @@ drwxr-xr-x	root/root	usr/share/vim/compiler/
 -rw-r--r--	root/root	usr/share/vim/compiler/ant.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/bcc.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/bdf.vim
+-rw-r--r--	root/root	usr/share/vim/compiler/cargo.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/checkstyle.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/context.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/cs.vim
@@ -144,6 +147,7 @@ drwxr-xr-x	root/root	usr/share/vim/compiler/
 -rw-r--r--	root/root	usr/share/vim/compiler/rst.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/ruby.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/rubyunit.vim
+-rw-r--r--	root/root	usr/share/vim/compiler/rustc.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/sass.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/se.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/splint.vim
@@ -172,6 +176,7 @@ drwxr-xr-x	root/root	usr/share/vim/doc/
 -rw-r--r--	root/root	usr/share/vim/doc/filetype.txt
 -rw-r--r--	root/root	usr/share/vim/doc/fold.txt
 -rw-r--r--	root/root	usr/share/vim/doc/ft_ada.txt
+-rw-r--r--	root/root	usr/share/vim/doc/ft_rust.txt
 -rw-r--r--	root/root	usr/share/vim/doc/ft_sql.txt
 -rw-r--r--	root/root	usr/share/vim/doc/gui.txt
 -rw-r--r--	root/root	usr/share/vim/doc/gui_w32.txt
@@ -307,6 +312,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/art.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/aspvbs.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/automake.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/awk.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/bdf.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/bst.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/btm.vim
@@ -451,6 +457,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/rrst.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/rst.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/ruby.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/rust.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/sass.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/scala.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/scheme.vim
@@ -478,6 +485,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/terminfo.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/tex.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/text.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/tmux.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/treetop.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/tt2html.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/udevconf.vim
@@ -591,6 +599,8 @@ drwxr-xr-x	root/root	usr/share/vim/indent/
 -rw-r--r--	root/root	usr/share/vim/indent/rrst.vim
 -rw-r--r--	root/root	usr/share/vim/indent/rst.vim
 -rw-r--r--	root/root	usr/share/vim/indent/ruby.vim
+-rw-r--r--	root/root	usr/share/vim/indent/rust.vim
+-rw-r--r--	root/root	usr/share/vim/indent/sas.vim
 -rw-r--r--	root/root	usr/share/vim/indent/sass.vim
 -rw-r--r--	root/root	usr/share/vim/indent/scala.vim
 -rw-r--r--	root/root	usr/share/vim/indent/scheme.vim
@@ -1138,6 +1148,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/rst.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/rtf.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/ruby.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/rust.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/samba.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/sas.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/sass.vim
@@ -1236,6 +1247,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/tidy.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/tilde.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/tli.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/tmux.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/tpp.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/trasys.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/treetop.vim
