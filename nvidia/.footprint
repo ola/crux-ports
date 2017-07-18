@@ -27,51 +27,51 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/nvidia-smi
 -rwxr-xr-x	root/root	usr/bin/nvidia-xconfig
 drwxr-xr-x	root/root	usr/lib/
--rwxr-xr-x	root/root	usr/lib/libEGL_nvidia.so.381.22
--rwxr-xr-x	root/root	usr/lib/libGL.so.381.22
--rwxr-xr-x	root/root	usr/lib/libGLESv1_CM_nvidia.so.381.22
--rwxr-xr-x	root/root	usr/lib/libGLESv2_nvidia.so.381.22
--rwxr-xr-x	root/root	usr/lib/libGLX_nvidia.so.381.22
-lrwxrwxrwx	root/root	usr/lib/libGL_so_1_2_nvidia -> libGL.so.381.22
+-rwxr-xr-x	root/root	usr/lib/libEGL_nvidia.so.384.47
+-rwxr-xr-x	root/root	usr/lib/libGL.so.384.47
+-rwxr-xr-x	root/root	usr/lib/libGLESv1_CM_nvidia.so.384.47
+-rwxr-xr-x	root/root	usr/lib/libGLESv2_nvidia.so.384.47
+-rwxr-xr-x	root/root	usr/lib/libGLX_nvidia.so.384.47
+lrwxrwxrwx	root/root	usr/lib/libGL_so_1_2_nvidia -> libGL.so.384.47
 lrwxrwxrwx	root/root	usr/lib/libOpenCL.so -> libOpenCL.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libOpenCL.so.1.0.0
-lrwxrwxrwx	root/root	usr/lib/libcuda.so -> libcuda.so.381.22
--rwxr-xr-x	root/root	usr/lib/libcuda.so.381.22
-lrwxrwxrwx	root/root	usr/lib/libnvcuvid.so -> libnvcuvid.so.381.22
-lrwxrwxrwx	root/root	usr/lib/libnvcuvid.so.1 -> libnvcuvid.so.381.22
--rwxr-xr-x	root/root	usr/lib/libnvcuvid.so.381.22
--rwxr-xr-x	root/root	usr/lib/libnvidia-cfg.so.381.22
--rwxr-xr-x	root/root	usr/lib/libnvidia-compiler.so.381.22
+lrwxrwxrwx	root/root	usr/lib/libcuda.so -> libcuda.so.384.47
+-rwxr-xr-x	root/root	usr/lib/libcuda.so.384.47
+lrwxrwxrwx	root/root	usr/lib/libnvcuvid.so -> libnvcuvid.so.384.47
+lrwxrwxrwx	root/root	usr/lib/libnvcuvid.so.1 -> libnvcuvid.so.384.47
+-rwxr-xr-x	root/root	usr/lib/libnvcuvid.so.384.47
+-rwxr-xr-x	root/root	usr/lib/libnvidia-cfg.so.384.47
+-rwxr-xr-x	root/root	usr/lib/libnvidia-compiler.so.384.47
 -rwxr-xr-x	root/root	usr/lib/libnvidia-egl-wayland.so.1.0.1
--rwxr-xr-x	root/root	usr/lib/libnvidia-eglcore.so.381.22
--rwxr-xr-x	root/root	usr/lib/libnvidia-encode.so.381.22
--rwxr-xr-x	root/root	usr/lib/libnvidia-fatbinaryloader.so.381.22
--rwxr-xr-x	root/root	usr/lib/libnvidia-fbc.so.381.22
--rwxr-xr-x	root/root	usr/lib/libnvidia-glcore.so.381.22
--rwxr-xr-x	root/root	usr/lib/libnvidia-glsi.so.381.22
--rwxr-xr-x	root/root	usr/lib/libnvidia-gtk2.so.381.22
--rwxr-xr-x	root/root	usr/lib/libnvidia-gtk3.so.381.22
--rwxr-xr-x	root/root	usr/lib/libnvidia-ifr.so.381.22
-lrwxrwxrwx	root/root	usr/lib/libnvidia-ml.so -> libnvidia-ml.so.381.22
-lrwxrwxrwx	root/root	usr/lib/libnvidia-ml.so.1 -> libnvidia-ml.so.381.22
--rwxr-xr-x	root/root	usr/lib/libnvidia-ml.so.381.22
--rwxr-xr-x	root/root	usr/lib/libnvidia-opencl.so.381.22
--rwxr-xr-x	root/root	usr/lib/libnvidia-ptxjitcompiler.so.381.22
--rwxr-xr-x	root/root	usr/lib/libnvidia-tls.so.381.22
+-rwxr-xr-x	root/root	usr/lib/libnvidia-eglcore.so.384.47
+-rwxr-xr-x	root/root	usr/lib/libnvidia-encode.so.384.47
+-rwxr-xr-x	root/root	usr/lib/libnvidia-fatbinaryloader.so.384.47
+-rwxr-xr-x	root/root	usr/lib/libnvidia-fbc.so.384.47
+-rwxr-xr-x	root/root	usr/lib/libnvidia-glcore.so.384.47
+-rwxr-xr-x	root/root	usr/lib/libnvidia-glsi.so.384.47
+-rwxr-xr-x	root/root	usr/lib/libnvidia-gtk2.so.384.47
+-rwxr-xr-x	root/root	usr/lib/libnvidia-gtk3.so.384.47
+-rwxr-xr-x	root/root	usr/lib/libnvidia-ifr.so.384.47
+lrwxrwxrwx	root/root	usr/lib/libnvidia-ml.so -> libnvidia-ml.so.384.47
+lrwxrwxrwx	root/root	usr/lib/libnvidia-ml.so.1 -> libnvidia-ml.so.384.47
+-rwxr-xr-x	root/root	usr/lib/libnvidia-ml.so.384.47
+-rwxr-xr-x	root/root	usr/lib/libnvidia-opencl.so.384.47
+-rwxr-xr-x	root/root	usr/lib/libnvidia-ptxjitcompiler.so.384.47
+-rwxr-xr-x	root/root	usr/lib/libnvidia-tls.so.384.47
 drwxr-xr-x	root/root	usr/lib/tls/
--rwxr-xr-x	root/root	usr/lib/tls/libnvidia-tls.so.381.22
+-rwxr-xr-x	root/root	usr/lib/tls/libnvidia-tls.so.384.47
 drwxr-xr-x	root/root	usr/lib/vdpau/
-lrwxrwxrwx	root/root	usr/lib/vdpau/libvdpau_nvidia.so -> libvdpau_nvidia.so.381.22
-lrwxrwxrwx	root/root	usr/lib/vdpau/libvdpau_nvidia.so.1 -> libvdpau_nvidia.so.381.22
--rwxr-xr-x	root/root	usr/lib/vdpau/libvdpau_nvidia.so.381.22
+lrwxrwxrwx	root/root	usr/lib/vdpau/libvdpau_nvidia.so -> libvdpau_nvidia.so.384.47
+lrwxrwxrwx	root/root	usr/lib/vdpau/libvdpau_nvidia.so.1 -> libvdpau_nvidia.so.384.47
+-rwxr-xr-x	root/root	usr/lib/vdpau/libvdpau_nvidia.so.384.47
 drwxr-xr-x	root/root	usr/lib/xorg/
 drwxr-xr-x	root/root	usr/lib/xorg/modules/
 drwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/nvidia_drv.so
 drwxr-xr-x	root/root	usr/lib/xorg/modules/extensions/
--rwxr-xr-x	root/root	usr/lib/xorg/modules/extensions/libglx.so.381.22
-lrwxrwxrwx	root/root	usr/lib/xorg/modules/extensions/libglx_so_nvidia -> libglx.so.381.22
--rwxr-xr-x	root/root	usr/lib/xorg/modules/libnvidia-wfb.so.381.22
+-rwxr-xr-x	root/root	usr/lib/xorg/modules/extensions/libglx.so.384.47
+lrwxrwxrwx	root/root	usr/lib/xorg/modules/extensions/libglx_so_nvidia -> libglx.so.384.47
+-rwxr-xr-x	root/root	usr/lib/xorg/modules/libnvidia-wfb.so.384.47
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/X11/
 drwxr-xr-x	root/root	usr/share/X11/xorg.conf.d/
@@ -87,6 +87,6 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/nvidia-smi.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/nvidia-xconfig.1.gz
 drwxr-xr-x	root/root	usr/share/nvidia/
--rw-r--r--	root/root	usr/share/nvidia/nvidia-application-profiles-381.22-key-documentation
+-rw-r--r--	root/root	usr/share/nvidia/nvidia-application-profiles-384.47-key-documentation
 drwxr-xr-x	root/root	usr/share/pixmaps/
 -rw-r--r--	root/root	usr/share/pixmaps/nvidia-settings.png

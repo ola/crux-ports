@@ -4,7 +4,7 @@
 # Depends on: gtk gl-select
 
 name=nvidia
-version=381.22
+version=384.47
 release=1
 source=(http://us.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version-no-compat32.run \
         90-nvidia-uvm.rules)
@@ -88,7 +88,7 @@ build() {
     install -m 0644 -D nvidia.icd $PKG/etc/OpenCL/vendors/nvidia.icd
 
     # vulkan icd file
-    install -m 0644 -D nvidia_icd.json $PKG/etc/vulkan/icd.d/nvidia_icd.json
+    install -m 0644 -D nvidia_icd.json.template $PKG/etc/vulkan/icd.d/nvidia_icd.json
 
     # nvidia-uvm module udev rule
     install -d $PKG/lib/udev/rules.d
