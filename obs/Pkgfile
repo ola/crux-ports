@@ -1,0 +1,24 @@
+# Description: Software for video recording and live streaming
+# URL: https://obsproject.com/
+# Maintainer: Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on: cmake jack v4l-utils ffmpeg
+
+name=obs-studio
+version=19.0.3
+release=1
+source=(https://github.com/jp9000/$name/archive/$version.tar.gz)
+
+build() {
+  cd ${name}-$version
+
+  mkdir build
+  cd build
+
+  cmake \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DUSE_SSL=ON ..
+
+  make
+  make DESTDIR=$PKG install
+}
