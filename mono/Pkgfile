@@ -1,6 +1,6 @@
 # Description: Cross platform, open source .NET framework
 # URL: http://www.mono-project.com
-# Maintainer: poq <jbloomfield at live dot com>
+# Maintainer: Ola Håkansson <ola dot hakansson at gmail dot com>
 # Depends on:
 
 name=mono
