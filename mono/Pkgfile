@@ -4,11 +4,11 @@
 # Depends on:
 
 name=mono
-version=5.0.0.100
+version=5.0.1.1
 release=1
 source=(http://download.mono-project.com/sources/$name/$name-$version.tar.bz2)
 build() {
-	cd $name-5.0.0
+	cd $name-$version
 
 	./configure --prefix=/usr \
               --with-large-heap=yes \

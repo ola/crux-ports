@@ -2744,6 +2744,9 @@ drwxr-xr-x	root/root	usr/lib/mono/xbuild/Microsoft/VisualStudio/v12.0/WebApplica
 drwxr-xr-x	root/root	usr/lib/mono/xbuild/Microsoft/VisualStudio/v14.0/
 drwxr-xr-x	root/root	usr/lib/mono/xbuild/Microsoft/VisualStudio/v14.0/WebApplications/
 -rw-r--r--	root/root	usr/lib/mono/xbuild/Microsoft/VisualStudio/v14.0/WebApplications/Microsoft.WebApplication.targets
+drwxr-xr-x	root/root	usr/lib/mono/xbuild/Microsoft/VisualStudio/v15.0/
+drwxr-xr-x	root/root	usr/lib/mono/xbuild/Microsoft/VisualStudio/v15.0/WebApplications/
+-rw-r--r--	root/root	usr/lib/mono/xbuild/Microsoft/VisualStudio/v15.0/WebApplications/Microsoft.WebApplication.targets
 drwxr-xr-x	root/root	usr/lib/mono/xbuild/Microsoft/VisualStudio/v9.0/
 drwxr-xr-x	root/root	usr/lib/mono/xbuild/Microsoft/VisualStudio/v9.0/WebApplications/
 -rw-r--r--	root/root	usr/lib/mono/xbuild/Microsoft/VisualStudio/v9.0/WebApplications/Microsoft.WebApplication.targets
