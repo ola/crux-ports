@@ -1,0 +1,19 @@
+# Description: A lightweight RDF library for accessing plugin metadata in the LADSPA plugin system
+# URL:         https://github.com/swh/LRDF
+# Maintainer:  Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on: libraptor2
+
+name=liblrdf
+version=0.6.1
+release=1
+source=(https://github.com/swh/LRDF/archive/v$version.tar.gz)
+
+build() {
+  cd LRDF-$version
+
+  ./autogen.sh
+  ./configure --prefix=/usr
+
+  make
+  make DESTDIR=$PKG install
+}
