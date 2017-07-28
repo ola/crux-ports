@@ -1,0 +1,18 @@
+# Description: Implementation of the Open Sound Control protocol for POSIX systems
+# URL:         http://liblo.sourceforge.net/
+# Maintainer:  Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on:
+
+name=liblo
+version=0.28
+release=1
+source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
+
+build() {
+  cd $name-$version
+
+  ./configure --prefix=/usr --enable-threads
+
+  make
+  make DESTDIR=$PKG install
+}
