@@ -1,0 +1,20 @@
+# Description: Provides a set of parsers and serializers that generate Resource Description Framework (RDF) triples
+# URL:         http://librdf.org/raptor/
+# Maintainer:  Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on: libxml2 curl
+
+name=libraptor2
+version=2.0.15
+release=1
+source=(http://download.librdf.org/source/raptor2-$version.tar.gz)
+
+build() {
+  cd raptor2-$version
+
+  ./configure --prefix=/usr --enable-release
+
+  make
+  make DESTDIR=$PKG install
+
+  rm -rf $PKG/usr/share/gtk-doc
+}
