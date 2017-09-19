@@ -248,6 +248,7 @@ drwxr-xr-x	root/root	usr/share/vim/doc/
 -rw-r--r--	root/root	usr/share/vim/doc/tags
 -rw-r--r--	root/root	usr/share/vim/doc/tagsrch.txt
 -rw-r--r--	root/root	usr/share/vim/doc/term.txt
+-rw-r--r--	root/root	usr/share/vim/doc/terminal.txt
 -rw-r--r--	root/root	usr/share/vim/doc/tips.txt
 -rw-r--r--	root/root	usr/share/vim/doc/todo.txt
 -rw-r--r--	root/root	usr/share/vim/doc/uganda.txt
@@ -459,6 +460,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/ruby.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/rust.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/sass.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/sbt.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/scala.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/scheme.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/screen.vim
@@ -665,6 +667,9 @@ drwxr-xr-x	root/root	usr/share/vim/pack/dist/opt/shellmenu/plugin/
 drwxr-xr-x	root/root	usr/share/vim/pack/dist/opt/swapmouse/
 drwxr-xr-x	root/root	usr/share/vim/pack/dist/opt/swapmouse/plugin/
 -rw-r--r--	root/root	usr/share/vim/pack/dist/opt/swapmouse/plugin/swapmouse.vim
+drwxr-xr-x	root/root	usr/share/vim/pack/dist/opt/termdebug/
+drwxr-xr-x	root/root	usr/share/vim/pack/dist/opt/termdebug/plugin/
+-rw-r--r--	root/root	usr/share/vim/pack/dist/opt/termdebug/plugin/termdebug.vim
 drwxr-xr-x	root/root	usr/share/vim/plugin/
 -rw-r--r--	root/root	usr/share/vim/plugin/getscriptPlugin.vim
 -rw-r--r--	root/root	usr/share/vim/plugin/gzip.vim
@@ -1050,9 +1055,11 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/msmessages.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/msql.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/mupad.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/murphi.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/mush.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/muttrc.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/mysql.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/n1ql.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/named.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/nanorc.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/nasm.vim
@@ -1153,6 +1160,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/sas.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/sass.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/sather.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/sbt.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/scala.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/scheme.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/scilab.vim

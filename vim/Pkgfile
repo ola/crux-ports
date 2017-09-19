@@ -4,12 +4,12 @@
 # Depends on:  ncurses acl
 
 name=vim
-version=8.0.586
+version=8.0.1071
 release=1
-source=(ftp://ftp.vim.org/pub/vim/unix/$name-$version.tar.bz2)
+source=(https://github.com/vim/vim/archive/v${version}/$name-$version.tar.gz)
 
 build () {
-    cd vim80/src
+    cd $name-$version/src
 
     sed -i '/^CFLAGS/d' Makefile
 
