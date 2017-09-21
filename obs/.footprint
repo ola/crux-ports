@@ -162,6 +162,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/frontend-tools/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/frontend-tools/locale/cs-CZ.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/frontend-tools/locale/da-DK.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/frontend-tools/locale/de-DE.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/frontend-tools/locale/el-GR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/frontend-tools/locale/en-US.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/frontend-tools/locale/es-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/frontend-tools/locale/et-EE.ini
@@ -231,6 +232,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/image-source/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/image-source/locale/th-TH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/image-source/locale/tr-TR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/image-source/locale/uk-UA.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/image-source/locale/vi-VN.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/image-source/locale/zh-CN.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/image-source/locale/zh-TW.ini
 drwxrwxr-x	root/root	usr/share/obs/obs-plugins/linux-alsa/
@@ -241,6 +243,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/cs-CZ.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/da-DK.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/de-DE.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/el-GR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/en-US.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/es-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/et-EE.ini
@@ -348,6 +351,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/linux-decklink/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-decklink/locale/sv-SE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-decklink/locale/tr-TR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-decklink/locale/uk-UA.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-decklink/locale/vi-VN.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-decklink/locale/zh-CN.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-decklink/locale/zh-TW.ini
 drwxrwxr-x	root/root	usr/share/obs/obs-plugins/linux-jack/
@@ -429,6 +433,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/th-TH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/tr-TR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/uk-UA.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/vi-VN.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/zh-CN.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/zh-TW.ini
 drwxrwxr-x	root/root	usr/share/obs/obs-plugins/obs-ffmpeg/
@@ -524,6 +529,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/obs-filters/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-filters/locale/sv-SE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-filters/locale/tr-TR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-filters/locale/uk-UA.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-filters/locale/vi-VN.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-filters/locale/zh-CN.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-filters/locale/zh-TW.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-filters/mask_alpha_filter.effect
@@ -607,6 +613,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/obs-transitions/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-transitions/locale/sv-SE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-transitions/locale/tr-TR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-transitions/locale/uk-UA.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-transitions/locale/vi-VN.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-transitions/locale/zh-CN.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-transitions/locale/zh-TW.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-transitions/luma_wipe_transition.effect
@@ -731,6 +738,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/rtmp-services/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/rtmp-services/locale/tr-TR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/rtmp-services/locale/uk-UA.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/rtmp-services/locale/ur-PK.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/rtmp-services/locale/vi-VN.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/rtmp-services/locale/zh-CN.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/rtmp-services/locale/zh-TW.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/rtmp-services/package.json
@@ -773,6 +781,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/text-freetype2/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/text-freetype2/locale/th-TH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/text-freetype2/locale/tr-TR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/text-freetype2/locale/uk-UA.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/text-freetype2/locale/vi-VN.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/text-freetype2/locale/zh-CN.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/text-freetype2/locale/zh-TW.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/text-freetype2/text_default.effect
@@ -784,6 +793,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/vlc-video/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/cs-CZ.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/da-DK.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/de-DE.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/el-GR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/en-US.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/es-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/et-EE.ini
@@ -808,6 +818,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/vlc-video/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/sv-SE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/tr-TR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/uk-UA.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/vi-VN.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/zh-CN.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/zh-TW.ini
 drwxrwxr-x	root/root	usr/share/obs/obs-studio/
@@ -815,6 +826,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-studio/license/
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/license/gplv2.txt
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/locale.ini
 drwxrwxr-x	root/root	usr/share/obs/obs-studio/locale/
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/locale/af-ZA.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/locale/ar-SA.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/locale/bg-BG.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/locale/bn-BD.ini
@@ -869,3 +881,26 @@ drwxrwxr-x	root/root	usr/share/obs/obs-studio/themes/Dark/
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/up_arrow.png
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/updown.png
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Default.qss
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Rachni.qss
+drwxrwxr-x	root/root	usr/share/obs/obs-studio/themes/Rachni/
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Rachni/checkbox_checked.png
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Rachni/checkbox_checked_disabled.png
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Rachni/checkbox_checked_focus.png
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Rachni/checkbox_unchecked.png
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Rachni/checkbox_unchecked_disabled.png
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Rachni/checkbox_unchecked_focus.png
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Rachni/down_arrow.png
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Rachni/down_arrow_disabled.png
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Rachni/left_arrow.png
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Rachni/left_arrow_disabled.png
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Rachni/radio_checked.png
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Rachni/radio_checked_disabled.png
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Rachni/radio_checked_focus.png
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Rachni/radio_unchecked.png
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Rachni/radio_unchecked_disabled.png
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Rachni/radio_unchecked_focus.png
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Rachni/right_arrow.png
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Rachni/right_arrow_disabled.png
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Rachni/sizegrip.png
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Rachni/up_arrow.png
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Rachni/up_arrow_disabled.png
