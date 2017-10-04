@@ -1,4 +1,4 @@
-# Description: nVIDIA Linux Display Driver
+# Description: NVIDIA Accelerated Linux Graphics Driver
 # URL: http://www.nvidia.com/
 # Maintainer: Ola Håkansson <ola dot hakansson at gmail dot com> 
 # Depends on: gtk gl-select
@@ -88,6 +88,7 @@ build() {
     install -m 0644 -D nvidia.icd $PKG/etc/OpenCL/vendors/nvidia.icd
 
     # vulkan icd file
+    sed -i 's/__NV_VK_ICD__/libGLX_nvidia.so.$version/' nvidia_icd.json.template
     install -m 0644 -D nvidia_icd.json.template $PKG/etc/vulkan/icd.d/nvidia_icd.json
 
     # nvidia-uvm module udev rule
@@ -95,8 +96,10 @@ build() {
     install -m 0644 $SRC/90-nvidia-uvm.rules $PKG/lib/udev/rules.d/90-nvidia-uvm.rules
 
     # nvidia-settings registry key file
-    install -D -m 0644 nvidia-application-profiles-$version-key-documentation \
-    $PKG/usr/share/nvidia/nvidia-application-profiles-$version-key-documentation
+    install -D -m 0644 nvidia-application-profiles-$version-key-documentation $PKG/usr/share/nvidia/nvidia-application-profiles-$version-key-documentation
+
+    # Wayland EGL external platform configuration
+    install -D -m 0644 10_nvidia_wayland.json $PKG/usr/share/egl/egl_external_platform.d/10_nvidia_wayland.json
 
     # kernel modules
     cd kernel
