@@ -88,7 +88,7 @@ build() {
     install -m 0644 -D nvidia.icd $PKG/etc/OpenCL/vendors/nvidia.icd
 
     # vulkan icd file
-    sed -i 's/__NV_VK_ICD__/libGLX_nvidia.so.$version/' nvidia_icd.json.template
+    sed -i "s/__NV_VK_ICD__/libGLX_nvidia.so.$version/" nvidia_icd.json.template
     install -m 0644 -D nvidia_icd.json.template $PKG/etc/vulkan/icd.d/nvidia_icd.json
 
     # nvidia-uvm module udev rule
