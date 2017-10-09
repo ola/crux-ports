@@ -4,7 +4,7 @@
 # Depends on: gtk gl-select
 
 name=nvidia
-version=384.90
+version=387.12
 release=1
 source=(http://us.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version-no-compat32.run \
         90-nvidia-uvm.rules)
@@ -43,7 +43,7 @@ build() {
     install -m 0755 libGLX_nvidia.so.$version               $PKG/usr/lib
 #   install -m 0755 libGLdispatch.so.0                      $PKG/usr/lib
     install -m 0755 libnvidia-eglcore.so.$version           $PKG/usr/lib
-    install -m 0755 libnvidia-egl-wayland.so.1.0.1          $PKG/usr/lib
+    install -m 0755 libnvidia-egl-wayland.so.1.0.2          $PKG/usr/lib
     install -m 0755 libnvidia-glsi.so.$version              $PKG/usr/lib
     install -m 0755 libnvidia-ptxjitcompiler.so.$version    $PKG/usr/lib
 
