@@ -1,0 +1,38 @@
+# Description: Khronos official ICD loader and validation layers for Vulkan developers
+# URL:         https://github.com/KhronosGroup/Vulkan-LoaderAndValidationLayers 
+# Maintainer:  Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on: bison cmake
+
+name=libvulkan
+version=1.0.61.1
+release=1
+source=(https://github.com/KhronosGroup/Vulkan-LoaderAndValidationLayers/archive/sdk-$version.tar.gz)
+
+build() {
+  cd Vulkan-LoaderAndValidationLayers-sdk-$version
+
+  ./update_external_sources.sh
+  
+  mkdir build && cd build
+  cmake -DBUILD_DEMOS=ON \
+        -DBUILD_LAYERS=ON \
+        -DBUILD_LOADER=ON \
+        -DBUILD_SHARED_LIBS=ON \
+        -DBUILD_TESTS=OFF \
+        -DBUILD_VKJSON=ON \
+        -DBUILD_WSI_MIR_SUPPORT=OFF \
+        -DBUILD_WSI_WAYLAND_SUPPORT=OFF \
+        -DBUILD_WSI_XCB_SUPPORT=ON \
+        -DBUILD_WSI_XLIB_SUPPORT=ON \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCUSTOM_GLSLANG_BIN_ROOT=OFF \
+        -DCUSTOM_SPIRV_TOOLS_BIN_ROOT=OFF \
+        -DDEMOS_WSI_SELECTION=XCB \
+        -DFALLBACK_CONFIG_DIRS=/etc/xdg \
+        -DINSTALL_LVL_FILES=ON \
+        ..
+
+  make
+  make DESTDIR=$PKG install
+}
