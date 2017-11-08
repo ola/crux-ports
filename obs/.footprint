@@ -3,9 +3,6 @@ drwxrwxr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/obs
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/obs/
-drwxr-xr-x	root/root	usr/include/obs/audio-monitoring/
-drwxr-xr-x	root/root	usr/include/obs/audio-monitoring/null/
--rw-r--r--	root/root	usr/include/obs/audio-monitoring/null/null-audio-monitoring.c
 drwxr-xr-x	root/root	usr/include/obs/callback/
 -rw-r--r--	root/root	usr/include/obs/callback/calldata.h
 -rw-r--r--	root/root	usr/include/obs/callback/decl.h

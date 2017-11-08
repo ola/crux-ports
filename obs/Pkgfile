@@ -4,7 +4,7 @@
 # Depends on: cmake jack v4l-utils ffmpeg
 
 name=obs-studio
-version=20.0.1
+version=20.1.1
 release=1
 source=(https://github.com/jp9000/$name/archive/$version.tar.gz)
 
