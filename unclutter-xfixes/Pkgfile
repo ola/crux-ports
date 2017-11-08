@@ -1,0 +1,16 @@
+# Description: Hides the mouse cursor but using the x11-xfixes extension, rewrite of unclutter
+# URL:         https://github.com/Airblader/unclutter-xfixes/
+# Maintainer:  Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on:  
+
+name=unclutter-xfixes
+version=1.2
+release=1
+source=(https://github.com/Airblader/$name/archive/v$version.tar.gz)
+
+build() {
+  cd $name-$version
+
+  make PREFIX=/usr
+  make DESTDIR=$PKG install
+}
