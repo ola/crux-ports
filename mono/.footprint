@@ -12,6 +12,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/crlupdate
 -rwxr-xr-x	root/root	usr/bin/csc
 -rwxr-xr-x	root/root	usr/bin/csharp
+-rwxr-xr-x	root/root	usr/bin/csi
 -rwxr-xr-x	root/root	usr/bin/disco
 -rwxr-xr-x	root/root	usr/bin/dmcs
 -rwxr-xr-x	root/root	usr/bin/dtd2rng
@@ -1119,8 +1120,11 @@ lrwxrwxrwx	root/root	usr/lib/mono/4.5/Microsoft.Build.dll -> ../gac/Microsoft.Bu
 -rw-r--r--	root/root	usr/lib/mono/4.5/Microsoft.Build.xsd
 lrwxrwxrwx	root/root	usr/lib/mono/4.5/Microsoft.CSharp.dll -> ../gac/Microsoft.CSharp/4.0.0.0__b03f5f7f11d50a3a/Microsoft.CSharp.dll
 -rw-r--r--	root/root	usr/lib/mono/4.5/Microsoft.CSharp.targets
+-rwxr-xr-x	root/root	usr/lib/mono/4.5/Microsoft.CodeAnalysis.CSharp.Scripting.dll
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Microsoft.CodeAnalysis.CSharp.dll
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Microsoft.CodeAnalysis.CSharp.dll.so
+-rwxr-xr-x	root/root	usr/lib/mono/4.5/Microsoft.CodeAnalysis.Scripting.dll
+-rwxr-xr-x	root/root	usr/lib/mono/4.5/Microsoft.CodeAnalysis.VisualBasic.dll
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Microsoft.CodeAnalysis.dll
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Microsoft.CodeAnalysis.dll.so
 -rw-r--r--	root/root	usr/lib/mono/4.5/Microsoft.Common.targets
@@ -1248,6 +1252,8 @@ lrwxrwxrwx	root/root	usr/lib/mono/4.5/System.Xml.Linq.dll -> ../gac/System.Xml.L
 lrwxrwxrwx	root/root	usr/lib/mono/4.5/System.Xml.Serialization.dll -> ../gac/System.Xml.Serialization/4.0.0.0__b77a5c561934e089/System.Xml.Serialization.dll
 lrwxrwxrwx	root/root	usr/lib/mono/4.5/System.Xml.dll -> ../gac/System.Xml/4.0.0.0__b77a5c561934e089/System.Xml.dll
 lrwxrwxrwx	root/root	usr/lib/mono/4.5/System.dll -> ../gac/System/4.0.0.0__b77a5c561934e089/System.dll
+-rwxr-xr-x	root/root	usr/lib/mono/4.5/VBCSCompiler.exe
+-rwxr-xr-x	root/root	usr/lib/mono/4.5/VBCSCompiler.exe.config
 lrwxrwxrwx	root/root	usr/lib/mono/4.5/WebMatrix.Data.dll -> ../gac/WebMatrix.Data/4.0.0.0__0738eb9f132ed756/WebMatrix.Data.dll
 lrwxrwxrwx	root/root	usr/lib/mono/4.5/WindowsBase.dll -> ../gac/WindowsBase/4.0.0.0__31bf3856ad364e35/WindowsBase.dll
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/al.exe
@@ -1277,6 +1283,9 @@ lrwxrwxrwx	root/root	usr/lib/mono/4.5/WindowsBase.dll -> ../gac/WindowsBase/4.0.
 lrwxrwxrwx	root/root	usr/lib/mono/4.5/cscompmgd.dll -> ../gac/cscompmgd/0.0.0.0__b03f5f7f11d50a3a/cscompmgd.dll
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/csharp.exe
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/csharp.pdb
+-rwxr-xr-x	root/root	usr/lib/mono/4.5/csi.exe
+-rwxr-xr-x	root/root	usr/lib/mono/4.5/csi.exe.config
+-rwxr-xr-x	root/root	usr/lib/mono/4.5/csi.rsp
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/culevel.exe
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/culevel.pdb
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/disco.exe
@@ -2799,6 +2808,24 @@ drwxr-xr-x	root/root	usr/lib/mono/mono-configuration-crypto/4.5/
 -rwxr-xr-x	root/root	usr/lib/mono/mono-configuration-crypto/4.5/mono-configuration-crypto.pdb
 drwxr-xr-x	root/root	usr/lib/mono/monodoc/
 lrwxrwxrwx	root/root	usr/lib/mono/monodoc/monodoc.dll -> ../gac/monodoc/1.0.0.0__0738eb9f132ed756/monodoc.dll
+drwxr-xr-x	root/root	usr/lib/mono/msbuild/
+drwxr-xr-x	root/root	usr/lib/mono/msbuild/15.0/
+drwxr-xr-x	root/root	usr/lib/mono/msbuild/15.0/bin/
+drwxr-xr-x	root/root	usr/lib/mono/msbuild/15.0/bin/Roslyn/
+-rwxr-xr-x	root/root	usr/lib/mono/msbuild/15.0/bin/Roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll
+-rwxr-xr-x	root/root	usr/lib/mono/msbuild/15.0/bin/Roslyn/Microsoft.CSharp.Core.targets
+lrwxrwxrwx	root/root	usr/lib/mono/msbuild/15.0/bin/Roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll -> ../../../../4.5/Microsoft.CodeAnalysis.CSharp.Scripting.dll
+lrwxrwxrwx	root/root	usr/lib/mono/msbuild/15.0/bin/Roslyn/Microsoft.CodeAnalysis.CSharp.dll -> ../../../../4.5/Microsoft.CodeAnalysis.CSharp.dll
+lrwxrwxrwx	root/root	usr/lib/mono/msbuild/15.0/bin/Roslyn/Microsoft.CodeAnalysis.Scripting.dll -> ../../../../4.5/Microsoft.CodeAnalysis.Scripting.dll
+lrwxrwxrwx	root/root	usr/lib/mono/msbuild/15.0/bin/Roslyn/Microsoft.CodeAnalysis.dll -> ../../../../4.5/Microsoft.CodeAnalysis.dll
+-rwxr-xr-x	root/root	usr/lib/mono/msbuild/15.0/bin/Roslyn/Microsoft.VisualBasic.Core.targets
+lrwxrwxrwx	root/root	usr/lib/mono/msbuild/15.0/bin/Roslyn/System.Collections.Immutable.dll -> ../../../../4.5/System.Collections.Immutable.dll
+lrwxrwxrwx	root/root	usr/lib/mono/msbuild/15.0/bin/Roslyn/System.Reflection.Metadata.dll -> ../../../../4.5/System.Reflection.Metadata.dll
+lrwxrwxrwx	root/root	usr/lib/mono/msbuild/15.0/bin/Roslyn/VBCSCompiler.exe -> ../../../../4.5/VBCSCompiler.exe
+lrwxrwxrwx	root/root	usr/lib/mono/msbuild/15.0/bin/Roslyn/VBCSCompiler.exe.config -> ../../../../4.5/VBCSCompiler.exe.config
+lrwxrwxrwx	root/root	usr/lib/mono/msbuild/15.0/bin/Roslyn/csi.exe -> ../../../../4.5/csi.exe
+lrwxrwxrwx	root/root	usr/lib/mono/msbuild/15.0/bin/Roslyn/csi.exe.config -> ../../../../4.5/csi.exe.config
+lrwxrwxrwx	root/root	usr/lib/mono/msbuild/15.0/bin/Roslyn/csi.rsp -> ../../../../4.5/csi.rsp
 drwxr-xr-x	root/root	usr/lib/mono/xbuild-frameworks/
 drwxr-xr-x	root/root	usr/lib/mono/xbuild-frameworks/.NETFramework/
 drwxr-xr-x	root/root	usr/lib/mono/xbuild-frameworks/.NETFramework/v2.0/
@@ -2939,6 +2966,7 @@ drwxr-xr-x	root/root	usr/lib/mono/xbuild/Microsoft/VisualStudio/v15.0/WebApplica
 drwxr-xr-x	root/root	usr/lib/mono/xbuild/Microsoft/VisualStudio/v9.0/
 drwxr-xr-x	root/root	usr/lib/mono/xbuild/Microsoft/VisualStudio/v9.0/WebApplications/
 -rw-r--r--	root/root	usr/lib/mono/xbuild/Microsoft/VisualStudio/v9.0/WebApplications/Microsoft.WebApplication.targets
+-rw-r--r--	root/root	usr/lib/mono/xbuild/deniedAssembliesList.txt
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/aspnetwebstack.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/cecil.pc
