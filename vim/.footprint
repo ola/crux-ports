@@ -34,6 +34,8 @@ drwxr-xr-x	root/root	usr/share/vim/autoload/
 -rw-r--r--	root/root	usr/share/vim/autoload/contextcomplete.vim
 -rw-r--r--	root/root	usr/share/vim/autoload/csscomplete.vim
 -rw-r--r--	root/root	usr/share/vim/autoload/decada.vim
+drwxr-xr-x	root/root	usr/share/vim/autoload/dist/
+-rw-r--r--	root/root	usr/share/vim/autoload/dist/ft.vim
 -rw-r--r--	root/root	usr/share/vim/autoload/getscript.vim
 -rw-r--r--	root/root	usr/share/vim/autoload/gnat.vim
 -rw-r--r--	root/root	usr/share/vim/autoload/gzip.vim
@@ -360,6 +362,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/fortran.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/framescript.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/fvwm.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/gdb.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/git.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/gitcommit.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/gitconfig.vim
@@ -423,6 +426,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/msmessages.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/muttrc.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/nanorc.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/neomuttrc.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/netrc.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/nsis.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/objc.vim
@@ -1066,6 +1070,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/nastran.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/natural.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/ncf.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/neomuttrc.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/netrc.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/netrw.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/ninja.vim
@@ -1240,6 +1245,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/tak.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/takcmp.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/takout.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/tap.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/tar.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/taskdata.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/taskedit.vim
