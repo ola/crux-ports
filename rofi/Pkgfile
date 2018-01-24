@@ -4,7 +4,7 @@
 # Depends on: pango cairo
 
 name=rofi
-version=1.3.1
+version=1.4.2
 release=1
 source=(https://github.com/DaveDavenport/$name/releases/download/$version/$name-$version.tar.xz)
 
