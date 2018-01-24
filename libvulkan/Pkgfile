@@ -1,5 +1,5 @@
 # Description: Khronos official ICD loader and validation layers for Vulkan developers
-# URL:         https://github.com/KhronosGroup/Vulkan-LoaderAndValidationLayers 
+# URL:         https://vulkan.lunarg.com/
 # Maintainer:  Ola Håkansson <ola dot hakansson at gmail dot com>
 # Depends on: bison cmake
 
