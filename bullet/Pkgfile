@@ -4,7 +4,7 @@
 # Depends on: cmake 
 
 name=bullet
-version=2.86
+version=2.87
 release=1
 source=(https://github.com/${name}physics/${name}3/archive/$version.tar.gz)
 
