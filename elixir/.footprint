@@ -41,6 +41,8 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/elixir/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Calendar.ISO.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Calendar.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.CaseClauseError.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Code.Formatter.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Code.Identifier.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Code.LoadError.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Code.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Collectable.BitString.beam
@@ -58,6 +60,7 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/elixir/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Date.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.DateTime.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Dict.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.DynamicSupervisor.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Enum.EmptyError.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Enum.OutOfBoundsError.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Enum.beam
@@ -275,6 +278,7 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/ex_unit/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/ex_unit/ebin/Elixir.ExUnit.Server.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/ex_unit/ebin/Elixir.ExUnit.Test.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/ex_unit/ebin/Elixir.ExUnit.TestCase.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/ex_unit/ebin/Elixir.ExUnit.TestModule.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/ex_unit/ebin/Elixir.ExUnit.TimeoutError.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/ex_unit/ebin/Elixir.ExUnit.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/ex_unit/ebin/ex_unit.app
@@ -286,7 +290,6 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/iex/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/iex/ebin/Elixir.IEx.Config.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/iex/ebin/Elixir.IEx.Evaluator.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/iex/ebin/Elixir.IEx.Helpers.beam
--rw-r--r--	root/root	usr/lib/elixir/lib/iex/ebin/Elixir.IEx.History.State.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/iex/ebin/Elixir.IEx.History.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/iex/ebin/Elixir.IEx.Info.Any.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/iex/ebin/Elixir.IEx.Info.Atom.beam
@@ -362,6 +365,8 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/mix/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Shell.Quiet.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Shell.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.State.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Task.Compiler.Diagnostic.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Task.Compiler.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Task.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.App.Start.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.App.Tree.beam
@@ -395,6 +400,7 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/mix/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Escript.Install.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Escript.Uninstall.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Escript.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Format.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Help.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Iex.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Loadconfig.beam
@@ -405,6 +411,7 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/mix/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Local.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.New.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Profile.Cprof.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Profile.Eprof.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Profile.Fprof.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Run.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Test.Cover.beam
