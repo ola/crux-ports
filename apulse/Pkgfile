@@ -1,0 +1,28 @@
+# Description: PulseAudio emulation for ALSA.
+# URL:         https://github.com/i-rinat/apulse
+# Maintainer:
+# Packager:
+# Depends on:  cmake glib alsa-lib
+
+name=apulse
+version=0.1.11
+release=1
+source=(https://github.com/i-rinat/apulse/archive/v${version}.tar.gz)
+
+build() {
+  cd apulse-$version
+
+  mkdir build
+  cd build
+
+  cmake -DCMAKE_INSTALL_PREFIX=/usr \
+        -DAPULSEPATH=/usr/lib/apulse \
+        -DAPULSE_SEARCH_PATHS=/usr/lib/apulse \
+        -DCMAKE_BUILD_TYPE=Release ..
+
+  mkdir -p $PKG/usr/include
+  cp -a ../3rdparty/pulseaudio-headers/pulse $PKG/usr/include
+
+  make
+  make DESTDIR=$PKG install
+}
