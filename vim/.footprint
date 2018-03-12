@@ -325,7 +325,9 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/cdrdaoconf.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/ch.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/changelog.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/chicken.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/clojure.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/cmake.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/cobol.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/conf.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/config.vim
@@ -584,6 +586,7 @@ drwxr-xr-x	root/root	usr/share/vim/indent/
 -rw-r--r--	root/root	usr/share/vim/indent/mf.vim
 -rw-r--r--	root/root	usr/share/vim/indent/mma.vim
 -rw-r--r--	root/root	usr/share/vim/indent/mp.vim
+-rw-r--r--	root/root	usr/share/vim/indent/nsis.vim
 -rw-r--r--	root/root	usr/share/vim/indent/objc.vim
 -rw-r--r--	root/root	usr/share/vim/indent/ocaml.vim
 -rw-r--r--	root/root	usr/share/vim/indent/occam.vim
@@ -772,6 +775,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/asterisk.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/asteriskvm.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/atlas.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/autodoc.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/autohotkey.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/autoit.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/automake.vim
@@ -806,6 +810,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/changelog.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/chaskell.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/cheetah.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/chicken.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/chill.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/chordpro.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/cl.vim
@@ -813,6 +818,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/clipper.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/clojure.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/cmake.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/cmod.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/cmusrc.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/cobol.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/coco.vim
