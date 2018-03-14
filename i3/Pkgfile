@@ -4,7 +4,7 @@
 # Depends on:  yajl startup-notification libev xorg-xcb-util-keysyms pango xorg-xcb-util-wm xorg-xcb-util-cursor
 
 name=i3
-version=4.14.1
+version=4.15
 release=1
 source=(http://i3wm.org/downloads/$name-$version.tar.bz2)
 
