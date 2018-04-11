@@ -4,7 +4,7 @@
 # Depends on:  git python clang
 
 name=cquery
-version=20180215
+version=20180302
 release=1
 source=(https://github.com/cquery-project/cquery/archive/v$version.tar.gz)
 
