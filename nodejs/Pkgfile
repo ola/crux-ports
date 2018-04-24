@@ -4,7 +4,7 @@
 # Depends on: libuv zlib openssl python
 
 name=nodejs
-version=8.10.0
+version=8.11.1
 release=1
 source=(https://nodejs.org/dist/v$version/node-v$version.tar.xz)
 
