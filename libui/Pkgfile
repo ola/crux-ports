@@ -1,0 +1,22 @@
+# Description: A portable GUI library for C
+# URL:         https://github.com/andlabs/libui
+# Maintainer:  Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on:  gtk3  
+
+name=libui
+version=alpha3.5
+release=1
+source=(https://github.com/andlabs/libui/releases/download/$version/$version.tgz)
+
+build() {
+  cd $version
+
+  mkdir build && cd build
+  cmake -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        ../src
+  make
+
+  install -m 0755 -D out/libui.so.0 $PKG/usr/lib/libui.so.0
+  cp -d out/libui.so $PKG/usr/lib/libui.so
+}
