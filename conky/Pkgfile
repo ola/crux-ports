@@ -5,7 +5,7 @@
 # Depends on: xorg curl imlib2 lua
 
 name=conky
-version=1.10.6
+version=1.10.8
 release=1
 source=(https://github.com/brndnmtthws/conky/archive/v$version.tar.gz)
 
