@@ -165,6 +165,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/frontend-tools/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/frontend-tools/locale/et-EE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/frontend-tools/locale/eu-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/frontend-tools/locale/fi-FI.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/frontend-tools/locale/fil-PH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/frontend-tools/locale/fr-FR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/frontend-tools/locale/he-IL.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/frontend-tools/locale/hr-HR.ini
@@ -186,6 +187,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/frontend-tools/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/frontend-tools/locale/sr-CS.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/frontend-tools/locale/sr-SP.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/frontend-tools/locale/sv-SE.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/frontend-tools/locale/tl-PH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/frontend-tools/locale/tr-TR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/frontend-tools/locale/uk-UA.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/frontend-tools/locale/vi-VN.ini
@@ -216,6 +218,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/image-source/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/image-source/locale/et-EE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/image-source/locale/eu-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/image-source/locale/fi-FI.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/image-source/locale/fil-PH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/image-source/locale/fr-FR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/image-source/locale/gl-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/image-source/locale/he-IL.ini
@@ -224,6 +227,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/image-source/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/image-source/locale/hu-HU.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/image-source/locale/it-IT.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/image-source/locale/ja-JP.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/image-source/locale/ka-GE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/image-source/locale/ko-KR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/image-source/locale/ms-MY.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/image-source/locale/nb-NO.ini
@@ -239,6 +243,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/image-source/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/image-source/locale/sr-SP.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/image-source/locale/sv-SE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/image-source/locale/th-TH.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/image-source/locale/tl-PH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/image-source/locale/tr-TR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/image-source/locale/uk-UA.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/image-source/locale/vi-VN.ini
@@ -258,6 +263,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/et-EE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/eu-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/fi-FI.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/fil-PH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/fr-FR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/gl-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/he-IL.ini
@@ -265,6 +271,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/hu-HU.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/it-IT.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/ja-JP.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/ka-GE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/ko-KR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/nb-NO.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/nl-NL.ini
@@ -277,6 +284,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/sr-CS.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/sr-SP.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/sv-SE.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/tl-PH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/tr-TR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/uk-UA.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/vi-VN.ini
@@ -297,6 +305,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/linux-capture/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-capture/locale/et-EE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-capture/locale/eu-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-capture/locale/fi-FI.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-capture/locale/fil-PH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-capture/locale/fr-FR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-capture/locale/gl-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-capture/locale/he-IL.ini
@@ -305,6 +314,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/linux-capture/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-capture/locale/hu-HU.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-capture/locale/it-IT.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-capture/locale/ja-JP.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-capture/locale/ka-GE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-capture/locale/ko-KR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-capture/locale/nb-NO.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-capture/locale/nl-NL.ini
@@ -318,6 +328,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/linux-capture/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-capture/locale/sr-CS.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-capture/locale/sr-SP.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-capture/locale/sv-SE.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-capture/locale/tl-PH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-capture/locale/tr-TR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-capture/locale/uk-UA.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-capture/locale/vi-VN.ini
@@ -338,6 +349,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/linux-decklink/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-decklink/locale/et-EE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-decklink/locale/eu-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-decklink/locale/fi-FI.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-decklink/locale/fil-PH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-decklink/locale/fr-FR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-decklink/locale/gl-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-decklink/locale/he-IL.ini
@@ -345,6 +357,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/linux-decklink/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-decklink/locale/hu-HU.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-decklink/locale/it-IT.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-decklink/locale/ja-JP.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-decklink/locale/ka-GE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-decklink/locale/ko-KR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-decklink/locale/nb-NO.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-decklink/locale/nl-NL.ini
@@ -358,6 +371,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/linux-decklink/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-decklink/locale/sr-CS.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-decklink/locale/sr-SP.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-decklink/locale/sv-SE.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-decklink/locale/tl-PH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-decklink/locale/tr-TR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-decklink/locale/uk-UA.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-decklink/locale/vi-VN.ini
@@ -378,6 +392,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/linux-jack/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-jack/locale/et-EE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-jack/locale/eu-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-jack/locale/fi-FI.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-jack/locale/fil-PH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-jack/locale/fr-FR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-jack/locale/gl-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-jack/locale/he-IL.ini
@@ -385,6 +400,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/linux-jack/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-jack/locale/hu-HU.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-jack/locale/it-IT.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-jack/locale/ja-JP.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-jack/locale/ka-GE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-jack/locale/ko-KR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-jack/locale/nb-NO.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-jack/locale/nl-NL.ini
@@ -418,6 +434,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/et-EE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/eu-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/fi-FI.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/fil-PH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/fr-FR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/gl-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/he-IL.ini
@@ -426,6 +443,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/hu-HU.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/it-IT.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/ja-JP.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/ka-GE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/ko-KR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/nb-NO.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/nl-NL.ini
@@ -440,6 +458,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/sr-SP.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/sv-SE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/th-TH.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/tl-PH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/tr-TR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/uk-UA.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/vi-VN.ini
@@ -461,6 +480,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/obs-ffmpeg/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-ffmpeg/locale/et-EE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-ffmpeg/locale/eu-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-ffmpeg/locale/fi-FI.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-ffmpeg/locale/fil-PH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-ffmpeg/locale/fr-FR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-ffmpeg/locale/gl-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-ffmpeg/locale/he-IL.ini
@@ -483,6 +503,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/obs-ffmpeg/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-ffmpeg/locale/sr-SP.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-ffmpeg/locale/sv-SE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-ffmpeg/locale/th-TH.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-ffmpeg/locale/tl-PH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-ffmpeg/locale/tr-TR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-ffmpeg/locale/uk-UA.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-ffmpeg/locale/vi-VN.ini
@@ -516,6 +537,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/obs-filters/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-filters/locale/et-EE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-filters/locale/eu-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-filters/locale/fi-FI.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-filters/locale/fil-PH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-filters/locale/fr-FR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-filters/locale/gl-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-filters/locale/he-IL.ini
@@ -537,6 +559,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/obs-filters/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-filters/locale/sr-CS.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-filters/locale/sr-SP.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-filters/locale/sv-SE.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-filters/locale/tl-PH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-filters/locale/tr-TR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-filters/locale/uk-UA.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-filters/locale/vi-VN.ini
@@ -559,6 +582,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/obs-outputs/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-outputs/locale/et-EE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-outputs/locale/eu-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-outputs/locale/fi-FI.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-outputs/locale/fil-PH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-outputs/locale/fr-FR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-outputs/locale/gl-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-outputs/locale/he-IL.ini
@@ -581,6 +605,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/obs-outputs/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-outputs/locale/sr-SP.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-outputs/locale/sv-SE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-outputs/locale/th-TH.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-outputs/locale/tl-PH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-outputs/locale/tr-TR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-outputs/locale/uk-UA.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-outputs/locale/ur-PK.ini
@@ -603,6 +628,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/obs-transitions/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-transitions/locale/et-EE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-transitions/locale/eu-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-transitions/locale/fi-FI.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-transitions/locale/fil-PH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-transitions/locale/fr-FR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-transitions/locale/gl-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-transitions/locale/he-IL.ini
@@ -622,6 +648,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/obs-transitions/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-transitions/locale/sr-CS.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-transitions/locale/sr-SP.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-transitions/locale/sv-SE.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-transitions/locale/tl-PH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-transitions/locale/tr-TR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-transitions/locale/uk-UA.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-transitions/locale/vi-VN.ini
@@ -682,6 +709,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/obs-x264/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-x264/locale/et-EE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-x264/locale/eu-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-x264/locale/fi-FI.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-x264/locale/fil-PH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-x264/locale/fr-FR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-x264/locale/gl-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-x264/locale/he-IL.ini
@@ -705,6 +733,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/obs-x264/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-x264/locale/sr-SP.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-x264/locale/sv-SE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-x264/locale/th-TH.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-x264/locale/tl-PH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-x264/locale/tr-TR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-x264/locale/uk-UA.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-x264/locale/ur-PK.ini
@@ -725,6 +754,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/rtmp-services/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/rtmp-services/locale/et-EE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/rtmp-services/locale/eu-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/rtmp-services/locale/fi-FI.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/rtmp-services/locale/fil-PH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/rtmp-services/locale/fr-FR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/rtmp-services/locale/gl-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/rtmp-services/locale/he-IL.ini
@@ -747,6 +777,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/rtmp-services/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/rtmp-services/locale/sr-SP.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/rtmp-services/locale/sv-SE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/rtmp-services/locale/th-TH.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/rtmp-services/locale/tl-PH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/rtmp-services/locale/tr-TR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/rtmp-services/locale/uk-UA.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/rtmp-services/locale/ur-PK.ini
@@ -769,6 +800,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/text-freetype2/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/text-freetype2/locale/et-EE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/text-freetype2/locale/eu-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/text-freetype2/locale/fi-FI.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/text-freetype2/locale/fil-PH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/text-freetype2/locale/fr-FR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/text-freetype2/locale/gl-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/text-freetype2/locale/he-IL.ini
@@ -791,6 +823,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/text-freetype2/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/text-freetype2/locale/sr-SP.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/text-freetype2/locale/sv-SE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/text-freetype2/locale/th-TH.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/text-freetype2/locale/tl-PH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/text-freetype2/locale/tr-TR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/text-freetype2/locale/uk-UA.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/text-freetype2/locale/vi-VN.ini
@@ -811,6 +844,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/vlc-video/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/et-EE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/eu-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/fi-FI.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/fil-PH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/fr-FR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/he-IL.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/hr-HR.ini
@@ -823,11 +857,13 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/vlc-video/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/pl-PL.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/pt-BR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/pt-PT.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/ro-RO.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/ru-RU.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/sk-SK.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/sr-CS.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/sr-SP.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/sv-SE.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/tl-PH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/tr-TR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/uk-UA.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/vlc-video/locale/vi-VN.ini
@@ -852,6 +888,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-studio/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/locale/et-EE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/locale/eu-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/locale/fi-FI.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/locale/fil-PH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/locale/fr-FR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/locale/gl-ES.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/locale/he-IL.ini
@@ -873,11 +910,13 @@ drwxrwxr-x	root/root	usr/share/obs/obs-studio/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/locale/ru-RU.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/locale/sk-SK.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/locale/sl-SI.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/locale/sq-AL.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/locale/sr-CS.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/locale/sr-SP.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/locale/sv-SE.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/locale/ta-IN.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/locale/th-TH.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/locale/tl-PH.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/locale/tr-TR.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/locale/uk-UA.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/locale/vi-VN.ini
