@@ -11,6 +11,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/chktrust
 -rwxr-xr-x	root/root	usr/bin/crlupdate
 -rwxr-xr-x	root/root	usr/bin/csc
+-rwxr-xr-x	root/root	usr/bin/csc-dim
 -rwxr-xr-x	root/root	usr/bin/csharp
 -rwxr-xr-x	root/root	usr/bin/csi
 -rwxr-xr-x	root/root	usr/bin/disco
@@ -23,6 +24,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/httpcfg
 -rwxr-xr-x	root/root	usr/bin/ikdasm
 -rwxr-xr-x	root/root	usr/bin/ilasm
+-rwxr-xr-x	root/root	usr/bin/illinkanalyzer
 -rwxr-xr-x	root/root	usr/bin/installvst
 -rwxr-xr-x	root/root	usr/bin/lc
 -rwxr-xr-x	root/root	usr/bin/macpack
@@ -157,6 +159,7 @@ drwxr-xr-x	root/root	usr/include/mono-2.0/mono/utils/
 -rw-r--r--	root/root	usr/include/mono-2.0/mono/utils/mono-counters.h
 -rw-r--r--	root/root	usr/include/mono-2.0/mono/utils/mono-dl-fallback.h
 -rw-r--r--	root/root	usr/include/mono-2.0/mono/utils/mono-error.h
+-rw-r--r--	root/root	usr/include/mono-2.0/mono/utils/mono-jemalloc.h
 -rw-r--r--	root/root	usr/include/mono-2.0/mono/utils/mono-logger.h
 -rw-r--r--	root/root	usr/include/mono-2.0/mono/utils/mono-publib.h
 drwxr-xr-x	root/root	usr/lib/
@@ -1056,10 +1059,12 @@ drwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Linq.dll
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Net.AuthenticationManager.dll
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Net.Cache.dll
+-rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Net.Http.Rtc.dll
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Net.HttpListener.dll
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Net.Mail.dll
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Net.NameResolution.dll
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Net.NetworkInformation.dll
+-rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Net.Ping.dll
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Net.Primitives.dll
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Net.Requests.dll
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Net.Security.dll
@@ -1078,8 +1083,10 @@ drwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Reflection.TypeExtensions.dll
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Reflection.TypeExtensions.pdb
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Reflection.dll
+-rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Resources.Reader.dll
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Resources.ReaderWriter.dll
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Resources.ResourceManager.dll
+-rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Resources.Writer.dll
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Runtime.CompilerServices.VisualC.dll
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Runtime.Extensions.dll
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Runtime.Handles.dll
@@ -1087,6 +1094,7 @@ drwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Runtime.InteropServices.WindowsRuntime.dll
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Runtime.InteropServices.dll
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Runtime.Numerics.dll
+-rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Runtime.Serialization.Formatters.dll
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Runtime.Serialization.Json.dll
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Runtime.Serialization.Primitives.dll
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Runtime.Serialization.Xml.dll
@@ -1096,6 +1104,7 @@ drwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Security.Claims.dll
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Security.Cryptography.Algorithms.dll
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Security.Cryptography.Algorithms.pdb
+-rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Security.Cryptography.Csp.dll
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Security.Cryptography.DeriveBytes.dll
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Security.Cryptography.Encoding.dll
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/Facades/System.Security.Cryptography.Encryption.Aes.dll
@@ -1332,6 +1341,14 @@ lrwxrwxrwx	root/root	usr/lib/mono/4.5/cscompmgd.dll -> ../gac/cscompmgd/0.0.0.0_
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/csi.rsp
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/culevel.exe
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/culevel.pdb
+drwxr-xr-x	root/root	usr/lib/mono/4.5/dim/
+-rwxr-xr-x	root/root	usr/lib/mono/4.5/dim/Microsoft.CodeAnalysis.CSharp.dll
+-rwxr-xr-x	root/root	usr/lib/mono/4.5/dim/Microsoft.CodeAnalysis.dll
+-rwxr-xr-x	root/root	usr/lib/mono/4.5/dim/System.Collections.Immutable.dll
+-rwxr-xr-x	root/root	usr/lib/mono/4.5/dim/System.Reflection.Metadata.dll
+-rwxr-xr-x	root/root	usr/lib/mono/4.5/dim/csc.exe
+-rwxr-xr-x	root/root	usr/lib/mono/4.5/dim/csc.exe.config
+-rwxr-xr-x	root/root	usr/lib/mono/4.5/dim/csc.rsp
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/disco.exe
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/disco.pdb
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/dtd2rng.exe
@@ -1350,14 +1367,14 @@ lrwxrwxrwx	root/root	usr/lib/mono/4.5/cscompmgd.dll -> ../gac/cscompmgd/0.0.0.0_
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/ikdasm.pdb
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/ilasm.exe
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/ilasm.pdb
+-rwxr-xr-x	root/root	usr/lib/mono/4.5/illinkanalyzer.exe
+-rwxr-xr-x	root/root	usr/lib/mono/4.5/illinkanalyzer.pdb
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/installutil.exe
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/installutil.pdb
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/installvst.exe
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/installvst.pdb
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/lc.exe
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/lc.pdb
--rwxr-xr-x	root/root	usr/lib/mono/4.5/linkeranalyzer.exe
--rwxr-xr-x	root/root	usr/lib/mono/4.5/linkeranalyzer.pdb
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/macpack.exe
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/macpack.pdb
 -rwxr-xr-x	root/root	usr/lib/mono/4.5/makecert.exe
@@ -3373,6 +3390,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/genxs.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/httpcfg.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/ilasm.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/illinkanalyzer.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/lc.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/macpack.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/makecert.1.gz
