@@ -5,7 +5,7 @@
 # Depends on:  cmake glib alsa-lib
 
 name=apulse
-version=0.1.11
+version=0.1.12
 release=1
 source=(https://github.com/i-rinat/apulse/archive/v${version}.tar.gz)
 
