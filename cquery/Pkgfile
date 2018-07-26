@@ -4,7 +4,7 @@
 # Depends on:  git python clang
 
 name=cquery
-version=20180302
+version=20180718
 release=1
 source=(https://github.com/cquery-project/cquery/archive/v$version.tar.gz)
 
@@ -16,6 +16,7 @@ build() {
   git clone https://github.com/greg7mdp/sparsepp third_party/sparsepp
   git clone https://github.com/emilk/loguru third_party/loguru
   git clone https://github.com/msgpack/msgpack-c third_party/msgpack-c
+  git clone https://github.com/zeux/pugixml.git third_party/pugixml
 
   mkdir -p $PKG/usr/bin
 
