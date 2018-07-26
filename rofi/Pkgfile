@@ -4,7 +4,7 @@
 # Depends on: pango cairo librsvg
 
 name=rofi
-version=1.5.0
+version=1.5.1
 release=1
 source=(https://github.com/DaveDavenport/$name/releases/download/$version/$name-$version.tar.xz)
 
