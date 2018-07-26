@@ -44,6 +44,7 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/elixir/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Code.Formatter.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Code.Identifier.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Code.LoadError.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Code.Typespec.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Code.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Collectable.BitString.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Collectable.File.Stream.beam
@@ -86,6 +87,7 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/elixir/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.File.Stream.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.File.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Float.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Function.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.FunctionClauseError.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.GenEvent.Stream.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.GenEvent.beam
@@ -269,6 +271,7 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/ex_unit/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/ex_unit/ebin/Elixir.ExUnit.DuplicateDescribeError.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/ex_unit/ebin/Elixir.ExUnit.DuplicateTestError.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/ex_unit/ebin/Elixir.ExUnit.EventManager.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/ex_unit/ebin/Elixir.ExUnit.FailuresManifest.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/ex_unit/ebin/Elixir.ExUnit.Filters.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/ex_unit/ebin/Elixir.ExUnit.Formatter.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/ex_unit/ebin/Elixir.ExUnit.MultiError.beam
@@ -319,6 +322,7 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/logger/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/logger/ebin/Elixir.Logger.App.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/logger/ebin/Elixir.Logger.Backends.Console.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/logger/ebin/Elixir.Logger.Config.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/logger/ebin/Elixir.Logger.ErlangHandler.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/logger/ebin/Elixir.Logger.ErrorHandler.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/logger/ebin/Elixir.Logger.Formatter.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/logger/ebin/Elixir.Logger.Translator.beam
@@ -333,8 +337,6 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/mix/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Compilers.Elixir.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Compilers.Erlang.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Compilers.Test.beam
--rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Config.Agent.beam
--rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Config.LoadError.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Config.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Dep.Converger.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Dep.ElixirSCM.beam
