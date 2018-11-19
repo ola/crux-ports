@@ -4,8 +4,8 @@
 # Depends on: qt5 libjpeg-turbo sysfsutils
 
 name=v4l-utils
-version=1.14.2
-release=2
+version=1.16.2
+release=1
 source=(http://linuxtv.org/downloads/$name/$name-$version.tar.bz2)
 
 build() {
