@@ -1,0 +1,29 @@
+# Description: A programming language used to build massively scalable soft real-time systems with requirements on high availability.
+# URL:         https://www.erlang.org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:
+
+name=erlang
+version=21.2
+release=1
+source=(https://github.com/$name/otp/archive/OTP-$version.tar.gz)
+
+build() {
+	cd otp-OTP-$version
+
+	./otp_build setup
+
+	./configure \
+		--prefix=/usr \
+		--enable-threads \
+		--enable-smp-support \
+		--enable-kernel-poll \
+		--enable-hipe \
+		--enable-sctp
+
+	make
+	make DESTDIR=$PKG install
+
+	find $PKG -name "README*" -delete
+	find $PKG -name "INSTALL" -delete
+}
