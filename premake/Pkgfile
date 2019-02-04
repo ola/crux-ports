@@ -4,7 +4,7 @@
 # Depends on:  
 
 name=premake
-version=5.0.0-alpha12
+version=5.0.0-alpha13
 release=1
 source=(https://github.com/premake/premake-core/releases/download/v$version/premake-$version-src.zip)
 
