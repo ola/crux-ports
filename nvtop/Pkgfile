@@ -4,7 +4,7 @@
 # Depends on:  nvidia
 
 name=nvtop
-version=0.2.3
+version=1.0.0
 release=1
 source=(https://github.com/Syllo/$name/archive/$version.tar.gz)
 
