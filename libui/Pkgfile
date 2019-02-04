@@ -4,17 +4,17 @@
 # Depends on:  gtk3  
 
 name=libui
-version=alpha3.5
+version=alpha4.1
 release=1
-source=(https://github.com/andlabs/libui/releases/download/$version/$version.tgz)
+source=(https://github.com/andlabs/libui/archive/$version.tar.gz)
 
 build() {
-  cd $version
+  cd $name-$version
 
   mkdir build && cd build
   cmake -DCMAKE_BUILD_TYPE=Release \
         -DCMAKE_INSTALL_PREFIX=/usr \
-        ../src
+        ..
   make
 
   install -m 0755 -D out/libui.so.0 $PKG/usr/lib/libui.so.0
