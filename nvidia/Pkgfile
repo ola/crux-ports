@@ -4,7 +4,7 @@
 # Depends on: gtk gtk3 libglvnd
 
 name=nvidia
-version=415.18
+version=415.27
 release=1
 source=(http://us.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version.run \
         90-nvidia-uvm.rules 10-nvidia-drm-outputclass.conf)
@@ -83,7 +83,7 @@ build() {
 
 	# TLS libraries
 	install -m 0755 libnvidia-tls.so.$version $PKG/usr/lib/
-	#install -d $PKG/usr/lib/tls
+	install -d $PKG/usr/lib/tls
 	#install -m 0755 tls/libnvidia-tls.so.$version $PKG/usr/lib/tls/
 
 	# monitoring and management API library
