@@ -4,7 +4,7 @@
 # Depends on: gtk gtk3 libglvnd
 
 name=nvidia
-version=415.27
+version=418.43
 release=1
 source=(http://us.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version.run \
         90-nvidia-uvm.rules 10-nvidia-drm-outputclass.conf)
@@ -112,6 +112,11 @@ build() {
 	install -m 0755 libnvoptix.so.$version $PKG/usr/lib/
 	ln -s libnvoptix.so.$version $PKG/usr/lib/libnvoptix.so.1
 	ln -s libnvoptix.so.$version $PKG/usr/lib/libnvoptix.so
+
+  # hardware-accelerated computation of optical flow vectors and stereo disparity values 
+  install -m 0755 libnvidia-opticalflow.so.$version $PKG/usr/lib/
+	ln -s libnvidia-opticalflow.so.$version $PKG/usr/lib/libnvidia-opticalflow.so.1
+	ln -s libnvidia-opticalflow.so.$version $PKG/usr/lib/libnvidia-opticalflow.so
 
 	# X driver config
 	install -D -m 0644 $SRC/10-nvidia-drm-outputclass.conf \
