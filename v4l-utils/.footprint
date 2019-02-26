@@ -102,11 +102,11 @@ drwxr-xr-x	root/root	lib/udev/rc_keymaps/
 -rw-r--r--	root/root	lib/udev/rc_keymaps/powercolor_real_angel.toml
 -rw-r--r--	root/root	lib/udev/rc_keymaps/proteus_2309.toml
 drwxr-xr-x	root/root	lib/udev/rc_keymaps/protocols/
--rwxr-xr-x	root/root	lib/udev/rc_keymaps/protocols/grundig.o
--rwxr-xr-x	root/root	lib/udev/rc_keymaps/protocols/manchester.o
--rwxr-xr-x	root/root	lib/udev/rc_keymaps/protocols/pulse_distance.o
--rwxr-xr-x	root/root	lib/udev/rc_keymaps/protocols/pulse_length.o
--rwxr-xr-x	root/root	lib/udev/rc_keymaps/protocols/rc_mm.o
+-rw-r--r--	root/root	lib/udev/rc_keymaps/protocols/grundig.o
+-rw-r--r--	root/root	lib/udev/rc_keymaps/protocols/manchester.o
+-rw-r--r--	root/root	lib/udev/rc_keymaps/protocols/pulse_distance.o
+-rw-r--r--	root/root	lib/udev/rc_keymaps/protocols/pulse_length.o
+-rw-r--r--	root/root	lib/udev/rc_keymaps/protocols/rc_mm.o
 -rw-r--r--	root/root	lib/udev/rc_keymaps/purpletv.toml
 -rw-r--r--	root/root	lib/udev/rc_keymaps/pv951.toml
 -rw-r--r--	root/root	lib/udev/rc_keymaps/rc6_mce.toml
