@@ -4,7 +4,7 @@
 # Depends on: cmake 
 
 name=bullet
-version=2.87
+version=2.88
 release=1
 source=(https://github.com/${name}physics/${name}3/archive/$version.tar.gz)
 
@@ -26,7 +26,8 @@ build() {
     -DUSE_GLUT=OFF \
     -DUSE_GRAPHICAL_BENCHMARK=OFF \
     -DINSTALL_LIBS=ON \
-    -DINSTALL_EXTRA_LIBS=ON .
+    -DINSTALL_EXTRA_LIBS=ON \
+    -DOpenGL_GL_PREFERENCE=GLVND .
 
   make
   make DESTDIR=$PKG install
