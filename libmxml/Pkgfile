@@ -1,0 +1,19 @@
+# Description: Tiny XML library to read and write XML and XML-like data files 
+# URL: http://michaelrsweet.github.io/mxml/index.html
+# Maintainer: Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on:
+
+name=libmxml
+version=2.12
+release=1
+source=(https://github.com/michaelrsweet/mxml/archive/v$version.tar.gz)
+build() {
+  cd mxml-$version
+  ./configure --prefix=/usr \
+              --enable-threads
+
+  make
+  make DSTROOT=$PKG install
+
+  rm -rf $PKG/usr/share/doc
+}
