@@ -2,12 +2,16 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/fruit/
 -rw-r--r--	root/root	usr/include/fruit/component.h
+-rw-r--r--	root/root	usr/include/fruit/component_function.h
 -rw-r--r--	root/root	usr/include/fruit/fruit.h
 -rw-r--r--	root/root	usr/include/fruit/fruit_forward_decls.h
 drwxr-xr-x	root/root	usr/include/fruit/impl/
 -rw-r--r--	root/root	usr/include/fruit/impl/bindings.h
 -rw-r--r--	root/root	usr/include/fruit/impl/component.defn.h
+-rw-r--r--	root/root	usr/include/fruit/impl/component_function.defn.h
 -rw-r--r--	root/root	usr/include/fruit/impl/component_functors.defn.h
+-rw-r--r--	root/root	usr/include/fruit/impl/component_install_arg_checks.defn.h
+-rw-r--r--	root/root	usr/include/fruit/impl/component_install_arg_checks.h
 drwxr-xr-x	root/root	usr/include/fruit/impl/component_storage/
 -rw-r--r--	root/root	usr/include/fruit/impl/component_storage/binding_deps.defn.h
 -rw-r--r--	root/root	usr/include/fruit/impl/component_storage/binding_deps.h
@@ -70,6 +74,7 @@ drwxr-xr-x	root/root	usr/include/fruit/impl/meta/
 -rw-r--r--	root/root	usr/include/fruit/impl/meta/triplet.h
 -rw-r--r--	root/root	usr/include/fruit/impl/meta/vector.h
 -rw-r--r--	root/root	usr/include/fruit/impl/meta/wrappers.h
+-rw-r--r--	root/root	usr/include/fruit/impl/meta_operation_wrappers.h
 -rw-r--r--	root/root	usr/include/fruit/impl/normalized_component.defn.h
 drwxr-xr-x	root/root	usr/include/fruit/impl/normalized_component_storage/
 -rw-r--r--	root/root	usr/include/fruit/impl/normalized_component_storage/binding_normalization.h

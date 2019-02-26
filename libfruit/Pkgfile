@@ -5,7 +5,7 @@
 # Depends on: cmake
 
 name=libfruit
-version=3.2.0
+version=3.4.0
 release=1
 source=(https://github.com/google/fruit/archive/v$version.tar.gz)
 
