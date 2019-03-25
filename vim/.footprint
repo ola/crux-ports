@@ -257,6 +257,7 @@ drwxr-xr-x	root/root	usr/share/vim/doc/
 -rw-r--r--	root/root	usr/share/vim/doc/tagsrch.txt
 -rw-r--r--	root/root	usr/share/vim/doc/term.txt
 -rw-r--r--	root/root	usr/share/vim/doc/terminal.txt
+-rw-r--r--	root/root	usr/share/vim/doc/textprop.txt
 -rw-r--r--	root/root	usr/share/vim/doc/tips.txt
 -rw-r--r--	root/root	usr/share/vim/doc/todo.txt
 -rw-r--r--	root/root	usr/share/vim/doc/uganda.txt
@@ -310,6 +311,7 @@ drwxr-xr-x	root/root	usr/share/vim/doc/
 -rw-r--r--	root/root	usr/share/vim/ftoff.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin.vim
 drwxr-xr-x	root/root	usr/share/vim/ftplugin/
+-rw-r--r--	root/root	usr/share/vim/ftplugin/8th.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/a2ps.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/aap.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/abap.vim
@@ -322,6 +324,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/aspvbs.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/automake.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/awk.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/bash.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/bdf.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/bst.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/btm.vim
@@ -329,6 +332,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/c.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/calendar.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/cdrdaoconf.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/cfg.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/ch.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/changelog.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/chicken.vim
@@ -427,6 +431,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/markdown.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/matlab.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/mf.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/mma.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/modconf.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/mp.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/mplayerconf.vim
@@ -608,6 +613,7 @@ drwxr-xr-x	root/root	usr/share/vim/indent/
 -rw-r--r--	root/root	usr/share/vim/indent/pyrex.vim
 -rw-r--r--	root/root	usr/share/vim/indent/python.vim
 -rw-r--r--	root/root	usr/share/vim/indent/r.vim
+-rw-r--r--	root/root	usr/share/vim/indent/raml.vim
 -rw-r--r--	root/root	usr/share/vim/indent/readline.vim
 -rw-r--r--	root/root	usr/share/vim/indent/rhelp.vim
 -rw-r--r--	root/root	usr/share/vim/indent/rmd.vim
@@ -675,6 +681,8 @@ drwxr-xr-x	root/root	usr/share/vim/pack/dist/opt/justify/
 drwxr-xr-x	root/root	usr/share/vim/pack/dist/opt/justify/plugin/
 -rw-r--r--	root/root	usr/share/vim/pack/dist/opt/justify/plugin/justify.vim
 drwxr-xr-x	root/root	usr/share/vim/pack/dist/opt/matchit/
+drwxr-xr-x	root/root	usr/share/vim/pack/dist/opt/matchit/autoload/
+-rw-r--r--	root/root	usr/share/vim/pack/dist/opt/matchit/autoload/matchit.vim
 drwxr-xr-x	root/root	usr/share/vim/pack/dist/opt/matchit/doc/
 -rw-r--r--	root/root	usr/share/vim/pack/dist/opt/matchit/doc/matchit.txt
 -rw-r--r--	root/root	usr/share/vim/pack/dist/opt/matchit/doc/tags
@@ -754,6 +762,7 @@ drwxr-xr-x	root/root	usr/share/vim/spell/
 -rw-r--r--	root/root	usr/share/vim/synmenu.vim
 drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/2html.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/8th.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/a2ps.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/a65.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/aap.vim
@@ -1154,6 +1163,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/r.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/racc.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/radiance.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/raml.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/ratpoison.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/rc.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/rcs.vim
