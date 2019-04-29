@@ -1,0 +1,25 @@
+# Description: C++ Actor Framework
+# URL:         https://actor-framework.readthedocs.io/
+# Maintainer:  Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on:  openssl
+
+name=libcaf
+version=0.16.3
+release=1
+source=(https://github.com/actor-framework/actor-framework/archive/$version.tar.gz)
+
+build() {
+  cd actor-framework-$version
+
+  ./configure --prefix=/usr \
+              --build-type=Release \
+              --no-examples \
+              --no-unit-tests \
+              --no-opencl \
+              --no-python
+
+  cd build
+
+  make
+  make DESTDIR=$PKG install
+}
