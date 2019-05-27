@@ -1,0 +1,20 @@
+# Description: Library and command line tool used to personalize YubiKeys.
+# URL:         https://github.com/Yubico/yubico-c-client
+# Maintainer:  Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on:  autoconf libyubikey pkg-config libusb json-c asciidoc
+
+name=ykpers
+version=1.19.3
+release=1
+source=(https://github.com/Yubico/yubikey-personalization/archive/v$version.tar.gz)
+
+build() {
+  cd yubikey-personalization-$version
+
+  autoreconf --install
+  ./configure --prefix=/usr \
+              --with-udevrulesdir=/etc/udev/rules.d
+
+  make PREFIX=/usr
+  make DESTDIR=$PKG install
+}
