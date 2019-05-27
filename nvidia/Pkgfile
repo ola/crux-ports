@@ -4,7 +4,7 @@
 # Depends on: gtk gtk3 libglvnd
 
 name=nvidia
-version=418.56
+version=430.14
 release=1
 source=(http://us.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version.run \
         90-nvidia-uvm.rules 10-nvidia-drm-outputclass.conf)
@@ -83,8 +83,6 @@ build() {
 
 	# TLS libraries
 	install -m 0755 libnvidia-tls.so.$version $PKG/usr/lib/
-	install -d $PKG/usr/lib/tls
-	#install -m 0755 tls/libnvidia-tls.so.$version $PKG/usr/lib/tls/
 
 	# monitoring and management API library
 	install -m 0755 libnvidia-ml.so.$version $PKG/usr/lib/
@@ -113,8 +111,8 @@ build() {
 	ln -s libnvoptix.so.$version $PKG/usr/lib/libnvoptix.so.1
 	ln -s libnvoptix.so.$version $PKG/usr/lib/libnvoptix.so
 
-  # hardware-accelerated computation of optical flow vectors and stereo disparity values 
-  install -m 0755 libnvidia-opticalflow.so.$version $PKG/usr/lib/
+	# Optical Flow library
+	install -m 0755 libnvidia-opticalflow.so.$version $PKG/usr/lib/
 	ln -s libnvidia-opticalflow.so.$version $PKG/usr/lib/libnvidia-opticalflow.so.1
 	ln -s libnvidia-opticalflow.so.$version $PKG/usr/lib/libnvidia-opticalflow.so
 
