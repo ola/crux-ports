@@ -237,6 +237,7 @@ drwxr-xr-x	root/root	usr/share/vim/doc/
 -rw-r--r--	root/root	usr/share/vim/doc/pi_tar.txt
 -rw-r--r--	root/root	usr/share/vim/doc/pi_vimball.txt
 -rw-r--r--	root/root	usr/share/vim/doc/pi_zip.txt
+-rw-r--r--	root/root	usr/share/vim/doc/popup.txt
 -rw-r--r--	root/root	usr/share/vim/doc/print.txt
 -rw-r--r--	root/root	usr/share/vim/doc/quickfix.txt
 -rw-r--r--	root/root	usr/share/vim/doc/quickref.txt
@@ -441,6 +442,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/nanorc.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/neomuttrc.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/netrc.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/nroff.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/nsis.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/objc.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/ocaml.vim
@@ -1281,6 +1283,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/tasm.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/tcl.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/tcsh.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/template.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/teraterm.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/terminfo.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/tex.vim
