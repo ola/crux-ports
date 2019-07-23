@@ -59,6 +59,9 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/elixir/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Collectable.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.CompileError.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.CondClauseError.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Config.Provider.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Config.Reader.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Config.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Date.Range.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Date.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.DateTime.beam
@@ -85,6 +88,7 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/elixir/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.File.CopyError.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.File.Error.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.File.LinkError.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.File.RenameError.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.File.Stat.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.File.Stream.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.File.beam
@@ -314,7 +318,6 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/iex/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/iex/ebin/Elixir.IEx.Info.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/iex/ebin/Elixir.IEx.Introspection.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/iex/ebin/Elixir.IEx.Pry.beam
--rw-r--r--	root/root	usr/lib/elixir/lib/iex/ebin/Elixir.IEx.Remsh.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/iex/ebin/Elixir.IEx.Server.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/iex/ebin/Elixir.IEx.State.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/iex/ebin/Elixir.IEx.beam
@@ -360,6 +363,7 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/mix/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.ProjectStack.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.PublicKey.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Rebar.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Release.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.RemoteConverger.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.SCM.Git.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.SCM.Path.beam
@@ -417,6 +421,8 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/mix/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Profile.Cprof.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Profile.Eprof.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Profile.Fprof.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Release.Init.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Release.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Run.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Test.Cover.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Test.beam
