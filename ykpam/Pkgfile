@@ -1,0 +1,21 @@
+# Description: Yubico PAM module provides an easy way to integrate the YubiKey into your existing user authentication infrastructure.
+# URL:         https://github.com/Yubico/yubico-pam
+# Maintainer:  Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on:  autoconf help2man libyubikey ykclient ykpers
+
+name=ykpam
+version=2.26
+release=1
+source=(https://github.com/Yubico/yubico-pam/archive/$version.tar.gz)
+
+build() {
+  cd yubico-pam-$version
+
+  autoreconf --install
+  ./configure --prefix=/usr \
+              --without-ldap \
+              --with-pam-dir=/lib/security
+
+  make PREFIX=/usr
+  make DESTDIR=$PKG install
+}
