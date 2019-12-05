@@ -4,7 +4,7 @@
 # Depends on: gtk gtk3 libglvnd
 
 name=nvidia
-version=430.26
+version=440.36
 release=1
 source=(http://us.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version.run \
         90-nvidia-uvm.rules 10-nvidia-drm-outputclass.conf)
@@ -42,8 +42,7 @@ build() {
 
 	# vulkan ICD config
 	install -d $PKG/etc/vulkan/icd.d
-	sed -i -e 's,__NV_VK_ICD__,libGLX_nvidia.so.0,g' nvidia_icd.json.template
-	install -m 0644 nvidia_icd.json.template $PKG/etc/vulkan/icd.d/nvidia_icd.json
+	install -m 0644 nvidia_icd.json $PKG/etc/vulkan/icd.d/
 
 	# driver component libraries
 	install -m 0755 libnvidia-cfg.so.$version $PKG/usr/lib/
