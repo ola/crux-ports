@@ -1,12 +1,12 @@
 # Description: Cross platform, open source .NET framework
 # URL: http://www.mono-project.com
 # Maintainer: Ola Håkansson <ola dot hakansson at gmail dot com>
-# Depends on:
+# Depends on: python cmake zlib
 
 name=mono
-version=5.20.1.27
+version=6.6.0.161
 release=1
-source=(http://download.mono-project.com/sources/$name/$name-$version.tar.bz2)
+source=(http://download.mono-project.com/sources/$name/$name-$version.tar.xz)
 build() {
 	cd $name-$version
 
@@ -14,7 +14,10 @@ build() {
               --with-large-heap=yes \
               --with-ikvm-native=no \
               --with-sgen-default-concurrent=yes \
-              --with-mcs-docs=no
+              --with-mcs-docs=no \
+              --disable-crash-reporting \
+              --disable-nls
+
 
 	make
 	make DESTDIR=$PKG MANDIR=/usr/share/man install
