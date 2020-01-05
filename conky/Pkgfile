@@ -5,7 +5,7 @@
 # Depends on: xorg curl imlib2 lua
 
 name=conky
-version=1.11.3
+version=1.11.5
 release=1
 source=(https://github.com/brndnmtthws/conky/archive/v$version.tar.gz)
 
@@ -21,6 +21,7 @@ build() {
           -DSYSTEM_CONFIG_FILE=/usr/etc/conky/conky.conf \
           -DDEFAULTNETDEV=eno1 \
           -DBUILD_APCUPSD=OFF \
+          -DBUILD_CMUS=OFF \
           -DBUILD_CURL=ON \
           -DBUILD_IBM=ON \
           -DBUILD_IMLIB2=ON \
