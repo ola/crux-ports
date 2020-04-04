@@ -120,6 +120,7 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/elixir/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Inspect.HashSet.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Inspect.Integer.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Inspect.List.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Inspect.Macro.Env.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Inspect.Map.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Inspect.MapSet.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Inspect.NaiveDateTime.beam
@@ -159,7 +160,14 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/elixir/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Map.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.MapSet.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.MatchError.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Module.Checker.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Module.LocalsTracker.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Module.ParallelChecker.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Module.Types.Expr.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Module.Types.Helpers.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Module.Types.Infer.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Module.Types.Pattern.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Module.Types.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Module.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.NaiveDateTime.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Node.beam
@@ -328,9 +336,10 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/logger/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/logger/ebin/Elixir.Logger.BackendSupervisor.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/logger/ebin/Elixir.Logger.Backends.Console.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/logger/ebin/Elixir.Logger.Config.beam
--rw-r--r--	root/root	usr/lib/elixir/lib/logger/ebin/Elixir.Logger.ErlangHandler.beam
--rw-r--r--	root/root	usr/lib/elixir/lib/logger/ebin/Elixir.Logger.ErrorHandler.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/logger/ebin/Elixir.Logger.Counter.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/logger/ebin/Elixir.Logger.Filter.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/logger/ebin/Elixir.Logger.Formatter.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/logger/ebin/Elixir.Logger.Handler.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/logger/ebin/Elixir.Logger.Translator.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/logger/ebin/Elixir.Logger.Utils.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/logger/ebin/Elixir.Logger.Watcher.beam
@@ -391,7 +400,6 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/mix/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Compile.Erlang.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Compile.Leex.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Compile.Protocols.beam
--rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Compile.Xref.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Compile.Yecc.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Compile.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Deps.Clean.beam
