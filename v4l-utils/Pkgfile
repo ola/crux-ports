@@ -4,13 +4,14 @@
 # Depends on: qt5 libjpeg-turbo sysfsutils
 
 name=v4l-utils
-version=1.16.6
+version=1.16.8
 release=1
 source=(http://linuxtv.org/downloads/$name/$name-$version.tar.bz2)
 
 build() {
     cd $name-$version
 
+    ./bootstrap.sh
     ./configure --prefix=/usr \
                 --sysconfdir=/etc \
                 --sbindir=/usr/bin \
@@ -21,11 +22,13 @@ build() {
                 --disable-doxygen-ps \
                 --disable-doxygen-pdf \
                 --disable-doxygen-dot \
-                --disable-doxygen-doc
+                --disable-doxygen-doc \
+                --disable-bpf
+
+
 
     make
-    make DESTDIR=$PKG \
-         install
+    make -j1 DESTDIR=$PKG install
 
     rm $PKG/usr/bin/ivtv-ctl
 }
