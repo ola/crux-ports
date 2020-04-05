@@ -4,7 +4,7 @@
 # Depends on:  ncurses acl
 
 name=vim
-version=8.2.0162
+version=8.2.0441
 release=1
 source=(https://github.com/vim/vim/archive/v${version}/$name-$version.tar.gz)
 
@@ -24,7 +24,7 @@ build () {
                 --enable-luainterp=yes \
                 --enable-pythoninterp=yes
 
-    make VIMRTDIR= 
+    make VIMRTDIR=
     make -j1 VIMRTDIR= DESTDIR=$PKG install
 
     mv $PKG/usr/share/vim/vimrc_example.vim $PKG/usr/share/vim/vimrc
