@@ -1,10 +1,10 @@
 # Description: A window switcher, run dialog and dmenu replacement 
 # URL: https://github.com/DaveDavenport/rofi
 # Maintainer: Ola Håkansson <ola dot hakansson at gmail dot com>
-# Depends on: pango cairo librsvg
+# Depends on: pango cairo librsvg startup-notification libxkbcommon xorg-xcb-util-xrm xorg-xcb-util-wm
 
 name=rofi
-version=1.5.2
+version=1.5.4
 release=1
 source=(https://github.com/DaveDavenport/$name/releases/download/$version/$name-$version.tar.xz)
 
