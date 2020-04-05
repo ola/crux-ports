@@ -3579,7 +3579,6 @@ lrwxrwxrwx	root/root	usr/lib/mono/msbuild/Current/bin/Roslyn/Microsoft.CodeAnaly
 lrwxrwxrwx	root/root	usr/lib/mono/msbuild/Current/bin/Roslyn/Microsoft.CodeAnalysis.VisualBasic.dll -> ../../../../4.5/Microsoft.CodeAnalysis.VisualBasic.dll
 lrwxrwxrwx	root/root	usr/lib/mono/msbuild/Current/bin/Roslyn/Microsoft.CodeAnalysis.dll -> ../../../../4.5/Microsoft.CodeAnalysis.dll
 -rwxr-xr-x	root/root	usr/lib/mono/msbuild/Current/bin/Roslyn/Microsoft.Managed.Core.targets
--rwxr-xr-x	root/root	usr/lib/mono/msbuild/Current/bin/Roslyn/Microsoft.Managed.EditorConfig.targets
 -rwxr-xr-x	root/root	usr/lib/mono/msbuild/Current/bin/Roslyn/Microsoft.VisualBasic.Core.targets
 lrwxrwxrwx	root/root	usr/lib/mono/msbuild/Current/bin/Roslyn/System.Collections.Immutable.dll -> ../../../../4.5/System.Collections.Immutable.dll
 lrwxrwxrwx	root/root	usr/lib/mono/msbuild/Current/bin/Roslyn/System.Memory.dll -> ../../../../4.5/System.Memory.dll
