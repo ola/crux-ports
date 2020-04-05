@@ -1,10 +1,10 @@
 # Description: Software for video recording and live streaming
 # URL: https://obsproject.com/
 # Maintainer: Ola Håkansson <ola dot hakansson at gmail dot com>
-# Depends on: cmake jack v4l-utils ffmpeg mbedtls fdk-aac libgmp qt5 x264
+# Depends on: cmake jack v4l-utils ffmpeg mbedtls fdk-aac libgmp qt5 x264 ffnvcodec-headers luajit speexdsp
 
 name=obs-studio
-version=24.0.5
+version=25.0.1
 release=1
 source=(https://github.com/obsproject/$name/archive/$version.tar.gz)
 
@@ -28,11 +28,11 @@ build() {
   make
   make DESTDIR=$PKG install
 
-	rm -r $PKG/usr/share/obs/obs-studio/authors/AUTHORS
+  rm -r $PKG/usr/share/obs/obs-studio/authors/AUTHORS
 
-	find $PKG/usr/share/obs \
-		   -iname '*ini' \
-		   ! -iname 'en-*.ini' \
-		   ! -iname 'locale.ini' \
-		   -exec rm '{}' \+
+  find $PKG/usr/share/obs \
+       -iname '*ini' \
+       ! -iname 'en-*.ini' \
+       ! -iname 'locale.ini' \
+       -exec rm '{}' \+
 }
