@@ -163,50 +163,38 @@ drwxr-xr-x	root/root	usr/include/mono-2.0/mono/utils/
 -rw-r--r--	root/root	usr/include/mono-2.0/mono/utils/mono-publib.h
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libMonoPosixHelper.a
--rwxr-xr-x	root/root	usr/lib/libMonoPosixHelper.la
 -rwxr-xr-x	root/root	usr/lib/libMonoPosixHelper.so
 -rw-r--r--	root/root	usr/lib/libMonoSupportW.a
--rwxr-xr-x	root/root	usr/lib/libMonoSupportW.la
 -rwxr-xr-x	root/root	usr/lib/libMonoSupportW.so
 lrwxrwxrwx	root/root	usr/lib/libmono-2.0.a -> libmonosgen-2.0.a
-lrwxrwxrwx	root/root	usr/lib/libmono-2.0.la -> libmonosgen-2.0.la
 lrwxrwxrwx	root/root	usr/lib/libmono-2.0.so -> libmonosgen-2.0.so
 lrwxrwxrwx	root/root	usr/lib/libmono-2.0.so.1 -> libmonosgen-2.0.so.1
 lrwxrwxrwx	root/root	usr/lib/libmono-2.0.so.1.0.0 -> libmonosgen-2.0.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libmono-btls-shared.so
 -rw-r--r--	root/root	usr/lib/libmono-native.a
--rwxr-xr-x	root/root	usr/lib/libmono-native.la
 lrwxrwxrwx	root/root	usr/lib/libmono-native.so -> libmono-native.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libmono-native.so.0 -> libmono-native.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libmono-native.so.0.0.0
 -rw-r--r--	root/root	usr/lib/libmono-profiler-aot-static.a
--rwxr-xr-x	root/root	usr/lib/libmono-profiler-aot-static.la
 -rw-r--r--	root/root	usr/lib/libmono-profiler-aot.a
--rwxr-xr-x	root/root	usr/lib/libmono-profiler-aot.la
 lrwxrwxrwx	root/root	usr/lib/libmono-profiler-aot.so -> libmono-profiler-aot.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libmono-profiler-aot.so.0 -> libmono-profiler-aot.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libmono-profiler-aot.so.0.0.0
 -rw-r--r--	root/root	usr/lib/libmono-profiler-coverage-static.a
--rwxr-xr-x	root/root	usr/lib/libmono-profiler-coverage-static.la
 -rw-r--r--	root/root	usr/lib/libmono-profiler-coverage.a
--rwxr-xr-x	root/root	usr/lib/libmono-profiler-coverage.la
 lrwxrwxrwx	root/root	usr/lib/libmono-profiler-coverage.so -> libmono-profiler-coverage.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libmono-profiler-coverage.so.0 -> libmono-profiler-coverage.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libmono-profiler-coverage.so.0.0.0
 -rw-r--r--	root/root	usr/lib/libmono-profiler-log-static.a
--rwxr-xr-x	root/root	usr/lib/libmono-profiler-log-static.la
 -rw-r--r--	root/root	usr/lib/libmono-profiler-log.a
--rwxr-xr-x	root/root	usr/lib/libmono-profiler-log.la
 lrwxrwxrwx	root/root	usr/lib/libmono-profiler-log.so -> libmono-profiler-log.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libmono-profiler-log.so.0 -> libmono-profiler-log.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libmono-profiler-log.so.0.0.0
 -rw-r--r--	root/root	usr/lib/libmonoboehm-2.0.a
--rwxr-xr-x	root/root	usr/lib/libmonoboehm-2.0.la
 lrwxrwxrwx	root/root	usr/lib/libmonoboehm-2.0.so -> libmonoboehm-2.0.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib/libmonoboehm-2.0.so.1 -> libmonoboehm-2.0.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libmonoboehm-2.0.so.1.0.0
 -rw-r--r--	root/root	usr/lib/libmonosgen-2.0.a
--rwxr-xr-x	root/root	usr/lib/libmonosgen-2.0.la
 lrwxrwxrwx	root/root	usr/lib/libmonosgen-2.0.so -> libmonosgen-2.0.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib/libmonosgen-2.0.so.1 -> libmonosgen-2.0.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libmonosgen-2.0.so.1.0.0
@@ -3779,29 +3767,6 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/xbuild12.pc
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/libgc-mono/
--rw-r--r--	root/root	usr/share/libgc-mono/README
--rw-r--r--	root/root	usr/share/libgc-mono/README.DGUX386
--rw-r--r--	root/root	usr/share/libgc-mono/README.Mac
--rw-r--r--	root/root	usr/share/libgc-mono/README.MacOSX
--rw-r--r--	root/root	usr/share/libgc-mono/README.OS2
--rw-r--r--	root/root	usr/share/libgc-mono/README.amiga
--rw-r--r--	root/root	usr/share/libgc-mono/README.arm.cross
--rw-r--r--	root/root	usr/share/libgc-mono/README.autoconf
--rw-r--r--	root/root	usr/share/libgc-mono/README.changes
--rw-r--r--	root/root	usr/share/libgc-mono/README.contributors
--rw-r--r--	root/root	usr/share/libgc-mono/README.cords
--rw-r--r--	root/root	usr/share/libgc-mono/README.darwin
--rw-r--r--	root/root	usr/share/libgc-mono/README.dj
--rw-r--r--	root/root	usr/share/libgc-mono/README.environment
--rw-r--r--	root/root	usr/share/libgc-mono/README.ews4800
--rw-r--r--	root/root	usr/share/libgc-mono/README.hp
--rw-r--r--	root/root	usr/share/libgc-mono/README.linux
--rw-r--r--	root/root	usr/share/libgc-mono/README.macros
--rw-r--r--	root/root	usr/share/libgc-mono/README.rs6000
--rw-r--r--	root/root	usr/share/libgc-mono/README.sgi
--rw-r--r--	root/root	usr/share/libgc-mono/README.solaris2
--rw-r--r--	root/root	usr/share/libgc-mono/README.uts
--rw-r--r--	root/root	usr/share/libgc-mono/README.win32
 -rw-r--r--	root/root	usr/share/libgc-mono/barrett_diagram
 -rw-r--r--	root/root	usr/share/libgc-mono/debugging.html
 -rw-r--r--	root/root	usr/share/libgc-mono/gc.man

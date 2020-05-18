@@ -4,13 +4,15 @@
 # Depends on: python cmake zlib
 
 name=mono
-version=6.8.0.105
+version=6.8.0.123
 release=1
 source=(http://download.mono-project.com/sources/$name/$name-$version.tar.xz)
 build() {
 	cd $name-$version
 
 	./configure --prefix=/usr \
+              --mandir=/usr/share/man \
+              --enable-ninja \
               --with-large-heap=yes \
               --with-ikvm-native=no \
               --with-sgen-default-concurrent=yes \
@@ -20,5 +22,8 @@ build() {
 
 
 	make
-	make DESTDIR=$PKG MANDIR=/usr/share/man install
+	make DESTDIR=$PKG install
+
+  rm -rf $PKG/usr/share/locale
+  find $PKG \( -iname "*README*" -o -iname "*la" \) -delete
 }
