@@ -279,8 +279,8 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/obs-x264/locale/
 drwxrwxr-x	root/root	usr/share/obs/obs-plugins/rtmp-services/
 drwxrwxr-x	root/root	usr/share/obs/obs-plugins/rtmp-services/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/rtmp-services/locale/en-US.ini
--rwxrwxr-x	root/root	usr/share/obs/obs-plugins/rtmp-services/package.json
--rwxrwxr-x	root/root	usr/share/obs/obs-plugins/rtmp-services/services.json
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/rtmp-services/package.json
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/rtmp-services/services.json
 drwxrwxr-x	root/root	usr/share/obs/obs-plugins/text-freetype2/
 drwxrwxr-x	root/root	usr/share/obs/obs-plugins/text-freetype2/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/text-freetype2/locale/en-US.ini
@@ -318,6 +318,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-studio/themes/Acri/
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Acri/top_hook.png
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark.qss
 drwxrwxr-x	root/root	usr/share/obs/obs-studio/themes/Dark/
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/close.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/down.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/expand.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/locked.svg
@@ -326,6 +327,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-studio/themes/Dark/
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/mute.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/no_sources.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/plus.svg
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/popout.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/refresh.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/revert.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/save.svg

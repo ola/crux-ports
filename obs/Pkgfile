@@ -4,7 +4,7 @@
 # Depends on: cmake jack v4l-utils ffmpeg mbedtls fdk-aac libgmp qt5 x264 ffnvcodec-headers luajit speexdsp
 
 name=obs-studio
-version=25.0.1
+version=25.0.8
 release=1
 source=(https://github.com/obsproject/$name/archive/$version.tar.gz)
 
@@ -15,6 +15,7 @@ build() {
   cd build
 
   cmake \
+    -Wno-dev \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DCMAKE_BUILD_TYPE=Release \
     -DOBS_VERSION_OVERRIDE="$version" \
