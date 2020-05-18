@@ -4,7 +4,7 @@
 # Depends on: 
 
 name=mbedtls
-version=2.16.5
+version=2.16.6
 release=1
 source=(https://tls.mbed.org/download/$name-$version-apache.tgz)
 
