@@ -5,13 +5,15 @@
 
 name=nvidia
 version=440.82
-release=1
+release=2
 source=(http://us.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version.run \
-        90-nvidia-uvm.rules 10-nvidia-drm-outputclass.conf)
+        90-nvidia-uvm.rules 10-nvidia-drm-outputclass.conf kernel-5.7.patch)
 
 build() {
 	sh NVIDIA-Linux-x86_64-$version.run --extract-only
 	cd NVIDIA-Linux-x86_64-$version
+
+  patch -p1 -i $SRC/kernel-5.7.patch
 
 	# X driver and GLX extension
 	install -d $PKG/usr/lib/xorg/modules/{drivers,extensions}
