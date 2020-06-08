@@ -113,6 +113,7 @@ drwxr-xr-x	root/root	usr/share/vim/compiler/
 -rw-r--r--	root/root	usr/share/vim/compiler/dot.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/erlang.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/eruby.vim
+-rw-r--r--	root/root	usr/share/vim/compiler/eslint.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/fortran_F.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/fortran_cv.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/fortran_elf90.vim
@@ -159,6 +160,7 @@ drwxr-xr-x	root/root	usr/share/vim/compiler/
 -rw-r--r--	root/root	usr/share/vim/compiler/se.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/splint.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/stack.vim
+-rw-r--r--	root/root	usr/share/vim/compiler/standard.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/tcl.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/tex.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/tidy.vim
@@ -435,6 +437,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/man.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/manconf.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/markdown.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/masm.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/matlab.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/meson.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/mf.vim
@@ -646,6 +649,7 @@ drwxr-xr-x	root/root	usr/share/vim/indent/
 -rw-r--r--	root/root	usr/share/vim/indent/sml.vim
 -rw-r--r--	root/root	usr/share/vim/indent/sql.vim
 -rw-r--r--	root/root	usr/share/vim/indent/sqlanywhere.vim
+-rw-r--r--	root/root	usr/share/vim/indent/sshconfig.vim
 -rw-r--r--	root/root	usr/share/vim/indent/systemd.vim
 -rw-r--r--	root/root	usr/share/vim/indent/systemverilog.vim
 -rw-r--r--	root/root	usr/share/vim/indent/tcl.vim
@@ -1137,6 +1141,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/opl.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/ora.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/pamconf.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/pamenv.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/papp.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/pascal.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/passwd.vim
