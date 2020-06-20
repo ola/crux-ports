@@ -1,0 +1,16 @@
+# Description: Simulate X11 keyboard input and mouse activity
+# URL:         https://www.semicomplete.com/projects/xdotool/
+# Maintainer:  Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on:  xorg-libxtst
+
+name=xdotool
+version=3.20160805.1
+release=1
+source=(https://github.com/jordansissel/xdotool/releases/download/v$version/$name-$version.tar.gz)
+
+build() {
+  cd $name-$version
+
+  PREFIX=/usr make
+  PREFIX=/usr INSTALLMAN=$PREFIX/share/man DESTDIR=$PKG make install
+}
