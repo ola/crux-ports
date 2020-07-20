@@ -3766,16 +3766,6 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/wcf.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/xbuild12.pc
 drwxr-xr-x	root/root	usr/share/
-drwxr-xr-x	root/root	usr/share/libgc-mono/
--rw-r--r--	root/root	usr/share/libgc-mono/barrett_diagram
--rw-r--r--	root/root	usr/share/libgc-mono/debugging.html
--rw-r--r--	root/root	usr/share/libgc-mono/gc.man
--rw-r--r--	root/root	usr/share/libgc-mono/gcdescr.html
--rw-r--r--	root/root	usr/share/libgc-mono/gcinterface.html
--rw-r--r--	root/root	usr/share/libgc-mono/leak.html
--rw-r--r--	root/root	usr/share/libgc-mono/scale.html
--rw-r--r--	root/root	usr/share/libgc-mono/simple_example.html
--rw-r--r--	root/root	usr/share/libgc-mono/tree.html
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/al.1.gz

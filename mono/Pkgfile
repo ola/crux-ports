@@ -4,7 +4,7 @@
 # Depends on: python cmake zlib
 
 name=mono
-version=6.8.0.123
+version=6.10.0.104
 release=1
 source=(http://download.mono-project.com/sources/$name/$name-$version.tar.xz)
 build() {
