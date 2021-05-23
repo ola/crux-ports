@@ -4,16 +4,16 @@
 # Depends on: cairo i3 xorg-xcb-util-image xorg-xcb-util-wm xcb-util-xrm xorg-xcb-util-cursor cmake git python python3 pkg-config
 
 name=polybar
-version=3.4.3
+version=3.5.5
 release=1
 
-source=(https://github.com/polybar/polybar/releases/download/${version}/polybar-${version}.tar)
+source=(https://github.com/polybar/polybar/releases/download/${version}/polybar-${version}.tar.gz)
 
 build() {
   
-  mkdir -p "$SRC/$name/build"
+  mkdir -p "$SRC/$name-$version/build"
 
-  cd "$SRC/$name/build" || exit 1
+  cd "$SRC/$name-$version/build" || exit 1
   cmake -DCMAKE_INSTALL_PREFIX=/usr \
         -DCMAKE_BUILD_TYPE=Release \
         -DDEBUG_LOGGER=OFF \
@@ -22,5 +22,5 @@ build() {
 
   cmake --build .
 
-  cmake --build "$SRC/$name/build" --target install -- DESTDIR="${PKG}"
+  cmake --build "$SRC/$name-$version/build" --target install -- DESTDIR="${PKG}"
 }
