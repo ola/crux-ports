@@ -4,7 +4,7 @@
 # Depends on:
 
 name=erlang
-version=23.0
+version=24.0
 release=1
 source=(https://github.com/$name/otp/archive/OTP-$version.tar.gz)
 
@@ -18,8 +18,7 @@ build() {
 		--enable-threads \
 		--enable-smp-support \
 		--enable-kernel-poll \
-		--enable-hipe \
-		--enable-sctp
+		--enable-hipe
 
 	make
 	make DESTDIR=$PKG install
