@@ -4,21 +4,20 @@
 # Depends on:
 
 name=erlang
-version=24.0
+version=24.1.6
 release=1
 source=(https://github.com/$name/otp/archive/OTP-$version.tar.gz)
 
 build() {
 	cd otp-OTP-$version
 
-	./otp_build setup
-
 	./configure \
 		--prefix=/usr \
 		--enable-threads \
 		--enable-smp-support \
 		--enable-kernel-poll \
-		--enable-hipe
+		--enable-hipe \
+    --without-javac
 
 	make
 	make DESTDIR=$PKG install
