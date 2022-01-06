@@ -1,25 +1,24 @@
 # Description: C++ Actor Framework
 # URL:         https://actor-framework.readthedocs.io/
 # Maintainer:  Ola Håkansson <ola dot hakansson at gmail dot com>
-# Depends on:  openssl
+# Depends on:  openssl cmake ninja
 
 name=libcaf
-version=0.16.3
+version=0.18.5
 release=1
 source=(https://github.com/actor-framework/actor-framework/archive/$version.tar.gz)
 
 build() {
-  cd actor-framework-$version
 
-  ./configure --prefix=/usr \
-              --build-type=Release \
-              --no-examples \
-              --no-unit-tests \
-              --no-opencl \
-              --no-python
+  mkdir build
+  cmake -GNinja \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCAF_ENABLE_EXAMPLES=OFF \
+        -DCAF_ENABLE_TESTING=OFF \
+        -S actor-framework-$version \
+        -B build
 
-  cd build
-
-  make
-  make DESTDIR=$PKG install
+  ninja -C build -j ${JOBS:-1}
+  DESTDIR=$PKG ninja -C build install
 }
