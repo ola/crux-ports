@@ -3066,9 +3066,9 @@ drwxr-xr-x	root/root	usr/lib/mono/gac/Mono.Cairo/4.0.0.0__0738eb9f132ed756/
 -rw-r--r--	root/root	usr/lib/mono/gac/Mono.Cairo/4.0.0.0__0738eb9f132ed756/Mono.Cairo.dll
 -rw-r--r--	root/root	usr/lib/mono/gac/Mono.Cairo/4.0.0.0__0738eb9f132ed756/Mono.Cairo.pdb
 drwxr-xr-x	root/root	usr/lib/mono/gac/Mono.Cecil/
-drwxr-xr-x	root/root	usr/lib/mono/gac/Mono.Cecil/0.11.0.0__0738eb9f132ed756/
--rw-r--r--	root/root	usr/lib/mono/gac/Mono.Cecil/0.11.0.0__0738eb9f132ed756/Mono.Cecil.dll
--rw-r--r--	root/root	usr/lib/mono/gac/Mono.Cecil/0.11.0.0__0738eb9f132ed756/Mono.Cecil.pdb
+drwxr-xr-x	root/root	usr/lib/mono/gac/Mono.Cecil/0.11.1.0__0738eb9f132ed756/
+-rw-r--r--	root/root	usr/lib/mono/gac/Mono.Cecil/0.11.1.0__0738eb9f132ed756/Mono.Cecil.dll
+-rw-r--r--	root/root	usr/lib/mono/gac/Mono.Cecil/0.11.1.0__0738eb9f132ed756/Mono.Cecil.pdb
 drwxr-xr-x	root/root	usr/lib/mono/gac/Mono.Cecil/0.9.5.0__0738eb9f132ed756/
 -rw-r--r--	root/root	usr/lib/mono/gac/Mono.Cecil/0.9.5.0__0738eb9f132ed756/Mono.Cecil.dll
 -rw-r--r--	root/root	usr/lib/mono/gac/Mono.Cecil/0.9.5.0__0738eb9f132ed756/Mono.Cecil.pdb
