@@ -1,0 +1,21 @@
+# Description:  Library for interfacing with USB and Bluetooth HID-Class devices
+# URL:          https://github.com/libusb/hidapi
+# Maintainer:   Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on:   libusb eudev ninja cmake
+
+name=hidapi
+version=0.11.2
+release=1
+source=(https://github.com/libusb/$name/archive/refs/tags/$name-$version.tar.gz)
+
+build() {
+
+  mkdir build
+  cmake -GNinja \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -S $name-$name-$version \
+        -B $SRC/build
+
+  ninja -C build -j ${JOBS:-1}
+  DESTDIR=$PKG ninja -C build install
+}
