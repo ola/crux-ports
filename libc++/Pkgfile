@@ -4,14 +4,14 @@
 # Depends on:  cmake clang ninja
 
 name=libc++
-version=10.0.0
+version=13.0.0
 release=1
 source=(https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/llvm-$version.src.tar.xz
         https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/libcxxabi-${version}.src.tar.xz
         https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/libcxx-${version}.src.tar.xz)
 
 build() {
-  mv "${SRC}/libcxxabi-${version}.src" "${SRC}/llvm-${version}.src/projects/libcxxabi" 
+  mv "${SRC}/libcxxabi-${version}.src" "${SRC}/llvm-${version}.src/projects/libcxxabi"
   mv "${SRC}/libcxx-${version}.src"  "${SRC}/llvm-${version}.src/projects/libcxx"
   mkdir -p build; cd build
 
@@ -24,6 +24,6 @@ build() {
     "${SRC}/llvm-${version}.src"
   ninja cxx cxx_experimental
 
-  DESTDIR="${PKG}" ninja install-libcxx install-libcxxabi
+  DESTDIR="${PKG}" ninja install-cxx install-cxxabi
   install -Dm0644 -t "${PKG}/usr/lib" lib/libc++experimental.a
 }
