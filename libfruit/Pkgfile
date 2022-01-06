@@ -5,7 +5,7 @@
 # Depends on: cmake
 
 name=libfruit
-version=3.4.0
+version=3.6.0
 release=1
 source=(https://github.com/google/fruit/archive/v$version.tar.gz)
 
@@ -18,6 +18,7 @@ build() {
     cmake -DCMAKE_BUILD_TYPE=Release \
           -DCMAKE_INSTALL_PREFIX=/usr \
           -DBUILD_SHARED_LIBS=ON \
+          -DFRUIT_USES_BOOST=False \
           ..
 
     make

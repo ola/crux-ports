@@ -99,5 +99,5 @@ drwxr-xr-x	root/root	usr/include/fruit/impl/util/
 -rw-r--r--	root/root	usr/include/fruit/macro.h
 -rw-r--r--	root/root	usr/include/fruit/normalized_component.h
 -rw-r--r--	root/root	usr/include/fruit/provider.h
-drwxr-xr-x	root/root	usr/lib/
--rwxr-xr-x	root/root	usr/lib/libfruit.so
+drwxr-xr-x	root/root	usr/lib64/
+-rwxr-xr-x	root/root	usr/lib64/libfruit.so
