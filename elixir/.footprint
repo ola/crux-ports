@@ -44,8 +44,10 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/elixir/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Calendar.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.CaseClauseError.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Code.Formatter.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Code.Fragment.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Code.Identifier.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Code.LoadError.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Code.Normalizer.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Code.Typespec.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Code.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Collectable.BitString.beam
@@ -193,7 +195,6 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/elixir/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Stream.Reducers.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Stream.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.String.Break.beam
--rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.String.Casing.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.String.Chars.Atom.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.String.Chars.BitString.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.String.Chars.Date.beam
@@ -225,6 +226,7 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/elixir/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.TokenMissingError.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.TryClauseError.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Tuple.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.URI.Error.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.URI.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.UndefinedFunctionError.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.UnicodeConversionError.beam
