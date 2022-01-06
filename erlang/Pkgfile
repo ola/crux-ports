@@ -4,7 +4,7 @@
 # Depends on:
 
 name=erlang
-version=24.1.6
+version=24.2
 release=1
 source=(https://github.com/$name/otp/archive/OTP-$version.tar.gz)
 
