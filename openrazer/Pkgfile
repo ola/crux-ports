@@ -1,0 +1,23 @@
+# Description:  Open source driver and user-space daemon to control Razer lighting and other features
+# URL:          https://openrazer.github.io/
+# Maintainer:   Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on:   python3
+
+name=openrazer
+version=3.2.0
+release=1
+source=(https://github.com/$name/$name/releases/download/v$version/$name-$version.tar.xz)
+
+build() {
+
+  cd $name-$version
+
+  mkdir -p $PKG/lib/modules/`uname -r`/kernel/drivers/hid
+  make driver
+  DESTDIR=$PKG make driver_install
+
+  DESTDIR=$PKG make daemon_install udev_install
+
+  rm -rf $PKG/usr/lib/systemd
+
+}
