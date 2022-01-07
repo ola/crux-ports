@@ -290,6 +290,7 @@ drwxr-xr-x	root/root	usr/include/bullet/BulletCollision/Gimpact/
 -rw-r--r--	root/root	usr/include/bullet/BulletCollision/Gimpact/gim_linear_math.h
 -rw-r--r--	root/root	usr/include/bullet/BulletCollision/Gimpact/gim_math.h
 -rw-r--r--	root/root	usr/include/bullet/BulletCollision/Gimpact/gim_memory.h
+-rw-r--r--	root/root	usr/include/bullet/BulletCollision/Gimpact/gim_pair.h
 -rw-r--r--	root/root	usr/include/bullet/BulletCollision/Gimpact/gim_radixsort.h
 -rw-r--r--	root/root	usr/include/bullet/BulletCollision/Gimpact/gim_tri_collision.h
 drwxr-xr-x	root/root	usr/include/bullet/BulletCollision/NarrowPhaseCollision/
@@ -358,6 +359,7 @@ drwxr-xr-x	root/root	usr/include/bullet/BulletDynamics/Featherstone/
 -rw-r--r--	root/root	usr/include/bullet/BulletDynamics/Featherstone/btMultiBodyDynamicsWorld.h
 -rw-r--r--	root/root	usr/include/bullet/BulletDynamics/Featherstone/btMultiBodyFixedConstraint.h
 -rw-r--r--	root/root	usr/include/bullet/BulletDynamics/Featherstone/btMultiBodyGearConstraint.h
+-rw-r--r--	root/root	usr/include/bullet/BulletDynamics/Featherstone/btMultiBodyInplaceSolverIslandCallback.h
 -rw-r--r--	root/root	usr/include/bullet/BulletDynamics/Featherstone/btMultiBodyJointFeedback.h
 -rw-r--r--	root/root	usr/include/bullet/BulletDynamics/Featherstone/btMultiBodyJointLimitConstraint.h
 -rw-r--r--	root/root	usr/include/bullet/BulletDynamics/Featherstone/btMultiBodyJointMotor.h
@@ -395,7 +397,23 @@ drwxr-xr-x	root/root	usr/include/bullet/BulletInverseDynamics/
 -rw-r--r--	root/root	usr/include/bullet/BulletInverseDynamics/btBulletCollisionCommon.h
 drwxr-xr-x	root/root	usr/include/bullet/BulletInverseDynamics/details/
 drwxr-xr-x	root/root	usr/include/bullet/BulletSoftBody/
+-rw-r--r--	root/root	usr/include/bullet/BulletSoftBody/DeformableBodyInplaceSolverIslandCallback.h
+-rw-r--r--	root/root	usr/include/bullet/BulletSoftBody/btCGProjection.h
+-rw-r--r--	root/root	usr/include/bullet/BulletSoftBody/btConjugateGradient.h
 -rw-r--r--	root/root	usr/include/bullet/BulletSoftBody/btDefaultSoftBodySolver.h
+-rw-r--r--	root/root	usr/include/bullet/BulletSoftBody/btDeformableBackwardEulerObjective.h
+-rw-r--r--	root/root	usr/include/bullet/BulletSoftBody/btDeformableBodySolver.h
+-rw-r--r--	root/root	usr/include/bullet/BulletSoftBody/btDeformableContactConstraint.h
+-rw-r--r--	root/root	usr/include/bullet/BulletSoftBody/btDeformableContactProjection.h
+-rw-r--r--	root/root	usr/include/bullet/BulletSoftBody/btDeformableCorotatedForce.h
+-rw-r--r--	root/root	usr/include/bullet/BulletSoftBody/btDeformableGravityForce.h
+-rw-r--r--	root/root	usr/include/bullet/BulletSoftBody/btDeformableLagrangianForce.h
+-rw-r--r--	root/root	usr/include/bullet/BulletSoftBody/btDeformableLinearElasticityForce.h
+-rw-r--r--	root/root	usr/include/bullet/BulletSoftBody/btDeformableMassSpringForce.h
+-rw-r--r--	root/root	usr/include/bullet/BulletSoftBody/btDeformableMultiBodyConstraintSolver.h
+-rw-r--r--	root/root	usr/include/bullet/BulletSoftBody/btDeformableMultiBodyDynamicsWorld.h
+-rw-r--r--	root/root	usr/include/bullet/BulletSoftBody/btDeformableNeoHookeanForce.h
+-rw-r--r--	root/root	usr/include/bullet/BulletSoftBody/btPreconditioner.h
 -rw-r--r--	root/root	usr/include/bullet/BulletSoftBody/btSoftBody.h
 -rw-r--r--	root/root	usr/include/bullet/BulletSoftBody/btSoftBodyConcaveCollisionAlgorithm.h
 -rw-r--r--	root/root	usr/include/bullet/BulletSoftBody/btSoftBodyData.h
@@ -460,6 +478,7 @@ drwxr-xr-x	root/root	usr/include/bullet/LinearMath/TaskScheduler/
 -rw-r--r--	root/root	usr/include/bullet/LinearMath/btGrahamScan2dConvexHull.h
 -rw-r--r--	root/root	usr/include/bullet/LinearMath/btHashMap.h
 -rw-r--r--	root/root	usr/include/bullet/LinearMath/btIDebugDraw.h
+-rw-r--r--	root/root	usr/include/bullet/LinearMath/btImplicitQRSVD.h
 -rw-r--r--	root/root	usr/include/bullet/LinearMath/btList.h
 -rw-r--r--	root/root	usr/include/bullet/LinearMath/btMatrix3x3.h
 -rw-r--r--	root/root	usr/include/bullet/LinearMath/btMatrixX.h
@@ -491,48 +510,136 @@ drwxr-xr-x	root/root	usr/include/bullet/LinearMath/TaskScheduler/
 -rw-r--r--	root/root	usr/include/bullet/b3RobotSimulatorClientAPI_NoGUI.h
 -rw-r--r--	root/root	usr/include/bullet/btBulletCollisionCommon.h
 -rw-r--r--	root/root	usr/include/bullet/btBulletDynamicsCommon.h
+drwxr-xr-x	root/root	usr/include/bullet_robotics/
+-rw-r--r--	root/root	usr/include/bullet_robotics/ActiveSocket.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/BulletMJCFImporter.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/BulletUrdfImporter.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/ChromeTraceUtil.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/Common2dCanvasInterface.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/CommonCallbacks.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/CommonCameraInterface.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/CommonExampleInterface.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/CommonFileIOInterface.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/CommonGUIHelperInterface.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/CommonGraphicsAppInterface.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/CommonMultiBodyBase.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/CommonParameterInterface.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/CommonRenderInterface.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/CommonRigidBodyBase.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/CommonWindowInterface.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/IKTrajectoryHelper.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/InProcessMemory.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/Jacobian.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/LinearR2.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/LinearR3.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/LinearR4.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/LoadMeshFromCollada.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/LoadMeshFromObj.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/MatrixRmn.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/MultiBodyCreationInterface.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/MyMultiBodyCreator.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/Node.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/PassiveSocket.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/PhysicsClient.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/PhysicsClientC_API.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/PhysicsClientSharedMemory.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/PhysicsClientSharedMemory_C_API.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/PhysicsClientTCP.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/PhysicsClientTCP_C_API.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/PhysicsClientUDP.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/PhysicsClientUDP_C_API.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/PhysicsDirect.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/PhysicsDirectC_API.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/PhysicsServer.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/PhysicsServerCommandProcessor.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/PhysicsServerSharedMemory.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/PosixSharedMemory.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/RobotLoggingUtil.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/SDFAudioTypes.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/SharedMemoryPublic.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/SimpleCamera.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/SimpleSocket.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/TinyRenderer.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/TinyRendererVisualShapeConverter.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/Tree.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/URDF2Bullet.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/URDFImporterInterface.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/URDFJointTypes.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/UrdfParser.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/UrdfRenderingInterface.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/VectorRn.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/Wavefront2GLInstanceGraphicsShape.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/Win32SharedMemory.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/b3Clock.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/b3ERPCFMHelper.hpp
+-rw-r--r--	root/root	usr/include/bullet_robotics/b3ImportMeshUtility.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/b3PluginManager.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/b3PosixThreadSupport.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/b3ReferenceFrameHelper.hpp
+-rw-r--r--	root/root	usr/include/bullet_robotics/b3ResourcePath.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/b3RobotSimulatorClientAPI_NoDirect.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/b3RobotSimulatorClientAPI_NoGUI.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/b3ThreadSupportInterface.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/b3Win32ThreadSupport.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/callbacks.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/collisionFilterPlugin.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/geometry.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/list.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/model.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/our_gl.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/pdControlPlugin.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/protocol.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/stb_image.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/tgaimage.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/tinyRendererPlugin.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/tiny_obj_loader.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/tinyxml2.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/unix.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/urdfStringSplit.h
+-rw-r--r--	root/root	usr/include/bullet_robotics/win32.h
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/cmake/
 drwxr-xr-x	root/root	usr/lib/cmake/bullet/
 -rw-r--r--	root/root	usr/lib/cmake/bullet/BulletConfig.cmake
 -rw-r--r--	root/root	usr/lib/cmake/bullet/UseBullet.cmake
-lrwxrwxrwx	root/root	usr/lib/libBullet2FileLoader.so -> libBullet2FileLoader.so.2.88
--rwxr-xr-x	root/root	usr/lib/libBullet2FileLoader.so.2.88
-lrwxrwxrwx	root/root	usr/lib/libBullet3Collision.so -> libBullet3Collision.so.2.88
--rwxr-xr-x	root/root	usr/lib/libBullet3Collision.so.2.88
-lrwxrwxrwx	root/root	usr/lib/libBullet3Common.so -> libBullet3Common.so.2.88
--rwxr-xr-x	root/root	usr/lib/libBullet3Common.so.2.88
-lrwxrwxrwx	root/root	usr/lib/libBullet3Dynamics.so -> libBullet3Dynamics.so.2.88
--rwxr-xr-x	root/root	usr/lib/libBullet3Dynamics.so.2.88
-lrwxrwxrwx	root/root	usr/lib/libBullet3Geometry.so -> libBullet3Geometry.so.2.88
--rwxr-xr-x	root/root	usr/lib/libBullet3Geometry.so.2.88
-lrwxrwxrwx	root/root	usr/lib/libBullet3OpenCL_clew.so -> libBullet3OpenCL_clew.so.2.88
--rwxr-xr-x	root/root	usr/lib/libBullet3OpenCL_clew.so.2.88
-lrwxrwxrwx	root/root	usr/lib/libBulletCollision.so -> libBulletCollision.so.2.88
--rwxr-xr-x	root/root	usr/lib/libBulletCollision.so.2.88
-lrwxrwxrwx	root/root	usr/lib/libBulletDynamics.so -> libBulletDynamics.so.2.88
--rwxr-xr-x	root/root	usr/lib/libBulletDynamics.so.2.88
-lrwxrwxrwx	root/root	usr/lib/libBulletFileLoader.so -> libBulletFileLoader.so.2.88
--rwxr-xr-x	root/root	usr/lib/libBulletFileLoader.so.2.88
-lrwxrwxrwx	root/root	usr/lib/libBulletInverseDynamics.so -> libBulletInverseDynamics.so.2.88
--rwxr-xr-x	root/root	usr/lib/libBulletInverseDynamics.so.2.88
-lrwxrwxrwx	root/root	usr/lib/libBulletInverseDynamicsUtils.so -> libBulletInverseDynamicsUtils.so.2.88
--rwxr-xr-x	root/root	usr/lib/libBulletInverseDynamicsUtils.so.2.88
-lrwxrwxrwx	root/root	usr/lib/libBulletRobotics.so -> libBulletRobotics.so.2.88
--rwxr-xr-x	root/root	usr/lib/libBulletRobotics.so.2.88
-lrwxrwxrwx	root/root	usr/lib/libBulletSoftBody.so -> libBulletSoftBody.so.2.88
--rwxr-xr-x	root/root	usr/lib/libBulletSoftBody.so.2.88
-lrwxrwxrwx	root/root	usr/lib/libBulletWorldImporter.so -> libBulletWorldImporter.so.2.88
--rwxr-xr-x	root/root	usr/lib/libBulletWorldImporter.so.2.88
-lrwxrwxrwx	root/root	usr/lib/libBulletXmlWorldImporter.so -> libBulletXmlWorldImporter.so.2.88
--rwxr-xr-x	root/root	usr/lib/libBulletXmlWorldImporter.so.2.88
-lrwxrwxrwx	root/root	usr/lib/libConvexDecomposition.so -> libConvexDecomposition.so.2.88
--rwxr-xr-x	root/root	usr/lib/libConvexDecomposition.so.2.88
-lrwxrwxrwx	root/root	usr/lib/libGIMPACTUtils.so -> libGIMPACTUtils.so.2.88
--rwxr-xr-x	root/root	usr/lib/libGIMPACTUtils.so.2.88
-lrwxrwxrwx	root/root	usr/lib/libHACD.so -> libHACD.so.2.88
--rwxr-xr-x	root/root	usr/lib/libHACD.so.2.88
-lrwxrwxrwx	root/root	usr/lib/libLinearMath.so -> libLinearMath.so.2.88
--rwxr-xr-x	root/root	usr/lib/libLinearMath.so.2.88
+lrwxrwxrwx	root/root	usr/lib/libBullet2FileLoader.so -> libBullet2FileLoader.so.2.89
+-rwxr-xr-x	root/root	usr/lib/libBullet2FileLoader.so.2.89
+lrwxrwxrwx	root/root	usr/lib/libBullet3Collision.so -> libBullet3Collision.so.2.89
+-rwxr-xr-x	root/root	usr/lib/libBullet3Collision.so.2.89
+lrwxrwxrwx	root/root	usr/lib/libBullet3Common.so -> libBullet3Common.so.2.89
+-rwxr-xr-x	root/root	usr/lib/libBullet3Common.so.2.89
+lrwxrwxrwx	root/root	usr/lib/libBullet3Dynamics.so -> libBullet3Dynamics.so.2.89
+-rwxr-xr-x	root/root	usr/lib/libBullet3Dynamics.so.2.89
+lrwxrwxrwx	root/root	usr/lib/libBullet3Geometry.so -> libBullet3Geometry.so.2.89
+-rwxr-xr-x	root/root	usr/lib/libBullet3Geometry.so.2.89
+lrwxrwxrwx	root/root	usr/lib/libBullet3OpenCL_clew.so -> libBullet3OpenCL_clew.so.2.89
+-rwxr-xr-x	root/root	usr/lib/libBullet3OpenCL_clew.so.2.89
+lrwxrwxrwx	root/root	usr/lib/libBulletCollision.so -> libBulletCollision.so.2.89
+-rwxr-xr-x	root/root	usr/lib/libBulletCollision.so.2.89
+lrwxrwxrwx	root/root	usr/lib/libBulletDynamics.so -> libBulletDynamics.so.2.89
+-rwxr-xr-x	root/root	usr/lib/libBulletDynamics.so.2.89
+lrwxrwxrwx	root/root	usr/lib/libBulletFileLoader.so -> libBulletFileLoader.so.2.89
+-rwxr-xr-x	root/root	usr/lib/libBulletFileLoader.so.2.89
+lrwxrwxrwx	root/root	usr/lib/libBulletInverseDynamics.so -> libBulletInverseDynamics.so.2.89
+-rwxr-xr-x	root/root	usr/lib/libBulletInverseDynamics.so.2.89
+lrwxrwxrwx	root/root	usr/lib/libBulletInverseDynamicsUtils.so -> libBulletInverseDynamicsUtils.so.2.89
+-rwxr-xr-x	root/root	usr/lib/libBulletInverseDynamicsUtils.so.2.89
+lrwxrwxrwx	root/root	usr/lib/libBulletRobotics.so -> libBulletRobotics.so.2.89
+-rwxr-xr-x	root/root	usr/lib/libBulletRobotics.so.2.89
+lrwxrwxrwx	root/root	usr/lib/libBulletSoftBody.so -> libBulletSoftBody.so.2.89
+-rwxr-xr-x	root/root	usr/lib/libBulletSoftBody.so.2.89
+lrwxrwxrwx	root/root	usr/lib/libBulletWorldImporter.so -> libBulletWorldImporter.so.2.89
+-rwxr-xr-x	root/root	usr/lib/libBulletWorldImporter.so.2.89
+lrwxrwxrwx	root/root	usr/lib/libBulletXmlWorldImporter.so -> libBulletXmlWorldImporter.so.2.89
+-rwxr-xr-x	root/root	usr/lib/libBulletXmlWorldImporter.so.2.89
+lrwxrwxrwx	root/root	usr/lib/libConvexDecomposition.so -> libConvexDecomposition.so.2.89
+-rwxr-xr-x	root/root	usr/lib/libConvexDecomposition.so.2.89
+lrwxrwxrwx	root/root	usr/lib/libGIMPACTUtils.so -> libGIMPACTUtils.so.2.89
+-rwxr-xr-x	root/root	usr/lib/libGIMPACTUtils.so.2.89
+lrwxrwxrwx	root/root	usr/lib/libHACD.so -> libHACD.so.2.89
+-rwxr-xr-x	root/root	usr/lib/libHACD.so.2.89
+lrwxrwxrwx	root/root	usr/lib/libLinearMath.so -> libLinearMath.so.2.89
+-rwxr-xr-x	root/root	usr/lib/libLinearMath.so.2.89
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/bullet.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/bullet_robotics.pc
