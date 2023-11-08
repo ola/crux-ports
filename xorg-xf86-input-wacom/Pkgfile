@@ -4,7 +4,7 @@
 # Depends on:
 
 name=xorg-xf86-input-wacom
-version=0.40.0
+version=1.2.0
 release=1
 source=(https://github.com/linuxwacom/xf86-input-wacom/releases/download/xf86-input-wacom-$version/xf86-input-wacom-$version.tar.bz2)
 
