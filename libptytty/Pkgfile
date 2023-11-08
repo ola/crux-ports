@@ -1,0 +1,17 @@
+# Description: Handles pty/tty/utmp/wtmp/lastlog handling in mostly OS-independent ways
+# URL:         http://software.schmorp.de/pkg/libptytty.html
+# Maintainer:  Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on:
+
+name=libptytty
+version=2.0
+release=1
+source=(http://dist.schmorp.de/libptytty/libptytty-2.0.tar.gz)
+
+build() {
+  cd $name-$version
+
+  cmake -DCMAKE_INSTALL_PREFIX=/usr -DBUILD_SHARED_LIBS=ON .
+  cmake --build .
+  DESTDIR=$PKG cmake --install .
+}
