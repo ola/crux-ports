@@ -1,0 +1,18 @@
+# Description: Generic command line non-JVM Apache Kafka producer and consumer
+# URL:         https://github.com/edenhill/kcat
+# Maintainer:  Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on:
+
+name=kcat
+version=1.7.0
+release=1
+source=(https://github.com/edenhill/$name/archive/refs/tags/$version.tar.gz)
+
+build() {
+  cd $name-$version
+
+  ./bootstrap.sh
+  install -d $PKG/usr/{bin,man/man1}
+  install kcat $PKG/usr/bin
+  install kcat.1 $PKG/usr/man/man1
+}
