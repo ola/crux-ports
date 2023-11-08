@@ -4,7 +4,7 @@
 # Depends on:  ncurses acl lua python
 
 name=vim
-version=8.2.3983
+version=9.0.2059
 release=1
 source=(https://github.com/vim/vim/archive/v${version}/$name-$version.tar.gz)
 
@@ -20,6 +20,7 @@ build () {
                 --enable-multibyte \
                 --enable-cscope \
                 --disable-gpm \
+                --disable-canberra \
                 --disable-nls \
                 --enable-luainterp=yes \
                 --enable-pythoninterp=yes
