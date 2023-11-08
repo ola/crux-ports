@@ -1,10 +1,10 @@
-# Description: NVIDIA GPUs htop like monitoring tool 
+# Description: GPUs process monitoring for AMD, Intel and NVIDIA
 # URL:         https://github.com/Syllo/nvtop
 # Maintainer:  Ola Håkansson <ola dot hakansson at gmail dot com>
 # Depends on:  nvidia
 
 name=nvtop
-version=1.2.2
+version=3.0.2
 release=1
 source=(https://github.com/Syllo/$name/archive/$version.tar.gz)
 
@@ -12,11 +12,12 @@ build() {
   cd $name-$version
 
   mkdir build && cd build
-  cmake -DNVML_RETRIEVE_HEADER_ONLINE=True \
-        -DCMAKE_INSTALL_PREFIX=/usr \
+  cmake -DCMAKE_INSTALL_PREFIX=/usr \
         -DCMAKE_BUILD_TYPE=Optimized \
         ..
 
   make
   make DESTDIR=$PKG install
+
+  rm -rf $PKG/usr/share/{applications,icons,metainfo}
 }
