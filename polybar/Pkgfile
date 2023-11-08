@@ -1,21 +1,25 @@
 # Description: A fast and easy-to-use status bar
 # URL:         https://github.com/jaagr/polybar
-# Maintainer: Abdullah, abdullah at abdullah dot today 
-# Depends on: cairo i3 xorg-xcb-util-image xorg-xcb-util-wm xcb-util-xrm xorg-xcb-util-cursor cmake git python python3 pkg-config
+# Maintainer:  Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on:  cairo i3 xorg-xcb-util-image xorg-xcb-util-wm xcb-util-xrm xorg-xcb-util-cursor cmake git python python3 pkg-config python3-sphinx
 
 name=polybar
-version=3.5.7
+version=3.7.0
 release=1
 
 source=(https://github.com/polybar/polybar/releases/download/${version}/polybar-${version}.tar.gz)
 
 build() {
-  
+
   mkdir -p "$SRC/$name-$version/build"
 
   cd "$SRC/$name-$version/build" || exit 1
   cmake -DCMAKE_INSTALL_PREFIX=/usr \
         -DCMAKE_BUILD_TYPE=Release \
+        -DBUILD_CONFIG=OFF \
+        -DBUILD_DOC=OFF \
+        -DBUILD_DOC_HTML=OFF \
+        -DBUILD_DOC_MAN=ON \
         -DDEBUG_LOGGER=OFF \
         -DENABLE_I3=ON \
         ..
@@ -23,4 +27,6 @@ build() {
   cmake --build .
 
   cmake --build "$SRC/$name-$version/build" --target install -- DESTDIR="${PKG}"
+
+  #rm -rf $PKG/usr/share/doc
 }
