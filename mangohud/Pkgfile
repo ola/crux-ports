@@ -1,0 +1,16 @@
+# Description: A Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more
+# URL:         https://github.com/flightlessmango/MangoHud
+# Maintainer:  Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on:  meson ninja glslang dbus
+
+name=mangohud
+version=0.7.0
+release=1
+source=(https://github.com/flightlessmango/MangoHud/archive/refs/tags/v$version.tar.gz)
+
+build() {
+  cd MangoHud-$version
+
+  meson setup --buildtype release --prefix=/usr -Dwith_xnvctrl=disabled build
+  PREFIX=/usr DESTDIR=$PKG ninja -C build install
+}
