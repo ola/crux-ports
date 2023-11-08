@@ -1,11 +1,11 @@
 # Description: Fruit is a dependency injection framework for C++, loosely inspired by the Guice framework for Java.
-# URL: https://github.com/google/fruit/wiki
-# Maintainer: Ola Håkansson <ola dot hakansson at gmail dot com>
+# URL:         https://github.com/google/fruit/wiki
+# Maintainer:  Ola Håkansson <ola dot hakansson at gmail dot com>
 #
 # Depends on: cmake
 
 name=libfruit
-version=3.6.0
+version=3.7.1
 release=1
 source=(https://github.com/google/fruit/archive/v$version.tar.gz)
 
