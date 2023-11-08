@@ -1,10 +1,10 @@
-# Description: Tiny XML library to read and write XML and XML-like data files 
-# URL: http://michaelrsweet.github.io/mxml/index.html
-# Maintainer: Ola Håkansson <ola dot hakansson at gmail dot com>
+# Description: Tiny XML library to read and write XML and XML-like data files
+# URL:         http://michaelrsweet.github.io/mxml/index.html
+# Maintainer:  Ola Håkansson <ola dot hakansson at gmail dot com>
 # Depends on:
 
 name=libmxml
-version=2.12
+version=3.3.1
 release=1
 source=(https://github.com/michaelrsweet/mxml/archive/v$version.tar.gz)
 build() {
