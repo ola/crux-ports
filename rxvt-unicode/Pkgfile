@@ -1,10 +1,10 @@
 # Description: rxvt fork with unicode and xft support
 # URL: http://software.schmorp.de/#rxvt-unicode
 # Maintainer: Ola Håkansson <ola dot hakansson at gmail dot com>
-# Depends on: xorg-libxft, xorg-libxpm, perl
+# Depends on: libptytty xorg-libxft, xorg-libxpm, perl
 
 name=rxvt-unicode
-version=9.26
+version=9.31
 release=1
 source=(http://dist.schmorp.de/$name/Attic/$name-$version.tar.bz2)
 

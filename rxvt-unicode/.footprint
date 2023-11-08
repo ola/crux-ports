@@ -10,6 +10,7 @@ drwxr-xr-x	root/root	usr/lib/urxvt/perl/
 -rw-r--r--	root/root	usr/lib/urxvt/perl/background
 -rw-r--r--	root/root	usr/lib/urxvt/perl/bell-command
 -rw-r--r--	root/root	usr/lib/urxvt/perl/block-graphics-to-ascii
+-rw-r--r--	root/root	usr/lib/urxvt/perl/clickthrough
 -rw-r--r--	root/root	usr/lib/urxvt/perl/clipboard-osc
 -rw-r--r--	root/root	usr/lib/urxvt/perl/confirm-paste
 -rw-r--r--	root/root	usr/lib/urxvt/perl/digital-clock
@@ -34,9 +35,11 @@ drwxr-xr-x	root/root	usr/lib/urxvt/perl/
 -rw-r--r--	root/root	usr/lib/urxvt/urxvt.pm
 drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man1/
+-rw-r--r--	root/root	usr/man/man1/urclock.1.gz
 -rw-r--r--	root/root	usr/man/man1/urxvt-background.1.gz
 -rw-r--r--	root/root	usr/man/man1/urxvt-bell-command.1.gz
 -rw-r--r--	root/root	usr/man/man1/urxvt-block-graphics-to-ascii.1.gz
+-rw-r--r--	root/root	usr/man/man1/urxvt-clickthrough.1.gz
 -rw-r--r--	root/root	usr/man/man1/urxvt-clipboard-osc.1.gz
 -rw-r--r--	root/root	usr/man/man1/urxvt-confirm-paste.1.gz
 -rw-r--r--	root/root	usr/man/man1/urxvt-digital-clock.1.gz
