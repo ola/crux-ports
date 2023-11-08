@@ -1,0 +1,13 @@
+# Description:  Heterogeneous set of I2C tools and library
+# URL:          https://mirrors.edge.kernel.org/pub/software/utils/i2c-tools
+# Maintainer:   Ola Håkansson <ola dot hakansson at gmail dot com>
+
+name=i2c-tools
+version=4.3
+release=1
+source=(https://mirrors.edge.kernel.org/pub/software/utils/$name/$name-$version.tar.xz)
+
+build() {
+  cd $name-$version
+  make PREFIX=/usr DESTDIR=$PKG install
+}
