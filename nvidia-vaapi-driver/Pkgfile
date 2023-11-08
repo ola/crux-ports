@@ -1,0 +1,19 @@
+# Description: VA-API implementation that uses NVDEC as a backend
+# URL:         https://github.com/elFarto/nvidia-vaapi-driver
+# Maintainer:  Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on:  nvidia nv-codec-headers gst-plugins-bad
+
+name=nvidia-vaapi-driver
+version=0.0.11
+release=1
+source=(https://github.com/elFarto/$name/archive/refs/tags/v$version.tar.gz)
+
+build() {
+  cd $name-$version
+
+  meson setup --buildtype release \
+              -Dprefix=/usr \
+              build
+
+  DESTDIR=$PKG ninja -C build install
+}
