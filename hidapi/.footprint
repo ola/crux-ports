@@ -8,14 +8,14 @@ drwxr-xr-x	root/root	usr/lib64/cmake/
 drwxr-xr-x	root/root	usr/lib64/cmake/hidapi/
 -rw-r--r--	root/root	usr/lib64/cmake/hidapi/hidapi-config-version.cmake
 -rw-r--r--	root/root	usr/lib64/cmake/hidapi/hidapi-config.cmake
--rw-r--r--	root/root	usr/lib64/cmake/hidapi/hidapi-release.cmake
--rw-r--r--	root/root	usr/lib64/cmake/hidapi/hidapi.cmake
+-rw-r--r--	root/root	usr/lib64/cmake/hidapi/libhidapi-release.cmake
+-rw-r--r--	root/root	usr/lib64/cmake/hidapi/libhidapi.cmake
 lrwxrwxrwx	root/root	usr/lib64/libhidapi-hidraw.so -> libhidapi-hidraw.so.0
-lrwxrwxrwx	root/root	usr/lib64/libhidapi-hidraw.so.0 -> libhidapi-hidraw.so.0.11.2
--rwxr-xr-x	root/root	usr/lib64/libhidapi-hidraw.so.0.11.2
+lrwxrwxrwx	root/root	usr/lib64/libhidapi-hidraw.so.0 -> libhidapi-hidraw.so.0.14.0
+-rwxr-xr-x	root/root	usr/lib64/libhidapi-hidraw.so.0.14.0
 lrwxrwxrwx	root/root	usr/lib64/libhidapi-libusb.so -> libhidapi-libusb.so.0
-lrwxrwxrwx	root/root	usr/lib64/libhidapi-libusb.so.0 -> libhidapi-libusb.so.0.11.2
--rwxr-xr-x	root/root	usr/lib64/libhidapi-libusb.so.0.11.2
+lrwxrwxrwx	root/root	usr/lib64/libhidapi-libusb.so.0 -> libhidapi-libusb.so.0.14.0
+-rwxr-xr-x	root/root	usr/lib64/libhidapi-libusb.so.0.14.0
 drwxr-xr-x	root/root	usr/lib64/pkgconfig/
 -rw-r--r--	root/root	usr/lib64/pkgconfig/hidapi-hidraw.pc
 -rw-r--r--	root/root	usr/lib64/pkgconfig/hidapi-libusb.pc
