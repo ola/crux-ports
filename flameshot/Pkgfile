@@ -4,7 +4,7 @@
 # Depends on:   ninja cmake qt5
 
 name=flameshot
-version=0.10.2
+version=12.1.0
 release=1
 source=(https://github.com/flameshot-org/$name/archive/refs/tags/v$version.tar.gz)
 
