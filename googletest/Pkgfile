@@ -1,16 +1,15 @@
-# Description: Google's C++ test framework. 
-# URL: https://github.com/google/googletest
-# Maintainer: Ola Håkansson <ola dot hakansson at gmail dot com>
-#
-# Depends on: cmake
+# Description: Google's C++ test framework.
+# URL:         https://github.com/google/googletest
+# Maintainer:  Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on:  cmake
 
 name=googletest
-version=1.11.0
+version=1.14.0
 release=1
-source=(https://github.com/google/googletest/archive/release-$version.tar.gz)
+source=(https://github.com/google/$name/archive/refs/tags/v$version.tar.gz)
 
 build() {
-    cd $name-release-$version
+    cd $name-$version
 
     mkdir build
     cd build
