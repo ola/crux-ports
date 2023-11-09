@@ -1,0 +1,17 @@
+# Description: C++ websocket client/server library
+# URL:         https://www.zaphoyd.com/projects/websocketpp/
+# Maintainer:  Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on:
+
+name=websocketpp
+version=0.8.2
+release=1
+source=(https://github.com/zaphoyd/$name/archive/refs/tags/$version.tar.gz)
+
+build() {
+  cmake -B "$SRC/build" -S "$SRC/websocketpp-$version" \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_INSTALL_PREFIX=/usr
+
+  DESTDIR="$PKG" cmake --install "$SRC/build"
+}
