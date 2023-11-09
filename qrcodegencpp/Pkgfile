@@ -1,0 +1,23 @@
+# Description: C and C++ QR Code generator library with CMake and pkgconfig
+# URL:         https://github.com/nayuki/QR-Code-generator, https://github.com/EasyCoding/qrcodegen-cmake
+# Maintainer:  Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on:
+
+name=qrcodegencpp
+version=1.8.0
+release=1
+source=(https://github.com/nayuki/QR-Code-generator/archive/refs/tags/v$version.tar.gz
+        https://github.com/EasyCoding/qrcodegen-cmake/archive/refs/tags/v$version-cmake2.tar.gz)
+
+build() {
+  cp -R qrcodegen-cmake-$version-cmake2/{cmake,CMakeLists.txt} QR-Code-generator-$version/
+
+  cmake -B "$SRC/build" -S "$SRC/QR-Code-generator-$version" \
+        -DCMAKE_BUILD_TYPE=None \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_INSTALL_LIBDIR=lib \
+        -DBUILD_SHARED_LIBS=ON
+
+  cmake --build "$SRC/build"
+  DESTDIR="$PKG" cmake --install "$SRC/build"
+}

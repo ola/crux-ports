@@ -1,0 +1,27 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/qrcodegen/
+-rw-r--r--	root/root	usr/include/qrcodegen/qrcodegen.h
+drwxr-xr-x	root/root	usr/include/qrcodegencpp/
+-rw-r--r--	root/root	usr/include/qrcodegencpp/qrcodegen.hpp
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/cmake/
+drwxr-xr-x	root/root	usr/lib/cmake/qrcodegen/
+-rw-r--r--	root/root	usr/lib/cmake/qrcodegen/qrcodegen-config-version.cmake
+-rw-r--r--	root/root	usr/lib/cmake/qrcodegen/qrcodegen-config.cmake
+-rw-r--r--	root/root	usr/lib/cmake/qrcodegen/qrcodegen-targets-none.cmake
+-rw-r--r--	root/root	usr/lib/cmake/qrcodegen/qrcodegen-targets.cmake
+drwxr-xr-x	root/root	usr/lib/cmake/qrcodegencpp/
+-rw-r--r--	root/root	usr/lib/cmake/qrcodegencpp/qrcodegencpp-config-version.cmake
+-rw-r--r--	root/root	usr/lib/cmake/qrcodegencpp/qrcodegencpp-config.cmake
+-rw-r--r--	root/root	usr/lib/cmake/qrcodegencpp/qrcodegencpp-targets-none.cmake
+-rw-r--r--	root/root	usr/lib/cmake/qrcodegencpp/qrcodegencpp-targets.cmake
+lrwxrwxrwx	root/root	usr/lib/libqrcodegen.so -> libqrcodegen.so.1
+lrwxrwxrwx	root/root	usr/lib/libqrcodegen.so.1 -> libqrcodegen.so.1.8.0
+-rwxr-xr-x	root/root	usr/lib/libqrcodegen.so.1.8.0
+lrwxrwxrwx	root/root	usr/lib/libqrcodegencpp.so -> libqrcodegencpp.so.1
+lrwxrwxrwx	root/root	usr/lib/libqrcodegencpp.so.1 -> libqrcodegencpp.so.1.8.0
+-rwxr-xr-x	root/root	usr/lib/libqrcodegencpp.so.1.8.0
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/qrcodegen.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/qrcodegencpp.pc
