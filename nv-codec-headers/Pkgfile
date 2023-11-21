@@ -1,0 +1,17 @@
+# Description: FFmpeg version of headers required to interface with Nvidias codec APIs.
+# URL:         https://github.com/FFmpeg/nv-codec-headers
+# Maintainer:  Ola Håkansson <ola dot hakansson at gmail dot com>
+
+name=nv-codec-headers
+version=12.1.14.0
+release=1
+source=(https://github.com/FFmpeg/nv-codec-headers/archive/n$version/$name-n$version.tar.gz)
+
+build() {
+	cd $name-n$version
+
+	sed -i -e 's|/include|/include/ffnvcodec|g' ffnvcodec.pc.in
+
+	make PREFIX=/usr LIBDIR=/share
+	make PREFIX=/usr LIBDIR=/share DESTDIR="$PKG" install
+}
