@@ -1,22 +1,26 @@
 # Description: Software for video recording and live streaming
 # URL: https://obsproject.com/
 # Maintainer: Ola Håkansson <ola dot hakansson at gmail dot com>
-# Depends on: cmake ninja jack v4l-utils ffmpeg mbedtls fdk-aac libgmp qt5 x264 ffnvcodec-headers luajit speexdsp
+# Depends on: cmake ninja jack v4l-utils ffmpeg mbedtls fdk-aac libgmp qt6 x264 ffnvcodec-headers luajit speexdsp
 
 name=obs-studio
-version=27.1.3
+version=29.1.3
 release=1
-browsercommit=d78acd7d542810909693b4d37ad63e015e7c648e
+browsercommit=594115a27d40f0916e55db97cb61f7c7130cbe28
+websocketcommit=4ff109b62bc221192943541010d055be9ae5dbba
 source=(https://github.com/obsproject/$name/archive/$version.tar.gz
-        https://cdn-fastly.obsproject.com/downloads/cef_binary_4280_linux64.tar.bz2
-        https://github.com/obsproject/obs-browser/archive/$browsercommit.zip)
+        https://cdn-fastly.obsproject.com/downloads/cef_binary_5060_linux64.tar.bz2
+        https://github.com/obsproject/obs-browser/archive/$browsercommit.zip
+        https://github.com/obsproject/obs-websocket/archive/$websocketcommit.zip)
 
 build() {
-
   mkdir build
 
-  rm -rf $SRC/$name-$version/plugins/obs-browser
+  rm -r $SRC/$name-$version/plugins/obs-browser
   mv $SRC/obs-browser-$browsercommit $SRC/$name-$version/plugins/obs-browser
+
+  rm -r $SRC/$name-$version/plugins/obs-websocket
+  mv $SRC/obs-websocket-$websocketcommit $SRC/$name-$version/plugins/obs-websocket
 
   cmake -GNinja \
     -Wno-dev \
@@ -25,15 +29,18 @@ build() {
     -DCMAKE_BUILD_TYPE=Release \
     -DOBS_VERSION_OVERRIDE="$version" \
     -DUNIX_STRUCTURE=ON \
-    -DCOMPILE_LUA=ON \
-    -DCOMPILE_PYTHON=ON \
     -DENABLE_SCRIPTING=ON \
     -DDISABLE_UPDATE_MODULE=ON \
     -DENABLE_WAYLAND=OFF \
-    -DENABLE_PIPEWIRE=OFF \
+    -DENABLE_PIPEWIRE=ON \
+    -DENABLE_PULSEAUDIO=OFF \
+    -DENABLE_VLC=OFF \
+    -DENABLE_WEBSOCKET=OFF \
+    -DENABLE_NEW_MPEGTS_OUTPUT=OFF \
+    -DENABLE_AJA=OFF \
     -DBUILD_BROWSER=ON \
-    -DCEF_ROOT_DIR=$SRC/cef_binary_4280_linux64 \
-    -DBUILD_VST=OFF \
+    -DCEF_ROOT_DIR=$SRC/cef_binary_5060_linux64 \
+    -DQT_VERSION=6 \
     -S $name-$version -B build
 
   ninja -C build -j ${JOBS:-1}
@@ -45,5 +52,10 @@ build() {
        -iname '*ini' \
        ! -iname 'en-*.ini' \
        ! -iname 'locale.ini' \
+       -exec rm '{}' \+
+
+  find $PKG/usr/lib/obs-plugins/locales \
+       -iname '*pak' \
+       ! -iname 'en-*.pak' \
        -exec rm '{}' \+
 }
