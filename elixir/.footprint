@@ -164,6 +164,7 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/elixir/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Map.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.MapSet.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.MatchError.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.MismatchedDelimiterError.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Module.LocalsTracker.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Module.ParallelChecker.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Module.Types.Behaviour.beam
@@ -278,6 +279,7 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/elixir/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/elixir_sup.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/elixir_tokenizer.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/elixir_utils.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/iex.beam
 drwxr-xr-x	root/root	usr/lib/elixir/lib/ex_unit/
 drwxr-xr-x	root/root	usr/lib/elixir/lib/ex_unit/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/ex_unit/ebin/Elixir.ExUnit.AssertionError.beam
