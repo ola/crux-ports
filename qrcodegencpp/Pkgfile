@@ -1,5 +1,5 @@
 # Description: C and C++ QR Code generator library with CMake and pkgconfig
-# URL:         https://github.com/nayuki/QR-Code-generator, https://github.com/EasyCoding/qrcodegen-cmake
+# URL:         https://github.com/nayuki/QR-Code-generator
 # Maintainer:  Ola Håkansson <ola dot hakansson at gmail dot com>
 # Depends on:
 

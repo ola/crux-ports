@@ -25,13 +25,13 @@ modifications to those.
 | [nv-codec-headers](https://github.com/FFmpeg/nv-codec-headers) | FFmpeg version of headers required to interface with Nvidias codec APIs. |
 | [nvidia-vaapi-driver](https://github.com/elFarto/nvidia-vaapi-driver) | VA-API implementation that uses NVDEC as a backend |
 | [nvtop](https://github.com/Syllo/nvtop) | GPUs process monitoring for AMD, Intel and NVIDIA |
-| [obs](https://obsproject.com/) | Software for video recording and live streaming |
+| [obs-studio](https://obsproject.com/) | Software for video recording and live streaming |
 | [openrazer](https://openrazer.github.io/) | Open source driver and user-space daemon to control Razer lighting and other features |
-| [picom](	       https://github.com/yshui/picom) | A lightweight compositor for X11 |
+| [picom](https://github.com/yshui/picom) | A lightweight compositor for X11 |
 | [polybar](https://github.com/jaagr/polybar) | A fast and easy-to-use status bar |
 | [premake](https://premake.github.io/) | Reads a scripted definition of a software project to generate project files for build tools. |
-| [qrcodegencpp](https://github.com/nayuki/QR-Code-generator, https://github.com/EasyCoding/qrcodegen-cmake) | C and C++ QR Code generator library with CMake and pkgconfig |
-| [redshift](	       https://github.com/jonls/redshift) | Adjusts the color temperature of your screen according to your surroundings |
+| [qrcodegencpp](https://github.com/nayuki/QR-Code-generator) | C and C++ QR Code generator library with CMake and pkgconfig |
+| [redshift](https://github.com/jonls/redshift) | Adjusts the color temperature of your screen according to your surroundings |
 | [rxvt-unicode](http://software.schmorp.de/#rxvt-unicode) | rxvt fork with unicode and xft support |
 | [unclutter-xfixes](https://github.com/Airblader/unclutter-xfixes/) | Hides the mouse cursor but using the x11-xfixes extension, rewrite of unclutter |
 | [uthash](https://troydhanson.github.io/uthash/) | C preprocessor implementations of a hash table and a linked list |
