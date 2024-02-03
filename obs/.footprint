@@ -4,6 +4,9 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/obs-ffmpeg-mux
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/obs/
+drwxr-xr-x	root/root	usr/include/obs/audio-monitoring/
+drwxr-xr-x	root/root	usr/include/obs/audio-monitoring/pulse/
+-rw-r--r--	root/root	usr/include/obs/audio-monitoring/pulse/pulseaudio-wrapper.h
 drwxr-xr-x	root/root	usr/include/obs/callback/
 -rw-r--r--	root/root	usr/include/obs/callback/calldata.h
 -rw-r--r--	root/root	usr/include/obs/callback/decl.h
@@ -74,6 +77,7 @@ drwxr-xr-x	root/root	usr/include/obs/media-io/
 -rw-r--r--	root/root	usr/include/obs/obs.h
 -rw-r--r--	root/root	usr/include/obs/obs.hpp
 -rw-r--r--	root/root	usr/include/obs/obsconfig.h
+-rw-r--r--	root/root	usr/include/obs/obsversion.h
 drwxr-xr-x	root/root	usr/include/obs/util/
 -rw-r--r--	root/root	usr/include/obs/util/AlignedNew.hpp
 -rw-r--r--	root/root	usr/include/obs/util/array-serializer.h
@@ -124,72 +128,76 @@ drwxr-xr-x	root/root	usr/include/obs/util/simde/x86/
 -rw-r--r--	root/root	usr/include/obs/util/util.hpp
 -rw-r--r--	root/root	usr/include/obs/util/util_uint128.h
 -rw-r--r--	root/root	usr/include/obs/util/util_uint64.h
-drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/cmake/
-drwxr-xr-x	root/root	usr/lib/cmake/libobs/
--rw-r--r--	root/root	usr/lib/cmake/libobs/libobsConfig.cmake
--rw-r--r--	root/root	usr/lib/cmake/libobs/libobsConfigVersion.cmake
--rw-r--r--	root/root	usr/lib/cmake/libobs/libobsTargets-release.cmake
--rw-r--r--	root/root	usr/lib/cmake/libobs/libobsTargets.cmake
-drwxr-xr-x	root/root	usr/lib/cmake/obs-frontend-api/
--rw-r--r--	root/root	usr/lib/cmake/obs-frontend-api/obs-frontend-apiConfig.cmake
--rw-r--r--	root/root	usr/lib/cmake/obs-frontend-api/obs-frontend-apiConfigVersion.cmake
--rw-r--r--	root/root	usr/lib/cmake/obs-frontend-api/obs-frontend-apiTargets-release.cmake
--rw-r--r--	root/root	usr/lib/cmake/obs-frontend-api/obs-frontend-apiTargets.cmake
-lrwxrwxrwx	root/root	usr/lib/libobs-frontend-api.so -> libobs-frontend-api.so.0
-lrwxrwxrwx	root/root	usr/lib/libobs-frontend-api.so.0 -> libobs-frontend-api.so.29
--rwxr-xr-x	root/root	usr/lib/libobs-frontend-api.so.29
-lrwxrwxrwx	root/root	usr/lib/libobs-opengl.so -> libobs-opengl.so.1
-lrwxrwxrwx	root/root	usr/lib/libobs-opengl.so.1 -> libobs-opengl.so.29
--rwxr-xr-x	root/root	usr/lib/libobs-opengl.so.29
-lrwxrwxrwx	root/root	usr/lib/libobs-scripting.so -> libobs-scripting.so.1
-lrwxrwxrwx	root/root	usr/lib/libobs-scripting.so.1 -> libobs-scripting.so.29
--rwxr-xr-x	root/root	usr/lib/libobs-scripting.so.29
-lrwxrwxrwx	root/root	usr/lib/libobs.so -> libobs.so.0
-lrwxrwxrwx	root/root	usr/lib/libobs.so.0 -> libobs.so.29
--rwxr-xr-x	root/root	usr/lib/libobs.so.29
-drwxr-xr-x	root/root	usr/lib/obs-plugins/
--rw-r--r--	root/root	usr/lib/obs-plugins/chrome-sandbox
--rw-r--r--	root/root	usr/lib/obs-plugins/chrome_100_percent.pak
--rw-r--r--	root/root	usr/lib/obs-plugins/chrome_200_percent.pak
--rwxr-xr-x	root/root	usr/lib/obs-plugins/decklink-captions.so
--rwxr-xr-x	root/root	usr/lib/obs-plugins/decklink-output-ui.so
--rwxr-xr-x	root/root	usr/lib/obs-plugins/decklink.so
--rwxr-xr-x	root/root	usr/lib/obs-plugins/frontend-tools.so
--rw-r--r--	root/root	usr/lib/obs-plugins/icudtl.dat
--rwxr-xr-x	root/root	usr/lib/obs-plugins/image-source.so
--rw-r--r--	root/root	usr/lib/obs-plugins/libEGL.so
--rw-r--r--	root/root	usr/lib/obs-plugins/libGLESv2.so
--rw-r--r--	root/root	usr/lib/obs-plugins/libcef.so
--rw-r--r--	root/root	usr/lib/obs-plugins/libvk_swiftshader.so
--rw-r--r--	root/root	usr/lib/obs-plugins/libvulkan.so.1
--rwxr-xr-x	root/root	usr/lib/obs-plugins/linux-alsa.so
--rwxr-xr-x	root/root	usr/lib/obs-plugins/linux-capture.so
--rwxr-xr-x	root/root	usr/lib/obs-plugins/linux-pipewire.so
--rwxr-xr-x	root/root	usr/lib/obs-plugins/linux-v4l2.so
-drwxr-xr-x	root/root	usr/lib/obs-plugins/locales/
--rw-r--r--	root/root	usr/lib/obs-plugins/locales/en-GB.pak
--rw-r--r--	root/root	usr/lib/obs-plugins/locales/en-US.pak
--rwxr-xr-x	root/root	usr/lib/obs-plugins/obs-browser-page
--rwxr-xr-x	root/root	usr/lib/obs-plugins/obs-browser.so
--rwxr-xr-x	root/root	usr/lib/obs-plugins/obs-ffmpeg.so
--rwxr-xr-x	root/root	usr/lib/obs-plugins/obs-filters.so
--rwxr-xr-x	root/root	usr/lib/obs-plugins/obs-outputs.so
--rwxr-xr-x	root/root	usr/lib/obs-plugins/obs-transitions.so
--rwxr-xr-x	root/root	usr/lib/obs-plugins/obs-vst.so
--rwxr-xr-x	root/root	usr/lib/obs-plugins/obs-x264.so
--rw-r--r--	root/root	usr/lib/obs-plugins/resources.pak
--rwxr-xr-x	root/root	usr/lib/obs-plugins/rtmp-services.so
--rw-r--r--	root/root	usr/lib/obs-plugins/snapshot_blob.bin
--rwxr-xr-x	root/root	usr/lib/obs-plugins/text-freetype2.so
--rw-r--r--	root/root	usr/lib/obs-plugins/v8_context_snapshot.bin
--rw-r--r--	root/root	usr/lib/obs-plugins/vk_swiftshader_icd.json
-drwxr-xr-x	root/root	usr/lib/obs-scripting/
--rwxr-xr-x	root/root	usr/lib/obs-scripting/_obspython.so
--rwxr-xr-x	root/root	usr/lib/obs-scripting/obslua.so
--rw-r--r--	root/root	usr/lib/obs-scripting/obspython.py
-drwxr-xr-x	root/root	usr/lib/pkgconfig/
--rw-r--r--	root/root	usr/lib/pkgconfig/libobs.pc
+drwxr-xr-x	root/root	usr/lib64/
+drwxr-xr-x	root/root	usr/lib64/cmake/
+drwxr-xr-x	root/root	usr/lib64/cmake/libobs/
+-rw-r--r--	root/root	usr/lib64/cmake/libobs/libobsConfig.cmake
+-rw-r--r--	root/root	usr/lib64/cmake/libobs/libobsConfigVersion.cmake
+-rw-r--r--	root/root	usr/lib64/cmake/libobs/libobsTargets-release.cmake
+-rw-r--r--	root/root	usr/lib64/cmake/libobs/libobsTargets.cmake
+drwxr-xr-x	root/root	usr/lib64/cmake/obs-frontend-api/
+-rw-r--r--	root/root	usr/lib64/cmake/obs-frontend-api/obs-frontend-apiConfig.cmake
+-rw-r--r--	root/root	usr/lib64/cmake/obs-frontend-api/obs-frontend-apiConfigVersion.cmake
+-rw-r--r--	root/root	usr/lib64/cmake/obs-frontend-api/obs-frontend-apiTargets-release.cmake
+-rw-r--r--	root/root	usr/lib64/cmake/obs-frontend-api/obs-frontend-apiTargets.cmake
+lrwxrwxrwx	root/root	usr/lib64/libobs-frontend-api.so -> libobs-frontend-api.so.0
+lrwxrwxrwx	root/root	usr/lib64/libobs-frontend-api.so.0 -> libobs-frontend-api.so.30
+-rwxr-xr-x	root/root	usr/lib64/libobs-frontend-api.so.30
+lrwxrwxrwx	root/root	usr/lib64/libobs-opengl.so -> libobs-opengl.so.1
+lrwxrwxrwx	root/root	usr/lib64/libobs-opengl.so.1 -> libobs-opengl.so.30
+-rwxr-xr-x	root/root	usr/lib64/libobs-opengl.so.30
+lrwxrwxrwx	root/root	usr/lib64/libobs-scripting.so -> libobs-scripting.so.1
+lrwxrwxrwx	root/root	usr/lib64/libobs-scripting.so.1 -> libobs-scripting.so.30
+-rwxr-xr-x	root/root	usr/lib64/libobs-scripting.so.30
+lrwxrwxrwx	root/root	usr/lib64/libobs.so -> libobs.so.0
+lrwxrwxrwx	root/root	usr/lib64/libobs.so.0 -> libobs.so.30
+-rwxr-xr-x	root/root	usr/lib64/libobs.so.30
+drwxr-xr-x	root/root	usr/lib64/obs-plugins/
+-rw-r--r--	root/root	usr/lib64/obs-plugins/chrome-sandbox
+-rw-r--r--	root/root	usr/lib64/obs-plugins/chrome_100_percent.pak
+-rw-r--r--	root/root	usr/lib64/obs-plugins/chrome_200_percent.pak
+-rwxr-xr-x	root/root	usr/lib64/obs-plugins/decklink-captions.so
+-rwxr-xr-x	root/root	usr/lib64/obs-plugins/decklink-output-ui.so
+-rwxr-xr-x	root/root	usr/lib64/obs-plugins/decklink.so
+-rwxr-xr-x	root/root	usr/lib64/obs-plugins/frontend-tools.so
+-rw-r--r--	root/root	usr/lib64/obs-plugins/icudtl.dat
+-rwxr-xr-x	root/root	usr/lib64/obs-plugins/image-source.so
+-rw-r--r--	root/root	usr/lib64/obs-plugins/libEGL.so
+-rw-r--r--	root/root	usr/lib64/obs-plugins/libGLESv2.so
+-rw-r--r--	root/root	usr/lib64/obs-plugins/libcef.so
+-rw-r--r--	root/root	usr/lib64/obs-plugins/libvk_swiftshader.so
+-rw-r--r--	root/root	usr/lib64/obs-plugins/libvulkan.so.1
+-rwxr-xr-x	root/root	usr/lib64/obs-plugins/linux-alsa.so
+-rwxr-xr-x	root/root	usr/lib64/obs-plugins/linux-capture.so
+-rwxr-xr-x	root/root	usr/lib64/obs-plugins/linux-pipewire.so
+-rwxr-xr-x	root/root	usr/lib64/obs-plugins/linux-pulseaudio.so
+-rwxr-xr-x	root/root	usr/lib64/obs-plugins/linux-v4l2.so
+drwxr-xr-x	root/root	usr/lib64/obs-plugins/locales/
+-rw-r--r--	root/root	usr/lib64/obs-plugins/locales/en-GB.pak
+-rw-r--r--	root/root	usr/lib64/obs-plugins/locales/en-US.pak
+-rwxr-xr-x	root/root	usr/lib64/obs-plugins/obs-browser-page
+-rwxr-xr-x	root/root	usr/lib64/obs-plugins/obs-browser.so
+-rwxr-xr-x	root/root	usr/lib64/obs-plugins/obs-ffmpeg.so
+-rwxr-xr-x	root/root	usr/lib64/obs-plugins/obs-filters.so
+-rwxr-xr-x	root/root	usr/lib64/obs-plugins/obs-libfdk.so
+-rwxr-xr-x	root/root	usr/lib64/obs-plugins/obs-outputs.so
+-rwxr-xr-x	root/root	usr/lib64/obs-plugins/obs-transitions.so
+-rwxr-xr-x	root/root	usr/lib64/obs-plugins/obs-vst.so
+-rwxr-xr-x	root/root	usr/lib64/obs-plugins/obs-webrtc.so
+-rwxr-xr-x	root/root	usr/lib64/obs-plugins/obs-websocket.so
+-rwxr-xr-x	root/root	usr/lib64/obs-plugins/obs-x264.so
+-rw-r--r--	root/root	usr/lib64/obs-plugins/resources.pak
+-rwxr-xr-x	root/root	usr/lib64/obs-plugins/rtmp-services.so
+-rw-r--r--	root/root	usr/lib64/obs-plugins/snapshot_blob.bin
+-rwxr-xr-x	root/root	usr/lib64/obs-plugins/text-freetype2.so
+-rw-r--r--	root/root	usr/lib64/obs-plugins/v8_context_snapshot.bin
+-rw-r--r--	root/root	usr/lib64/obs-plugins/vk_swiftshader_icd.json
+drwxr-xr-x	root/root	usr/lib64/obs-scripting/
+-rwxr-xr-x	root/root	usr/lib64/obs-scripting/_obspython.so
+-rwxr-xr-x	root/root	usr/lib64/obs-scripting/obslua.so
+-rw-r--r--	root/root	usr/lib64/obs-scripting/obspython.py
+drwxr-xr-x	root/root	usr/lib64/pkgconfig/
+-rw-r--r--	root/root	usr/lib64/pkgconfig/libobs.pc
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/com.obsproject.Studio.desktop
@@ -243,6 +251,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/decklink/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/decklink/locale/en-US.ini
 drwxrwxr-x	root/root	usr/share/obs/obs-plugins/frontend-tools/
 drwxrwxr-x	root/root	usr/share/obs/obs-plugins/frontend-tools/locale/
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/frontend-tools/locale/en-GB.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/frontend-tools/locale/en-US.ini
 drwxrwxr-x	root/root	usr/share/obs/obs-plugins/frontend-tools/scripts/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/frontend-tools/scripts/clock-source.lua
@@ -261,14 +270,21 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/image-source/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/image-source/locale/en-US.ini
 drwxrwxr-x	root/root	usr/share/obs/obs-plugins/linux-alsa/
 drwxrwxr-x	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/en-GB.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-alsa/locale/en-US.ini
 drwxrwxr-x	root/root	usr/share/obs/obs-plugins/linux-capture/
 drwxrwxr-x	root/root	usr/share/obs/obs-plugins/linux-capture/locale/
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-capture/locale/en-GB.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-capture/locale/en-US.ini
 drwxrwxr-x	root/root	usr/share/obs/obs-plugins/linux-pipewire/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-pipewire/.gitkeep (EMPTY)
 drwxrwxr-x	root/root	usr/share/obs/obs-plugins/linux-pipewire/locale/
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-pipewire/locale/en-GB.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-pipewire/locale/en-US.ini
+drwxrwxr-x	root/root	usr/share/obs/obs-plugins/linux-pulseaudio/
+drwxrwxr-x	root/root	usr/share/obs/obs-plugins/linux-pulseaudio/locale/
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-pulseaudio/locale/en-GB.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-pulseaudio/locale/en-US.ini
 drwxrwxr-x	root/root	usr/share/obs/obs-plugins/linux-v4l2/
 drwxrwxr-x	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/linux-v4l2/locale/en-GB.ini
@@ -319,6 +335,10 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/obs-filters/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-filters/mask_color_filter.effect
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-filters/rtx_greenscreen.effect
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-filters/sharpness.effect
+drwxrwxr-x	root/root	usr/share/obs/obs-plugins/obs-libfdk/
+drwxrwxr-x	root/root	usr/share/obs/obs-plugins/obs-libfdk/locale/
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-libfdk/locale/en-GB.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-libfdk/locale/en-US.ini
 drwxrwxr-x	root/root	usr/share/obs/obs-plugins/obs-outputs/
 drwxrwxr-x	root/root	usr/share/obs/obs-plugins/obs-outputs/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-outputs/locale/en-GB.ini
@@ -371,13 +391,23 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/obs-transitions/luma_wipes/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-transitions/swipe_transition.effect
 drwxrwxr-x	root/root	usr/share/obs/obs-plugins/obs-vst/
 drwxrwxr-x	root/root	usr/share/obs/obs-plugins/obs-vst/locale/
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-vst/locale/en-GB.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-vst/locale/en-US.ini
+drwxrwxr-x	root/root	usr/share/obs/obs-plugins/obs-webrtc/
+drwxrwxr-x	root/root	usr/share/obs/obs-plugins/obs-webrtc/locale/
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-webrtc/locale/en-GB.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-webrtc/locale/en-US.ini
+drwxrwxr-x	root/root	usr/share/obs/obs-plugins/obs-websocket/
+drwxrwxr-x	root/root	usr/share/obs/obs-plugins/obs-websocket/locale/
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-websocket/locale/en-GB.ini
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-websocket/locale/en-US.ini
 drwxrwxr-x	root/root	usr/share/obs/obs-plugins/obs-x264/
 drwxrwxr-x	root/root	usr/share/obs/obs-plugins/obs-x264/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-x264/locale/en-GB.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-x264/locale/en-US.ini
 drwxrwxr-x	root/root	usr/share/obs/obs-plugins/rtmp-services/
 drwxrwxr-x	root/root	usr/share/obs/obs-plugins/rtmp-services/locale/
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/rtmp-services/locale/en-GB.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/rtmp-services/locale/en-US.ini
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/rtmp-services/package.json
 drwxrwxr-x	root/root	usr/share/obs/obs-plugins/rtmp-services/schema/
@@ -444,9 +474,13 @@ drwxrwxr-x	root/root	usr/share/obs/obs-studio/themes/Dark/media/
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/media/media_stop.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/minus.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/mute.svg
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/network-disconnected.svg
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/network-inactive.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/no_sources.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/plus.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/popout.svg
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/recording-inactive.svg
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/recording-pause-inactive.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/refresh.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/revert.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/right.svg
@@ -475,6 +509,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-studio/themes/Dark/sources/
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/sources/text.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/sources/window.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/sources/windowaudio.svg
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/streaming-inactive.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/trash.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/unassigned.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/up.svg
