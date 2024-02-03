@@ -1,0 +1,17 @@
+# Description: Cross-platform C++ library for network and low-level I/O programming
+# URL: https://think-async.com/Asio
+# Maintainer: Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on:
+
+name=asio
+version=1.28.1
+release=1
+source=(https://downloads.sourceforge.net/project/$name/$name/$version%20%28Stable%29/$name-$version.tar.gz)
+
+build() {
+  cd $name-$version
+
+  ./configure --prefix=/usr --without-boost
+
+  make DESTDIR=$PKG install
+}
