@@ -1,9 +1,11 @@
 ## CRUX ports
 
-This repository contains my ports for the [CRUX](https://crux.nu/) Linux
-distribution. Many of them are already available in the official opt
-and contrib repositories and are only here because I have wanted some
-modifications to those.
+This repository contains my ports for the [CRUX](https://crux.nu/) Linux distribution.
+Many of them are already available in the official opt and contrib repositories but have modifications here.
+
+#### Caveats
+
+Not all ports in this repository uses best practices for building CRUX packages.
 
 
 | Folder | Description |
@@ -39,3 +41,9 @@ modifications to those.
 | [vim](http://www.vim.org/) | Highly configurable text editor |
 | [xdotool](https://www.semicomplete.com/projects/xdotool/) | Simulate X11 keyboard input and mouse activity |
 | [xorg-xf86-input-wacom](https://github.com/linuxwacom/xf86-input-wacom) | X driver for configuring and running Wacom tablets |
+
+### Scripts
+
+| Folder | Description |
+|--------|-------------|
+| desc_to_md.sh | Outputs a markdown table with descriptions of all ports |
