@@ -1,23 +1,21 @@
 # Description: Standalone implementation of WebRTC Data Channels, WebRTC Media Transport, and WebSockets in C++
 # URL:         https://libdatachannel.org/
 # Maintainer:  Ola Håkansson <ola dot hakansson at gmail dot com>
-# Depends on:
+# Depends on: openssl
 
 name=libdatachannel
-version=0.19.5
+version=0.20.1
 release=1
 usrsctpcommit=5ca29ac7d8055802c7657191325c06386640ac24
 source=(https://github.com/paullouisageneau/$name/archive/refs/tags/v$version.tar.gz
-        https://github.com/nlohmann/json/archive/refs/tags/v3.11.3.tar.gz
-        https://github.com/paullouisageneau/libjuice/archive/refs/tags/v1.3.3.tar.gz
+        https://github.com/paullouisageneau/libjuice/archive/refs/tags/v1.3.4.tar.gz
         https://github.com/cisco/libsrtp/archive/refs/tags/v2.5.0.tar.gz
         https://github.com/SergiusTheBest/plog/archive/refs/tags/1.1.10.tar.gz
         https://codeload.github.com/sctplab/usrsctp/zip/$usrsctpcommit)
-renames=($name-$version.tar.gz json.tar.gz libjuice.tar.gz libsrtp.tar.gz plog.tar.gz usrsctp.zip)
+renames=($name-$version.tar.gz libjuice.tar.gz libsrtp.tar.gz plog.tar.gz usrsctp.zip)
 
 build() {
 
-  cp -a $SRC/json-*/. $SRC/$name-$version/deps/json
   cp -a $SRC/libjuice-*/. $SRC/$name-$version/deps/libjuice
   cp -a $SRC/libsrtp-*/. $SRC/$name-$version/deps/libsrtp
   cp -a $SRC/plog-*/. $SRC/$name-$version/deps/plog
@@ -27,6 +25,8 @@ build() {
   cmake -GNinja \
         -DCMAKE_BUILD_TYPE=Release \
         -DCMAKE_INSTALL_PREFIX=/usr \
+        -DNO_EXAMPLES=ON \
+        -DNO_TESTS=ON \
         -S libdatachannel-$version \
         -B build
 

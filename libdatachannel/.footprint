@@ -1,8 +1,6 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/rtc/
--rw-r--r--	root/root	usr/include/rtc/aacrtppacketizer.hpp
--rw-r--r--	root/root	usr/include/rtc/av1packetizationhandler.hpp
 -rw-r--r--	root/root	usr/include/rtc/av1rtppacketizer.hpp
 -rw-r--r--	root/root	usr/include/rtc/candidate.hpp
 -rw-r--r--	root/root	usr/include/rtc/channel.hpp
@@ -11,20 +9,14 @@ drwxr-xr-x	root/root	usr/include/rtc/
 -rw-r--r--	root/root	usr/include/rtc/datachannel.hpp
 -rw-r--r--	root/root	usr/include/rtc/description.hpp
 -rw-r--r--	root/root	usr/include/rtc/global.hpp
--rw-r--r--	root/root	usr/include/rtc/h264packetizationhandler.hpp
 -rw-r--r--	root/root	usr/include/rtc/h264rtppacketizer.hpp
 -rw-r--r--	root/root	usr/include/rtc/h265nalunit.hpp
--rw-r--r--	root/root	usr/include/rtc/h265packetizationhandler.hpp
 -rw-r--r--	root/root	usr/include/rtc/h265rtppacketizer.hpp
--rw-r--r--	root/root	usr/include/rtc/mediachainablehandler.hpp
 -rw-r--r--	root/root	usr/include/rtc/mediahandler.hpp
--rw-r--r--	root/root	usr/include/rtc/mediahandlerelement.hpp
--rw-r--r--	root/root	usr/include/rtc/mediahandlerrootelement.hpp
 -rw-r--r--	root/root	usr/include/rtc/message.hpp
 -rw-r--r--	root/root	usr/include/rtc/nalunit.hpp
--rw-r--r--	root/root	usr/include/rtc/opuspacketizationhandler.hpp
--rw-r--r--	root/root	usr/include/rtc/opusrtppacketizer.hpp
 -rw-r--r--	root/root	usr/include/rtc/peerconnection.hpp
+-rw-r--r--	root/root	usr/include/rtc/plihandler.hpp
 -rw-r--r--	root/root	usr/include/rtc/reliability.hpp
 -rw-r--r--	root/root	usr/include/rtc/rtc.h
 -rw-r--r--	root/root	usr/include/rtc/rtc.hpp
@@ -45,6 +37,6 @@ drwxr-xr-x	root/root	usr/lib64/cmake/LibDataChannel/
 -rw-r--r--	root/root	usr/lib64/cmake/LibDataChannel/LibDataChannelConfigVersion.cmake
 -rw-r--r--	root/root	usr/lib64/cmake/LibDataChannel/LibDataChannelTargets-release.cmake
 -rw-r--r--	root/root	usr/lib64/cmake/LibDataChannel/LibDataChannelTargets.cmake
-lrwxrwxrwx	root/root	usr/lib64/libdatachannel.so -> libdatachannel.so.0.19
-lrwxrwxrwx	root/root	usr/lib64/libdatachannel.so.0.19 -> libdatachannel.so.0.19.5
--rwxr-xr-x	root/root	usr/lib64/libdatachannel.so.0.19.5
+lrwxrwxrwx	root/root	usr/lib64/libdatachannel.so -> libdatachannel.so.0.20
+lrwxrwxrwx	root/root	usr/lib64/libdatachannel.so.0.20 -> libdatachannel.so.0.20.1
+-rwxr-xr-x	root/root	usr/lib64/libdatachannel.so.0.20.1
