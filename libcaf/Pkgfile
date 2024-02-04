@@ -4,7 +4,7 @@
 # Depends on:  openssl cmake ninja
 
 name=libcaf
-version=0.19.3
+version=0.19.5
 release=1
 source=(https://github.com/actor-framework/actor-framework/archive/$version.tar.gz)
 
