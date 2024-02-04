@@ -1,7 +1,7 @@
 ## CRUX ports
 
 This repository contains my ports for the [CRUX](https://crux.nu/) Linux distribution.
-Many of them are already available in the official opt and contrib repositories but have modifications here.
+Some of them are already available in the official opt and contrib repositories but have modifications here.
 
 #### Caveats
 
@@ -44,6 +44,6 @@ Not all ports in this repository uses best practices for building CRUX packages.
 
 ### Scripts
 
-| Folder | Description |
+| Script | Description |
 |--------|-------------|
-| desc_to_md.sh | Outputs a markdown table with descriptions of all ports |
+| desc_to_md.sh | Outputs a sorted markdown table of ports with links and descriptions |
