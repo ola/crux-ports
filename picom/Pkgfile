@@ -1,10 +1,10 @@
 # Description: A lightweight compositor for X11
 # URL:	       https://github.com/yshui/picom
 # Maintainer:  Ola Håkansson <ola dot hakansson at gmail dot com>
-# Depends on: uthash 
+# Depends on: uthash
 
 name=picom
-version=10.2
+version=11.1
 release=1
 source=(https://github.com/yshui/$name/archive/refs/tags/v$version.tar.gz)
 
