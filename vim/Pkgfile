@@ -4,7 +4,7 @@
 # Depends on:  ncurses acl lua python
 
 name=vim
-version=9.1.0015
+version=9.1.0080
 release=1
 source=(https://github.com/vim/vim/archive/v${version}/$name-$version.tar.gz)
 
