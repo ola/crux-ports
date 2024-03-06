@@ -4,7 +4,7 @@
 # Depends on:  meson ninja glslang dbus
 
 name=mangohud
-version=0.7.0
+version=0.7.1
 release=1
 source=(https://github.com/flightlessmango/MangoHud/archive/refs/tags/v$version.tar.gz)
 

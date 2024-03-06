@@ -11,6 +11,7 @@ drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/doc/
 drwxr-xr-x	root/root	usr/share/doc/mangohud/
 -rw-r--r--	root/root	usr/share/doc/mangohud/MangoHud.conf.example
+-rw-r--r--	root/root	usr/share/doc/mangohud/presets.conf.example
 drwxr-xr-x	root/root	usr/share/icons/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/scalable/
