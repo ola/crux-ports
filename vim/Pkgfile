@@ -4,53 +4,61 @@
 # Depends on:  ncurses acl lua python
 
 name=vim
-version=9.1.0080
+version=9.1.0163
 release=1
-source=(https://github.com/vim/vim/archive/v${version}/$name-$version.tar.gz)
+_commit=897d46d5fd029945d7373167ec2bf8d8c37079b2
+_date=20230703
+source=(https://github.com/vim/vim/archive/v${version}/$name-$version.tar.gz \
+  https://git.crux.nu/tb/Pkgfile.vim/archive/$_commit.tar.gz)
+renames=(SKIP Pkgfile-$_date.vim.tar.gz)
 
 build () {
-    cd $name-$version/src
+  cd $name-$version/src
 
-    sed -i '/^CFLAGS/d' Makefile
+  sed -i '/^CFLAGS/d' Makefile
 
-    ./configure --prefix=/usr \
-                --with-vim-name=vim \
-                --without-x \
-                --disable-gui \
-                --enable-multibyte \
-                --enable-cscope \
-                --disable-gpm \
-                --disable-canberra \
-                --disable-nls \
-                --enable-luainterp=yes \
-                --enable-pythoninterp=yes
+  ./configure --prefix=/usr \
+              --with-vim-name=vim \
+              --without-x \
+              --disable-gui \
+              --enable-multibyte \
+              --enable-cscope \
+              --disable-gpm \
+              --disable-canberra \
+              --disable-nls \
+              --enable-luainterp=yes \
+              --enable-pythoninterp=yes
 
-    make VIMRTDIR=
-    make -j1 VIMRTDIR= DESTDIR=$PKG install
+  make VIMRTDIR=
+  make -j1 VIMRTDIR= DESTDIR=$PKG install
 
-    mv $PKG/usr/share/vim/vimrc_example.vim $PKG/usr/share/vim/vimrc
-    rm -r $PKG/usr/{share/man/man?/vimtutor*,share/vim/{tutor,macros},bin/vimtutor}
-    rm $PKG/usr/share/vim/*/README.txt
-    rm -rf $PKG/usr/share/{applications,icons}
-    ln -sf vim $PKG/usr/bin/evim
-    ln -sf /bin/vi $PKG/usr/bin/vi
-    ln -sf vim.1.gz $PKG/usr/share/man/man1/ex.1.gz
-    ln -sf vim.1.gz $PKG/usr/share/man/man1/vi.1.gz
-    ln -sf vim.1.gz $PKG/usr/share/man/man1/rvim.1.gz
-    ln -sf vim.1.gz $PKG/usr/share/man/man1/view.1.gz
-    ln -sf vim.1.gz $PKG/usr/share/man/man1/rview.1.gz
-    ln -sf vim.1.gz $PKG/usr/share/man/man1/gvim.1.gz
+  mv $PKG/usr/share/vim/vimrc_example.vim $PKG/usr/share/vim/vimrc
+  rm -r $PKG/usr/{share/man/man?/vimtutor*,share/vim/{tutor,macros},bin/vimtutor}
+  rm $PKG/usr/share/vim/*/README.txt
+  rm -rf $PKG/usr/share/{applications,icons}
+  ln -sf vim $PKG/usr/bin/evim
+  ln -sf /bin/vi $PKG/usr/bin/vi
+  ln -sf vim.1.gz $PKG/usr/share/man/man1/ex.1.gz
+  ln -sf vim.1.gz $PKG/usr/share/man/man1/vi.1.gz
+  ln -sf vim.1.gz $PKG/usr/share/man/man1/rvim.1.gz
+  ln -sf vim.1.gz $PKG/usr/share/man/man1/view.1.gz
+  ln -sf vim.1.gz $PKG/usr/share/man/man1/rview.1.gz
+  ln -sf vim.1.gz $PKG/usr/share/man/man1/gvim.1.gz
 
-    ./configure --prefix=/ \
-                --datarootdir=/usr/share \
-                --with-vim-name=vi \
-                --without-x \
-                --disable-gui \
-                --enable-multibyte \
-                --disable-gpm \
-                --disable-nls \
-                --with-features=tiny
+  ./configure --prefix=/ \
+              --datarootdir=/usr/share \
+              --with-vim-name=vi \
+              --without-x \
+              --disable-gui \
+              --enable-multibyte \
+              --disable-gpm \
+              --disable-nls \
+              --with-features=tiny
 
-    make VIMRTDIR=
-    make -j1 VIMRTDIR= DESTDIR=$PKG installvimbin
+  make VIMRTDIR=
+  make -j1 VIMRTDIR= DESTDIR=$PKG installvimbin
+
+  cd $SRC/pkgfile.vim
+  install -d $PKG/usr/share/vim/vimfiles
+  cp -r * $PKG/usr/share/vim/vimfiles
 }

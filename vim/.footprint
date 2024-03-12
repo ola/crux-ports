@@ -407,6 +407,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/apache.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/arch.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/art.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/asciidoc.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/asm.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/aspvbs.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/automake.vim
@@ -1731,4 +1732,13 @@ drwxr-xr-x	root/root	usr/share/vim/tools/
 -rwxr-xr-x	root/root	usr/share/vim/tools/vimspell.sh
 -rw-r--r--	root/root	usr/share/vim/tools/vimspell.txt
 -rw-r--r--	root/root	usr/share/vim/tools/xcmdsrv_client.c
+drwxr-xr-x	root/root	usr/share/vim/vimfiles/
+drwxr-xr-x	root/root	usr/share/vim/vimfiles/ftdetect/
+-rw-r--r--	root/root	usr/share/vim/vimfiles/ftdetect/Pkgfile.vim
+drwxr-xr-x	root/root	usr/share/vim/vimfiles/ftplugin/
+-rw-r--r--	root/root	usr/share/vim/vimfiles/ftplugin/Pkgfile.vim
+drwxr-xr-x	root/root	usr/share/vim/vimfiles/indent/
+-rw-r--r--	root/root	usr/share/vim/vimfiles/indent/Pkgfile.vim
+drwxr-xr-x	root/root	usr/share/vim/vimfiles/syntax/
+-rw-r--r--	root/root	usr/share/vim/vimfiles/syntax/Pkgfile.vim
 -rw-r--r--	root/root	usr/share/vim/vimrc
