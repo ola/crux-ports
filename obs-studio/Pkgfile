@@ -5,7 +5,7 @@
 
 name=obs-studio
 version=30.0.2
-release=1
+release=2
 browsercommit=a3ae78b5c6ce6d4ddb29d49b29f2f60014d554e1
 websocketcommit=ede66a68cbc043a6fc7c8af683ae0924d4068941
 source=(https://github.com/obsproject/$name/archive/$version.tar.gz
@@ -36,9 +36,11 @@ build() {
     -DENABLE_WEBSOCKET=ON \
     -DENABLE_WEBRTC=ON \
     -DENABLE_NEW_MPEGTS_OUTPUT=OFF \
+    -DENABLE_DECKLINK=OFF \
     -DENABLE_AJA=OFF \
     -DENABLE_QSV11=OFF \
     -DENABLE_VLC=OFF \
+    -DENABLE_WHATSNEW=OFF \
     -DENABLE_LIBFDK=ON \
     -DBUILD_BROWSER=ON \
     -DCEF_ROOT_DIR=$SRC/cef_binary_5060_linux64 \
