@@ -28,6 +28,7 @@ Not all ports in this repository uses best practices for building CRUX packages.
 | [nvidia-vaapi-driver](https://github.com/elFarto/nvidia-vaapi-driver) | VA-API implementation that uses NVDEC as a backend |
 | [nvtop](https://github.com/Syllo/nvtop) | GPUs process monitoring for AMD, Intel and NVIDIA |
 | [obs-studio](https://obsproject.com/) | Software for video recording and live streaming |
+| [obs-vkcapture](https://github.com/nowrep/obs-vkcapture) | OBS plugin for Vulkan/OpenGL game capture on Linux |
 | [openrazer](https://openrazer.github.io/) | Open source driver and user-space daemon to control Razer lighting and other features |
 | [picom](https://github.com/yshui/picom) | A lightweight compositor for X11 |
 | [polybar](https://github.com/jaagr/polybar) | A fast and easy-to-use status bar |
