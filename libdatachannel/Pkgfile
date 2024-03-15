@@ -4,9 +4,9 @@
 # Depends on: openssl
 
 name=libdatachannel
-version=0.20.1
+version=0.20.2
 release=1
-usrsctpcommit=5ca29ac7d8055802c7657191325c06386640ac24
+usrsctpcommit=ebb18adac6501bad4501b1f6dccb67a1c85cc299
 source=(https://github.com/paullouisageneau/$name/archive/refs/tags/v$version.tar.gz
         https://github.com/paullouisageneau/libjuice/archive/refs/tags/v1.3.4.tar.gz
         https://github.com/cisco/libsrtp/archive/refs/tags/v2.5.0.tar.gz
