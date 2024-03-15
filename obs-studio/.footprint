@@ -49,6 +49,7 @@ drwxr-xr-x	root/root	usr/include/obs/media-io/
 -rw-r--r--	root/root	usr/include/obs/media-io/video-io.h
 -rw-r--r--	root/root	usr/include/obs/media-io/video-scaler.h
 -rw-r--r--	root/root	usr/include/obs/obs-audio-controls.h
+-rw-r--r--	root/root	usr/include/obs/obs-av1.h
 -rw-r--r--	root/root	usr/include/obs/obs-avc.h
 -rw-r--r--	root/root	usr/include/obs/obs-config.h
 -rw-r--r--	root/root	usr/include/obs/obs-data.h
@@ -73,13 +74,11 @@ drwxr-xr-x	root/root	usr/include/obs/media-io/
 -rw-r--r--	root/root	usr/include/obs/obs-scene.h
 -rw-r--r--	root/root	usr/include/obs/obs-service.h
 -rw-r--r--	root/root	usr/include/obs/obs-source.h
--rw-r--r--	root/root	usr/include/obs/obs-ui.h
 -rw-r--r--	root/root	usr/include/obs/obs.h
 -rw-r--r--	root/root	usr/include/obs/obs.hpp
 -rw-r--r--	root/root	usr/include/obs/obsconfig.h
 -rw-r--r--	root/root	usr/include/obs/obsversion.h
 drwxr-xr-x	root/root	usr/include/obs/util/
--rw-r--r--	root/root	usr/include/obs/util/AlignedNew.hpp
 -rw-r--r--	root/root	usr/include/obs/util/array-serializer.h
 -rw-r--r--	root/root	usr/include/obs/util/base.h
 -rw-r--r--	root/root	usr/include/obs/util/bitstream.h
@@ -93,6 +92,7 @@ drwxr-xr-x	root/root	usr/include/obs/util/
 drwxr-xr-x	root/root	usr/include/obs/util/curl/
 -rw-r--r--	root/root	usr/include/obs/util/curl/curl-helper.h
 -rw-r--r--	root/root	usr/include/obs/util/darray.h
+-rw-r--r--	root/root	usr/include/obs/util/deque.h
 -rw-r--r--	root/root	usr/include/obs/util/dstr.h
 -rw-r--r--	root/root	usr/include/obs/util/dstr.hpp
 -rw-r--r--	root/root	usr/include/obs/util/file-serializer.h
