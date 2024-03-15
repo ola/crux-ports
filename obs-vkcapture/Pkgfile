@@ -1,0 +1,26 @@
+# Description: OBS plugin for Vulkan/OpenGL game capture on Linux
+# URL: https://github.com/nowrep/obs-vkcapture
+# Maintainer: Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on: obs-studio
+
+name=obs-vkcapture
+version=1.4.9
+release=1
+source=(https://github.com/nowrep/$name/archive/refs/tags/v$version.tar.gz)
+
+build() {
+  cmake -GNinja \
+    -Wno-dev \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_BUILD_TYPE=Release \
+    -S $name-$version -B build
+
+  ninja -C build -j ${JOBS:-1}
+  DESTDIR=$PKG ninja -C build install
+
+  find $PKG/usr/share/obs \
+       -iname '*ini' \
+       ! -iname 'en-*.ini' \
+       ! -iname 'locale.ini' \
+       -exec rm '{}' \+
+}
