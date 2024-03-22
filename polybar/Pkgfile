@@ -4,7 +4,7 @@
 # Depends on:  cairo i3 xorg-xcb-util-image xorg-xcb-util-wm xcb-util-xrm xorg-xcb-util-cursor cmake git python python3 pkg-config python3-sphinx
 
 name=polybar
-version=3.7.0
+version=3.7.1
 release=1
 
 source=(https://github.com/polybar/polybar/releases/download/${version}/polybar-${version}.tar.gz)
@@ -27,6 +27,4 @@ build() {
   cmake --build .
 
   cmake --build "$SRC/$name-$version/build" --target install -- DESTDIR="${PKG}"
-
-  #rm -rf $PKG/usr/share/doc
 }
