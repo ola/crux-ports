@@ -1,0 +1,16 @@
+# Description: ldd as a tree
+# URL: https://github.com/haampie/libtree
+# Maintainer: Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on: 
+
+name=libtree
+version=3.1.1
+release=1
+source=(https://github.com/haampie/$name/archive/refs/tags/v$version.tar.gz)
+
+build() {
+  cd $name-$version
+
+  make LDFLAGS=-static
+  make PREFIX=$PKG/usr install
+}
