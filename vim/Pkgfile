@@ -4,7 +4,7 @@
 # Depends on:  ncurses acl lua python
 
 name=vim
-version=9.1.0163
+version=9.1.0363
 release=1
 _commit=897d46d5fd029945d7373167ec2bf8d8c37079b2
 _date=20230703
