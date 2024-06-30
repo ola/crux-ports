@@ -5,13 +5,14 @@
 
 name=obs-studio
 version=30.1.2
-release=1
+release=2
 browsercommit=996b5a7bc43d912f1f4992e0032d4f263ac8b060
 websocketcommit=d2d4bfb3e78cf2b02c8e2f5dda1d805eda8d8f32
 source=(https://github.com/obsproject/$name/archive/$version.tar.gz
         https://cdn-fastly.obsproject.com/downloads/cef_binary_5060_linux64.tar.bz2
         https://github.com/obsproject/obs-browser/archive/$browsercommit.zip
-        https://github.com/obsproject/obs-websocket/archive/$websocketcommit.zip)
+        https://github.com/obsproject/obs-websocket/archive/$websocketcommit.zip
+        0001-obs-ffmpeg-fix-incompatible-pointer-types.patch)
 
 build() {
   mkdir build
@@ -21,6 +22,8 @@ build() {
 
   rm -r $SRC/$name-$version/plugins/obs-websocket
   mv $SRC/obs-websocket-$websocketcommit $SRC/$name-$version/plugins/obs-websocket
+
+  patch -d $SRC/$name-$version -Np1 < $SRC/0001-obs-ffmpeg-fix-incompatible-pointer-types.patch
 
   cmake -GNinja \
     -Wno-dev \
