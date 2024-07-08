@@ -1,0 +1,22 @@
+# Description:  General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software 
+# URL:          https://ziglang.org/ 
+# Maintainer:   Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on:   llvm clang
+# Optional:     lld
+
+name=zig
+version=0.13.0
+release=1
+source=(https://github.com/ziglang/$name/archive/refs/tags/$version.tar.gz)
+
+build() {
+  mkdir build
+  cmake -GNinja \
+        -Wno-dev \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_BUILD_TYPE=Release \
+        -S $name-$version -B build
+
+  ninja -C build -j ${JOBS:-1}
+  DESTDIR=$PKG ninja -C build install
+}

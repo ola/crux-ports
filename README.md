@@ -43,6 +43,7 @@ Not all ports in this repository uses best practices for building CRUX packages.
 | [vim](http://www.vim.org/) | Highly configurable text editor |
 | [xdotool](https://www.semicomplete.com/projects/xdotool/) | Simulate X11 keyboard input and mouse activity |
 | [xorg-xf86-input-wacom](https://github.com/linuxwacom/xf86-input-wacom) | X driver for configuring and running Wacom tablets |
+| [zig](https://ziglang.org/) | General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software |
 
 ### Scripts
 
