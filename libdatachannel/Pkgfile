@@ -4,7 +4,7 @@
 # Depends on: openssl
 
 name=libdatachannel
-version=0.21.1
+version=0.21.2
 release=1
 usrsctpcommit=ebb18adac6501bad4501b1f6dccb67a1c85cc299
 source=(https://github.com/paullouisageneau/$name/archive/refs/tags/v$version.tar.gz
