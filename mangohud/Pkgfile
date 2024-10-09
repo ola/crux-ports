@@ -4,13 +4,13 @@
 # Depends on:  meson ninja glslang dbus
 
 name=mangohud
-version=0.7.1
+version=0.7.2
 release=1
 source=(https://github.com/flightlessmango/MangoHud/archive/refs/tags/v$version.tar.gz)
 
 build() {
   cd MangoHud-$version
 
-  meson setup --buildtype release --prefix=/usr -Dwith_xnvctrl=disabled build
+  meson setup --buildtype release --prefix=/usr -Dwith_wayland=disabled -Dwith_xnvctrl=disabled build
   PREFIX=/usr DESTDIR=$PKG ninja -C build install
 }
