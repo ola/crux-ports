@@ -32,6 +32,7 @@ Not all ports in this repository uses best practices for building CRUX packages.
 | [openrazer](https://openrazer.github.io/) | Open source driver and user-space daemon to control Razer lighting and other features |
 | [picom](https://github.com/yshui/picom) | A lightweight compositor for X11 |
 | [polybar](https://github.com/jaagr/polybar) | A fast and easy-to-use status bar |
+| [portaudio](http://portaudio.com) | Portable cross-platform audio I/O library |
 | [premake](https://premake.github.io/) | Reads a scripted definition of a software project to generate project files for build tools. |
 | [qrcodegencpp](https://github.com/nayuki/QR-Code-generator) | C and C++ QR Code generator library with CMake and pkgconfig |
 | [redshift](https://github.com/jonls/redshift) | Adjusts the color temperature of your screen according to your surroundings |
@@ -43,6 +44,7 @@ Not all ports in this repository uses best practices for building CRUX packages.
 | [vim](http://www.vim.org/) | Highly configurable text editor |
 | [xdotool](https://www.semicomplete.com/projects/xdotool/) | Simulate X11 keyboard input and mouse activity |
 | [xorg-xf86-input-wacom](https://github.com/linuxwacom/xf86-input-wacom) | X driver for configuring and running Wacom tablets |
+| [xournalpp](https://xournalpp.github.io/) | Handwriting notetaking software with PDF annotation support |
 | [zig](https://ziglang.org/) | General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software |
 
 ### Scripts
