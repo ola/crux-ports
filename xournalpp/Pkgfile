@@ -1,0 +1,22 @@
+# Description: Handwriting notetaking software with PDF annotation support
+# URL:         https://xournalpp.github.io/
+# Maintainer:  Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on:  gtk3 glib poppler libxml2 libzip librsvg lua portaudio libsndfile
+
+name=xournalpp
+version=1.2.3
+release=1
+source=(https://github.com/$name/$name/archive/refs/tags/v$version.tar.gz)
+
+build() {
+
+  mkdir build
+  cmake -GNinja \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -S $name-$version \
+        -B build
+
+  ninja -C build -j ${JOBS:-1}
+  DESTDIR=$PKG ninja -C build install
+}
