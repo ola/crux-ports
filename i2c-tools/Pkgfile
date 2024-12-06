@@ -3,7 +3,7 @@
 # Maintainer:   Ola Håkansson <ola dot hakansson at gmail dot com>
 
 name=i2c-tools
-version=4.3
+version=4.4
 release=1
 source=(https://mirrors.edge.kernel.org/pub/software/utils/$name/$name-$version.tar.xz)
 
