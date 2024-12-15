@@ -80,6 +80,9 @@ drwxr-xr-x	root/root	usr/share/locale/ja/LC_MESSAGES/
 drwxr-xr-x	root/root	usr/share/locale/ko/
 drwxr-xr-x	root/root	usr/share/locale/ko/LC_MESSAGES/
 -rw-r--r--	root/root	usr/share/locale/ko/LC_MESSAGES/xournalpp.mo
+drwxr-xr-x	root/root	usr/share/locale/ml_IN/
+drwxr-xr-x	root/root	usr/share/locale/ml_IN/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/ml_IN/LC_MESSAGES/xournalpp.mo
 drwxr-xr-x	root/root	usr/share/locale/nl/
 drwxr-xr-x	root/root	usr/share/locale/nl/LC_MESSAGES/
 -rw-r--r--	root/root	usr/share/locale/nl/LC_MESSAGES/xournalpp.mo
@@ -104,6 +107,9 @@ drwxr-xr-x	root/root	usr/share/locale/ru/LC_MESSAGES/
 drwxr-xr-x	root/root	usr/share/locale/si_LK/
 drwxr-xr-x	root/root	usr/share/locale/si_LK/LC_MESSAGES/
 -rw-r--r--	root/root	usr/share/locale/si_LK/LC_MESSAGES/xournalpp.mo
+drwxr-xr-x	root/root	usr/share/locale/sl_SI/
+drwxr-xr-x	root/root	usr/share/locale/sl_SI/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/sl_SI/LC_MESSAGES/xournalpp.mo
 drwxr-xr-x	root/root	usr/share/locale/sv/
 drwxr-xr-x	root/root	usr/share/locale/sv/LC_MESSAGES/
 -rw-r--r--	root/root	usr/share/locale/sv/LC_MESSAGES/xournalpp.mo

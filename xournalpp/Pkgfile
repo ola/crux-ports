@@ -4,7 +4,7 @@
 # Depends on:  gtk3 glib poppler libxml2 libzip librsvg lua portaudio libsndfile
 
 name=xournalpp
-version=1.2.3
+version=1.2.5
 release=1
 source=(https://github.com/$name/$name/archive/refs/tags/v$version.tar.gz)
 
