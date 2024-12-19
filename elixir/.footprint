@@ -142,6 +142,20 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/elixir/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Inspect.Version.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Inspect.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Integer.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.JSON.DecodeError.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.JSON.Encoder.Atom.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.JSON.Encoder.BitString.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.JSON.Encoder.Date.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.JSON.Encoder.DateTime.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.JSON.Encoder.Duration.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.JSON.Encoder.Float.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.JSON.Encoder.Integer.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.JSON.Encoder.List.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.JSON.Encoder.Map.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.JSON.Encoder.NaiveDateTime.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.JSON.Encoder.Time.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.JSON.Encoder.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.JSON.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Kernel.CLI.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Kernel.ErrorHandler.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Kernel.LexicalTracker.beam
@@ -167,9 +181,10 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/elixir/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.MapSet.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.MatchError.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.MismatchedDelimiterError.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.MissingApplicationsError.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Module.Behaviour.beam
--rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Module.LocalsTracker.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Module.ParallelChecker.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Module.Types.Apply.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Module.Types.Descr.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Module.Types.Expr.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Module.Types.Helpers.beam
@@ -269,8 +284,8 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/elixir/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/elixir_fn.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/elixir_import.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/elixir_interpolation.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/elixir_json.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/elixir_lexical.beam
--rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/elixir_locals.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/elixir_map.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/elixir_module.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/elixir_overridable.beam
@@ -295,8 +310,6 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/ex_unit/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/ex_unit/ebin/Elixir.ExUnit.Diff.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/ex_unit/ebin/Elixir.ExUnit.DocTest.Error.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/ex_unit/ebin/Elixir.ExUnit.DocTest.beam
--rw-r--r--	root/root	usr/lib/elixir/lib/ex_unit/ebin/Elixir.ExUnit.DuplicateDescribeError.beam
--rw-r--r--	root/root	usr/lib/elixir/lib/ex_unit/ebin/Elixir.ExUnit.DuplicateTestError.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/ex_unit/ebin/Elixir.ExUnit.EventManager.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/ex_unit/ebin/Elixir.ExUnit.FailuresManifest.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/ex_unit/ebin/Elixir.ExUnit.Filters.beam
@@ -343,6 +356,7 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/iex/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/iex/ebin/Elixir.IEx.Info.Tuple.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/iex/ebin/Elixir.IEx.Info.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/iex/ebin/Elixir.IEx.Introspection.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/iex/ebin/Elixir.IEx.MixListener.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/iex/ebin/Elixir.IEx.Pry.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/iex/ebin/Elixir.IEx.Server.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/iex/ebin/Elixir.IEx.beam
@@ -388,6 +402,8 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/mix/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.NoTaskError.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Project.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.ProjectStack.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.PubSub.Subscriber.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.PubSub.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Rebar.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Release.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.RemoteConverger.beam
@@ -399,6 +415,8 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/mix/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Shell.Quiet.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Shell.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.State.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Sync.Lock.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Sync.PubSub.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Task.Compiler.Diagnostic.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Task.Compiler.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Task.beam
