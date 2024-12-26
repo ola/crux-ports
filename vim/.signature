@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/ohakn.pub
+RWQPl/pDOy0JgpTi52eN+j94kQAToJWm1D0zPSl5cuNg6WUw1XW+e7c4Tt5RDpyqWVGlQVuakcw5nYhtRtMsl/btQ0OD5YwbYAA=
+SHA256 (Pkgfile) = efac1e5d0d3a2794d7c43fb8ed54231341b1945e0946ef1d04864dc0b3fc5497
+SHA256 (.footprint) = 62049d8beebbae0f1e6d37b8c7bee4407fd36e79e1e6bb5bc70a0bdc8f1b1f9f
+SHA256 (vim-9.1.0754.tar.gz) = 6086e93d41889ad7ebdd8568abb693833dbbaccc179f4f71879ef49e3982580e
+SHA256 (Pkgfile-20230703.vim.tar.gz) = 1f275a454fdd936b446518dbd6b60ea8e82895b4fb9759a2f5757e03e996b195

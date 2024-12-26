@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/ohakn.pub
+RWQPl/pDOy0Jgr1qGMPxkEL8kaxviM8NzK59siMxoYz6KZkvwl93OUx34d0WPWMlE3tLjabMwG9otbrvZNyPD6owfeXEqS6URAQ=
+SHA256 (Pkgfile) = f91e8fc5d8bee84c104fa8393fe6a86c6c2b90030f6d660cd62054c7241a6333
+SHA256 (.footprint) = 774ebd308b63137579bae4a06f19d589403a49eb97214cf243391983dbe43648
+SHA256 (libptytty-2.0.tar.gz) = 8033ed3aadf28759660d4f11f2d7b030acf2a6890cb0f7926fb0cfa6739d31f7

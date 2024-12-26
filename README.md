@@ -23,6 +23,7 @@ Not all ports in this repository uses best practices for building CRUX packages.
 | [libfruit](https://github.com/google/fruit/wiki) | Fruit is a dependency injection framework for C++, loosely inspired by the Guice framework for Java. |
 | [libmxml](http://michaelrsweet.github.io/mxml/index.html) | Tiny XML library to read and write XML and XML-like data files |
 | [libptytty](http://software.schmorp.de/pkg/libptytty.html) | Handles pty/tty/utmp/wtmp/lastlog handling in mostly OS-independent ways |
+| [libtree](https://github.com/haampie/libtree) | ldd as a tree |
 | [mangohud](https://github.com/flightlessmango/MangoHud) | A Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more |
 | [nv-codec-headers](https://github.com/FFmpeg/nv-codec-headers) | FFmpeg version of headers required to interface with Nvidias codec APIs. |
 | [nvidia-vaapi-driver](https://github.com/elFarto/nvidia-vaapi-driver) | VA-API implementation that uses NVDEC as a backend |

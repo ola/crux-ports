@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/ohakn.pub
+RWQPl/pDOy0JghfkmCsoZEU6SbRe/EOuq2j0afWZtyn6ii0WBXL2im7X1y6ApX//wSka4DwRt2mxTAkvyPGCtBXbZmDA2XHhZQU=
+SHA256 (Pkgfile) = e372f397237ab07bdaa7ffa2e18506514df9b77a7d6be109476ea6762837d8e5
+SHA256 (.footprint) = efe09ce120f18211ff9fc3d9a30d6ff55a54e3bed6f81092bfc40c9e2327138e
+SHA256 (hidapi-0.14.0.tar.gz) = a5714234abe6e1f53647dd8cba7d69f65f71c558b7896ed218864ffcf405bcbd

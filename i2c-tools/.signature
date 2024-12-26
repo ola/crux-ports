@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/ohakn.pub
+RWQPl/pDOy0JgnohZQzru6r+IVjWDqeMCFREG3BMeWuuiLtOsXCREJxNDgqPE9SpfBs3LTZyyT9REDsDeraY6D35/Px3nmhNvAw=
+SHA256 (Pkgfile) = bbf4d060802d15decb314c9e8743adfb50508c98c8bb003c0c6681d40ac9ea46
+SHA256 (.footprint) = bf72ccd3fbb16ca92d99a76a72abb03ff3c3fae5448a9dbbf2878a8e2d8a40be
+SHA256 (i2c-tools-4.4.tar.xz) = 8b15f0a880ab87280c40cfd7235cfff28134bf14d5646c07518b1ff6642a2473

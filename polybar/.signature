@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/ohakn.pub
+RWQPl/pDOy0JgvRU81Y5740jb+rCvH3rMTlxk6y1+iN43YEsVe0W7eYSnRYTUKVBS6HoKjaK+rRgiQsGDMFyEtqfxTiw77m2cgk=
+SHA256 (Pkgfile) = 18ffdd538582e0812f861b331e36da21537635702d4f75930dada6dbba8ad313
+SHA256 (.footprint) = 68ab23370c4b5a58bbe400243d46f7520d0bd3c2d7ce421b0efa55305ba5512e
+SHA256 (polybar-3.7.2.tar.gz) = e2feacbd02e7c94baed7f50b13bcbf307d95df0325c3ecae443289ba5b56af29
