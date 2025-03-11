@@ -1,8 +1,9 @@
 untrusted comment: verify with /etc/ports/ohakn.pub
-RWQPl/pDOy0JgtsaNnq2EuebjsVy8wsi+aa3LAbczST3S85y8FQQjogDR5tsqlVfKA8zSkzqrnHotC4grRYVyKyVWMBiPEWy1ws=
-SHA256 (Pkgfile) = 33c84fc01f5d73d99777ed8d3816227c8b6cc2368568a4f6130a60bf6d798d49
-SHA256 (.footprint) = 9813acb49da31cfde7c5bbfbbf3247db832956de5c7082c1659c5a9164716605
-SHA256 (30.2.2.tar.gz) = ce8c6ae586df17fef6c2473883531291010dfbb8fc1ce20582e23d3c41df41ba
-SHA256 (cef_binary_5060_linux64.tar.bz2) = ac4e2a8ebf20700e4e36353e314f876623633dd5b474778a2548bb66bdbea11d
-SHA256 (2a2879b5a69f4a99cd7459d8595af46cdb23115c.zip) = 23f99eefee082f63e7bda27b220740ae96fa9cc4bfbbe311d254c5c4540092a3
-SHA256 (0548c7798a323fe5296c150e13b898a5ee62fc1e.zip) = 9a03b3825da531bc3b6adf8a4ad6b1acb703bfca9e8f792700fd9ba9951fc65e
+RWQPl/pDOy0JgtQGupsK+yD7Gsi7uJlopNk0Rf3vRrQc/ch/6EJWIuznuvu8kX6f0et7gNEl6HZraIeAp+ZGMWKo2SSktbz4cQU=
+SHA256 (Pkgfile) = 361d0c3641613f5c48a754b835fb6109f8986bb6a419cca12eb5cc65f9355539
+SHA256 (.footprint) = 80e944ee8533e05926589dc23c3b08d5c38baec4a2fd5804ef036b42ecd05166
+SHA256 (31.0.2.tar.gz) = 74563ebbee5fcd448e6a790569cf3ca1a01bdcbc6bc2b3f61a9421ff8dfa6eb2
+SHA256 (cef_binary_6533_linux_x86_64.tar.xz) = fab66dfc9cfd2e26fb87798f855aef30c2004edc8e19570d37af555644ae1655
+SHA256 (nv-codec-headers-13.0.19.0.tar.gz) = 13da39edb3a40ed9713ae390ca89faa2f1202c9dda869ef306a8d4383e242bee
+SHA256 (16ff0faef223959f6ab9dbfd4e8c6c1622a7991b.zip) = ac44893d2a1d78a0192c63c4f67c06d21fad35171cc14bfecfaae232cd9c326c
+SHA256 (63e04d20daf84391955580579e6576dfb373fa7f.zip) = d2b8d3ec4bdebb1b103f21fcfd4d951259ecf41404dfa19920cafbec3e0f580d

@@ -4,12 +4,14 @@
 # Depends on: cmake ninja v4l-utils ffmpeg mbedtls fdk-aac libgmp qt6 x264 ffnvcodec-headers luajit speexdsp pipewire pulseaudio libdatachannel asio
 
 name=obs-studio
-version=30.2.2
+version=31.0.2
 release=1
-browsercommit=2a2879b5a69f4a99cd7459d8595af46cdb23115c
-websocketcommit=0548c7798a323fe5296c150e13b898a5ee62fc1e
+browsercommit=16ff0faef223959f6ab9dbfd4e8c6c1622a7991b
+websocketcommit=63e04d20daf84391955580579e6576dfb373fa7f
+nvcodecversion=13.0.19.0
 source=(https://github.com/obsproject/$name/archive/$version.tar.gz
-        https://cdn-fastly.obsproject.com/downloads/cef_binary_5060_linux64.tar.bz2
+        https://cdn-fastly.obsproject.com/downloads/cef_binary_6533_linux_x86_64.tar.xz
+        https://github.com/FFmpeg/nv-codec-headers/releases/download/n$nvcodecversion/nv-codec-headers-$nvcodecversion.tar.gz
         https://github.com/obsproject/obs-browser/archive/$browsercommit.zip
         https://github.com/obsproject/obs-websocket/archive/$websocketcommit.zip)
 
@@ -26,16 +28,19 @@ build() {
     -Wno-dev \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_C_FLAGS_RELEASE="$CFLAGS -Wno-error=deprecated-declarations" \
+    -DFFnvcodec_INCLUDE_DIR="$SRC/nv-codec-headers-$nvcodecversion/include/" \
     -DOBS_VERSION_OVERRIDE="$version" \
     -DUNIX_STRUCTURE=ON \
     -DENABLE_SCRIPTING=ON \
-    -DDISABLE_UPDATE_MODULE=ON \
+    -DENABLE_SERVICE_UPDATES=OFF \
     -DENABLE_WAYLAND=OFF \
     -DENABLE_PIPEWIRE=ON \
     -DENABLE_PULSEAUDIO=ON \
     -DENABLE_WEBSOCKET=ON \
     -DENABLE_WEBRTC=ON \
     -DENABLE_NATIVE_NVENC=OFF \
+    -DENABLE_RNNOISE=OFF \
     -DENABLE_NEW_MPEGTS_OUTPUT=OFF \
     -DENABLE_DECKLINK=OFF \
     -DENABLE_AJA=OFF \
@@ -44,8 +49,7 @@ build() {
     -DENABLE_WHATSNEW=OFF \
     -DENABLE_LIBFDK=ON \
     -DBUILD_BROWSER=ON \
-    -DCEF_ROOT_DIR=$SRC/cef_binary_5060_linux64 \
-    -DCALM_DEPRECATION=ON \
+    -DCEF_ROOT_DIR=$SRC/cef_binary_6533_linux_x86_64 \
     -S $name-$version -B build
 
   ninja -C build -j ${JOBS:-1}
@@ -57,10 +61,5 @@ build() {
        -iname '*ini' \
        ! -iname 'en-*.ini' \
        ! -iname 'locale.ini' \
-       -exec rm '{}' \+
-
-  find $PKG/usr/lib64/obs-plugins/locales \
-       -iname '*pak' \
-       ! -iname 'en-*.pak' \
        -exec rm '{}' \+
 }
