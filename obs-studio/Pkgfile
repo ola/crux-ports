@@ -1,17 +1,15 @@
 # Description: Software for video recording and live streaming
 # URL: https://obsproject.com/
 # Maintainer: Ola Håkansson <ola dot hakansson at gmail dot com>
-# Depends on: cmake ninja v4l-utils ffmpeg mbedtls fdk-aac libgmp qt6 x264 ffnvcodec-headers luajit speexdsp pipewire pulseaudio libdatachannel asio
+# Depends on: cmake ninja v4l-utils ffmpeg mbedtls fdk-aac libgmp qt6 x264 luajit speexdsp pipewire pulseaudio libdatachannel asio
 
 name=obs-studio
-version=31.0.2
+version=31.1.2
 release=1
-browsercommit=16ff0faef223959f6ab9dbfd4e8c6c1622a7991b
-websocketcommit=63e04d20daf84391955580579e6576dfb373fa7f
-nvcodecversion=13.0.19.0
+browsercommit=bdabf8300ecefeb566b81f4a7ff75f8a8e21f62b
+websocketcommit=40d26dbf4d29137bf88cd393a3031adb04d68bba
 source=(https://github.com/obsproject/$name/archive/$version.tar.gz
         https://cdn-fastly.obsproject.com/downloads/cef_binary_6533_linux_x86_64.tar.xz
-        https://github.com/FFmpeg/nv-codec-headers/releases/download/n$nvcodecversion/nv-codec-headers-$nvcodecversion.tar.gz
         https://github.com/obsproject/obs-browser/archive/$browsercommit.zip
         https://github.com/obsproject/obs-websocket/archive/$websocketcommit.zip)
 
@@ -29,9 +27,7 @@ build() {
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_C_FLAGS_RELEASE="$CFLAGS -Wno-error=deprecated-declarations" \
-    -DFFnvcodec_INCLUDE_DIR="$SRC/nv-codec-headers-$nvcodecversion/include/" \
     -DOBS_VERSION_OVERRIDE="$version" \
-    -DUNIX_STRUCTURE=ON \
     -DENABLE_SCRIPTING=ON \
     -DENABLE_SERVICE_UPDATES=OFF \
     -DENABLE_WAYLAND=OFF \
@@ -39,7 +35,7 @@ build() {
     -DENABLE_PULSEAUDIO=ON \
     -DENABLE_WEBSOCKET=ON \
     -DENABLE_WEBRTC=ON \
-    -DENABLE_NATIVE_NVENC=OFF \
+    -DENABLE_NVENC=OFF \
     -DENABLE_RNNOISE=OFF \
     -DENABLE_NEW_MPEGTS_OUTPUT=OFF \
     -DENABLE_DECKLINK=OFF \
@@ -48,7 +44,7 @@ build() {
     -DENABLE_VLC=OFF \
     -DENABLE_WHATSNEW=OFF \
     -DENABLE_LIBFDK=ON \
-    -DBUILD_BROWSER=ON \
+    -DENABLE_BROWSER=ON \
     -DCEF_ROOT_DIR=$SRC/cef_binary_6533_linux_x86_64 \
     -S $name-$version -B build
 
