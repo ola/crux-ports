@@ -1,9 +1,9 @@
 untrusted comment: verify with /etc/ports/ohakn.pub
-RWQPl/pDOy0JgiUsSIiF/nBxEAb7vC1c8oiFN4Y0AESHi44CcoXiaXqZ5rXX1gnZ2cosWPNR+qOk6wS2i1qbWoUISis2wcyaGAk=
-SHA256 (Pkgfile) = 0f1cd1f09d5dcd8f5a6d5ddc0467fb927e52c3424cdbab4003ad538304d2d6a3
-SHA256 (.footprint) = e85aec6aa7d9e93c4fa7f17eba04b7abe17a3f86a82103a23b705f14d0b60c3b
-SHA256 (libdatachannel-0.22.5.tar.gz) = bdb6aa8a79b981799282c4e71d5f9e6134b40fde2bf33f6119fd03223428d149
-SHA256 (libjuice.tar.gz) = 952c9ae86491e1b7920e034281759a16158525e56e3dfa07060aac2532c77c6f
-SHA256 (libsrtp.tar.gz) = 8a43ef8e9ae2b665292591af62aa1a4ae41e468b6d98d8258f91478735da4e09
-SHA256 (plog.tar.gz) = 55a090fc2b46ab44d0dde562a91fe5fc15445a3caedfaedda89fe3925da4705a
-SHA256 (usrsctp.zip) = e77a855ce395b877e9f2aa7ebe070dfaf5cb11cfecdeb424cc876fc0d98e5d11
+RWQPl/pDOy0JgndeJ5FfeWea7/W4G/jZgNSHSt/q1R9RHD25ezdRGouN1VSpOgm1ESO9PZJXnum8ymCG4df5o9unduGsdM9/ygA=
+SHA256 (Pkgfile) = 108eba5b1271d99d57542c974cfdb1d8864be8d0bdc871b1944745a823e727ac
+SHA256 (.footprint) = 39ca993d009bc595ecc8f0575307aac5efff2e7c01b14bdeb05b10e959a23ab2
+SHA256 (libdatachannel-0.23.2.tar.gz) = b9606efc5b2b173f2d22d0be3f6ba4f12af78c00ca02cde5932f3ff902980eb9
+SHA256 (libjuice.tar.gz) = 14d7cfc1a541843c1678828ad52d860d043bd82ed39ff076b260565796e4e4ee
+SHA256 (libsrtp.tar.gz) = 54facb1727a557c2a76b91194dcb2d0a453aaf8e2d0cbbf1e3c2848c323e28ad
+SHA256 (plog.tar.gz) = d60b8b35f56c7c852b7f00f58cbe9c1c2e9e59566c5b200512d0cdbb6309a7c2
+SHA256 (usrsctp.zip) = 752b4337bece1138f4f4151cec4240956a7230b007e11bc1a6915cbda58d7086
