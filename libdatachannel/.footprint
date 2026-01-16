@@ -46,6 +46,6 @@ drwxr-xr-x	root/root	usr/lib64/cmake/LibDataChannel/
 -rw-r--r--	root/root	usr/lib64/cmake/LibDataChannel/LibDataChannelConfigVersion.cmake
 -rw-r--r--	root/root	usr/lib64/cmake/LibDataChannel/LibDataChannelTargets-release.cmake
 -rw-r--r--	root/root	usr/lib64/cmake/LibDataChannel/LibDataChannelTargets.cmake
-lrwxrwxrwx	root/root	usr/lib64/libdatachannel.so -> libdatachannel.so.0.23
-lrwxrwxrwx	root/root	usr/lib64/libdatachannel.so.0.23 -> libdatachannel.so.0.23.2
--rwxr-xr-x	root/root	usr/lib64/libdatachannel.so.0.23.2
+lrwxrwxrwx	root/root	usr/lib64/libdatachannel.so -> libdatachannel.so.0.24
+lrwxrwxrwx	root/root	usr/lib64/libdatachannel.so.0.24 -> libdatachannel.so.0.24.0
+-rwxr-xr-x	root/root	usr/lib64/libdatachannel.so.0.24.0

@@ -4,11 +4,11 @@
 # Depends on: openssl
 
 name=libdatachannel
-version=0.23.2
+version=0.24.0
 release=1
 usrsctpcommit=fec583d54493f879d2ae44a743423bf8a04371ab
 source=(https://github.com/paullouisageneau/$name/archive/refs/tags/v$version.tar.gz
-        https://github.com/paullouisageneau/libjuice/archive/refs/tags/v1.6.1.tar.gz
+        https://github.com/paullouisageneau/libjuice/archive/refs/tags/v1.7.0.tar.gz
         https://github.com/cisco/libsrtp/archive/refs/tags/v2.7.0.tar.gz
         https://github.com/SergiusTheBest/plog/archive/refs/tags/1.1.11.tar.gz
         https://codeload.github.com/sctplab/usrsctp/zip/$usrsctpcommit)
