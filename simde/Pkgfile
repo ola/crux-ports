@@ -1,0 +1,15 @@
+# Description: Header-only library that provides fast portable implementations of SIMD intrinsics
+# URL:	       https://github.com/simd-everywhere/simde
+# Maintainer:  Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on: 
+
+name=simde
+version=0.8.2
+release=1
+source=(https://github.com/simd-everywhere/$name/archive/refs/tags/v$version.tar.gz)
+
+build() {
+  meson setup --buildtype=release --prefix=/usr $SRC/build $SRC/$name-$version
+  meson compile -C $SRC/build
+  meson install -C $SRC/build --destdir "$PKG"
+}
