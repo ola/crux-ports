@@ -103,7 +103,6 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/elixir/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.HashDict.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.HashSet.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.IO.ANSI.Docs.beam
--rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.IO.ANSI.Sequence.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.IO.ANSI.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.IO.Stream.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.IO.StreamError.beam
@@ -331,7 +330,6 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/iex/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/iex/ebin/Elixir.IEx.App.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/iex/ebin/Elixir.IEx.Autocomplete.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/iex/ebin/Elixir.IEx.Broker.beam
--rw-r--r--	root/root	usr/lib/elixir/lib/iex/ebin/Elixir.IEx.CLI.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/iex/ebin/Elixir.IEx.Config.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/iex/ebin/Elixir.IEx.Evaluator.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/iex/ebin/Elixir.IEx.Helpers.beam
@@ -382,6 +380,7 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/mix/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.CLI.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Compilers.Elixir.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Compilers.Erlang.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Compilers.Protocol.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Compilers.Test.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Config.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Dep.Converger.beam
@@ -442,6 +441,7 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/mix/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Deps.Compile.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Deps.Get.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Deps.Loadpaths.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Deps.Partition.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Deps.Precompile.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Deps.Tree.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Deps.Unlock.beam
@@ -459,7 +459,6 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/mix/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Loadconfig.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Loadpaths.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Local.Hex.beam
--rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Local.PublicKeys.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Local.Rebar.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Local.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.New.beam
