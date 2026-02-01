@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/ohakn.pub
-RWQPl/pDOy0Jgtm7h8B/JMafvdmn0WFca5R38j3BMOqnfmB388tw+ANwlc2TFk/loynza1Ik5M5rRBHWuB++gEkbEVzPfxwV0QA=
-SHA256 (Pkgfile) = 7fcba77d5ddc56f67cb86c01b5c06fa49de9107a594c3cc54fc1040d61a51513
-SHA256 (.footprint) = c13c54c9c6a1f4663909f70b437dec0ea1378cab00554d3dbeda07179401917a
-SHA256 (v1.2.7.tar.gz) = cd20608417fef374e5360ec96c9f56c61236d45e0d35d33b48346ed39eaf025d
+RWQPl/pDOy0JghKSPyar4NdyVhIYCfPMTuBiPnQrb5Bg3zVp4e2fNninzZHCaTt34T8too/FecKyQOyCo7qKSK7VmxCBC/AQNAM=
+SHA256 (Pkgfile) = 53706153c50948ead0bf2677da6b3cb7babba5015193970c9ae578c6eacf6fd5
+SHA256 (.footprint) = ec9865637fcdb2177870976ddec85c36fbbee49dc71df194568e6ecfc7ae435a
+SHA256 (v1.3.1.tar.gz) = ae779d7f1dd4e85edbe9eee1262b74a9efa7406cb7c7bb222bf8c450e4d8edba
