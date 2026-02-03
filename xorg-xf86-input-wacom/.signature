@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/ohakn.pub
-RWQPl/pDOy0JghGCjfLrYvc5kOhop7MYjge7c/i3z1Bpr8iWUdfdIEmstZ2QrUFDEuphpIiiwadorJG3GEym9gGyeWDyS7iLYQs=
-SHA256 (Pkgfile) = 7b6cadc6fdcecdafc40a7676588dcf203146b666a75c8bddc16a56b1886f8cd8
+RWQPl/pDOy0Jgm2f4AkbJ09S+9F9sLXKoGwVAdcFhKZfbQTdE7vkQikPCuV5d5PsQ/FpEsn/fCwhM974XqMK8TDa7cj5sDmT2w8=
+SHA256 (Pkgfile) = f0e21b376ba1d884f96d7bcc421aaba1fc70adfc276b0e49ea2ccd9ca0eedad8
 SHA256 (.footprint) = fbb41a8a088be79ff142156727d1c6c21486c66d618b321b17eb73216196a40c
-SHA256 (xf86-input-wacom-1.2.3.tar.bz2) = 70365826c3ca58cc81d98fab8f048f2c375e78c786111eb8a72a67a5721cb146
+SHA256 (xf86-input-wacom-1.2.4.tar.bz2) = cbc5fccda8994b9314e60da6933d8e5f901e4c3f208dd9fc09a611fe25b71a0d
