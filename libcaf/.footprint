@@ -105,6 +105,7 @@ drwxr-xr-x	root/root	usr/include/caf/detail/
 -rw-r--r--	root/root	usr/include/caf/detail/call_cfun.hpp
 -rw-r--r--	root/root	usr/include/caf/detail/cas_weak.hpp
 -rw-r--r--	root/root	usr/include/caf/detail/cleanup_and_release.hpp
+-rw-r--r--	root/root	usr/include/caf/detail/combine_latest.hpp
 -rw-r--r--	root/root	usr/include/caf/detail/comparable.hpp
 -rw-r--r--	root/root	usr/include/caf/detail/config_consumer.hpp
 -rw-r--r--	root/root	usr/include/caf/detail/connection_acceptor.hpp
@@ -121,6 +122,7 @@ drwxr-xr-x	root/root	usr/include/caf/detail/
 -rw-r--r--	root/root	usr/include/caf/detail/flow_bridge_initializer.hpp
 -rw-r--r--	root/root	usr/include/caf/detail/flow_source.hpp
 -rw-r--r--	root/root	usr/include/caf/detail/format.hpp
+-rw-r--r--	root/root	usr/include/caf/detail/forward_like.hpp
 -rw-r--r--	root/root	usr/include/caf/detail/functor_attachable.hpp
 -rw-r--r--	root/root	usr/include/caf/detail/get_process_id.hpp
 -rw-r--r--	root/root	usr/include/caf/detail/glob_match.hpp
@@ -252,6 +254,7 @@ drwxr-xr-x	root/root	usr/include/caf/flow/op/
 -rw-r--r--	root/root	usr/include/caf/flow/op/cell.hpp
 -rw-r--r--	root/root	usr/include/caf/flow/op/cold.hpp
 -rw-r--r--	root/root	usr/include/caf/flow/op/concat.hpp
+-rw-r--r--	root/root	usr/include/caf/flow/op/debounce.hpp
 -rw-r--r--	root/root	usr/include/caf/flow/op/defer.hpp
 -rw-r--r--	root/root	usr/include/caf/flow/op/empty.hpp
 -rw-r--r--	root/root	usr/include/caf/flow/op/fail.hpp
@@ -264,11 +267,14 @@ drwxr-xr-x	root/root	usr/include/caf/flow/op/
 -rw-r--r--	root/root	usr/include/caf/flow/op/merge.hpp
 -rw-r--r--	root/root	usr/include/caf/flow/op/never.hpp
 -rw-r--r--	root/root	usr/include/caf/flow/op/on_backpressure_buffer.hpp
+-rw-r--r--	root/root	usr/include/caf/flow/op/on_error_resume_next.hpp
 -rw-r--r--	root/root	usr/include/caf/flow/op/prefix_and_tail.hpp
 -rw-r--r--	root/root	usr/include/caf/flow/op/publish.hpp
 -rw-r--r--	root/root	usr/include/caf/flow/op/pullable.hpp
+-rw-r--r--	root/root	usr/include/caf/flow/op/retry.hpp
 -rw-r--r--	root/root	usr/include/caf/flow/op/sample.hpp
 -rw-r--r--	root/root	usr/include/caf/flow/op/state.hpp
+-rw-r--r--	root/root	usr/include/caf/flow/op/throttle_first.hpp
 -rw-r--r--	root/root	usr/include/caf/flow/op/ucast.hpp
 -rw-r--r--	root/root	usr/include/caf/flow/op/zip_with.hpp
 -rw-r--r--	root/root	usr/include/caf/flow/scoped_coordinator.hpp
@@ -692,18 +698,18 @@ drwxr-xr-x	root/root	usr/lib64/cmake/CAF/
 -rw-r--r--	root/root	usr/lib64/cmake/CAF/CAFConfigVersion.cmake
 -rw-r--r--	root/root	usr/lib64/cmake/CAF/CAFTargets-release.cmake
 -rw-r--r--	root/root	usr/lib64/cmake/CAF/CAFTargets.cmake
-lrwxrwxrwx	root/root	usr/lib64/libcaf_core.so -> libcaf_core.so.1.0.2
+lrwxrwxrwx	root/root	usr/lib64/libcaf_core.so -> libcaf_core.so.1.1.0
 -rwxr-xr-x	root/root	usr/lib64/libcaf_core.so.1
-lrwxrwxrwx	root/root	usr/lib64/libcaf_core.so.1.0.2 -> libcaf_core.so.1
-lrwxrwxrwx	root/root	usr/lib64/libcaf_io.so -> libcaf_io.so.1.0.2
+lrwxrwxrwx	root/root	usr/lib64/libcaf_core.so.1.1.0 -> libcaf_core.so.1
+lrwxrwxrwx	root/root	usr/lib64/libcaf_io.so -> libcaf_io.so.1.1.0
 -rwxr-xr-x	root/root	usr/lib64/libcaf_io.so.1
-lrwxrwxrwx	root/root	usr/lib64/libcaf_io.so.1.0.2 -> libcaf_io.so.1
-lrwxrwxrwx	root/root	usr/lib64/libcaf_net.so -> libcaf_net.so.1.0.2
+lrwxrwxrwx	root/root	usr/lib64/libcaf_io.so.1.1.0 -> libcaf_io.so.1
+lrwxrwxrwx	root/root	usr/lib64/libcaf_net.so -> libcaf_net.so.1.1.0
 -rwxr-xr-x	root/root	usr/lib64/libcaf_net.so.1
-lrwxrwxrwx	root/root	usr/lib64/libcaf_net.so.1.0.2 -> libcaf_net.so.1
-lrwxrwxrwx	root/root	usr/lib64/libcaf_openssl.so -> libcaf_openssl.so.1.0.2
+lrwxrwxrwx	root/root	usr/lib64/libcaf_net.so.1.1.0 -> libcaf_net.so.1
+lrwxrwxrwx	root/root	usr/lib64/libcaf_openssl.so -> libcaf_openssl.so.1.1.0
 -rwxr-xr-x	root/root	usr/lib64/libcaf_openssl.so.1
-lrwxrwxrwx	root/root	usr/lib64/libcaf_openssl.so.1.0.2 -> libcaf_openssl.so.1
-lrwxrwxrwx	root/root	usr/lib64/libcaf_test.so -> libcaf_test.so.1.0.2
+lrwxrwxrwx	root/root	usr/lib64/libcaf_openssl.so.1.1.0 -> libcaf_openssl.so.1
+lrwxrwxrwx	root/root	usr/lib64/libcaf_test.so -> libcaf_test.so.1.1.0
 -rwxr-xr-x	root/root	usr/lib64/libcaf_test.so.1
-lrwxrwxrwx	root/root	usr/lib64/libcaf_test.so.1.0.2 -> libcaf_test.so.1
+lrwxrwxrwx	root/root	usr/lib64/libcaf_test.so.1.1.0 -> libcaf_test.so.1
