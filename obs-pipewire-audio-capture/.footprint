@@ -1,0 +1,10 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib64/
+drwxr-xr-x	root/root	usr/lib64/obs-plugins/
+-rwxr-xr-x	root/root	usr/lib64/obs-plugins/linux-pipewire-audio.so
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/obs/
+drwxr-xr-x	root/root	usr/share/obs/obs-plugins/
+drwxr-xr-x	root/root	usr/share/obs/obs-plugins/linux-pipewire-audio/
+drwxr-xr-x	root/root	usr/share/obs/obs-plugins/linux-pipewire-audio/locale/
+-rw-r--r--	root/root	usr/share/obs/obs-plugins/linux-pipewire-audio/locale/en-US.ini

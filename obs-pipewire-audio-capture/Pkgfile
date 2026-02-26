@@ -1,0 +1,26 @@
+# Description: OBS plugin for audio device and application capture with Pipewire
+# URL: https://github.com/dimtpap/obs-pipewire-audio-capture
+# Maintainer: Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on: obs-studio pipewire wireplumber
+
+name=obs-pipewire-audio-capture
+version=1.2.1
+release=1
+source=(https://github.com/dimtpap/$name/archive/refs/tags/$version.tar.gz)
+
+build() {
+  cmake -GNinja \
+    -Wno-dev \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_BUILD_TYPE=Release \
+    -S $name-$version -B build
+
+  ninja -C build -j ${JOBS:-1}
+  DESTDIR=$PKG ninja -C build install
+
+  find $PKG/usr/share/obs \
+       -iname '*ini' \
+       ! -iname 'en-*.ini' \
+       ! -iname 'locale.ini' \
+       -exec rm '{}' \+
+}
