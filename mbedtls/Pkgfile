@@ -1,0 +1,45 @@
+# Description:  Portable TLS library and reference implementation of the PSA Cryptography API
+# URL: https://www.trustedfirmware.org/projects/mbed-tls/
+# Maintainer: Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on: cmake ninja python3
+
+name=mbedtls
+version=3.6.5
+release=1
+_framework=457996474728cb8e968ed21953b72f74d2f536b2
+_tfpsacrypto=4587e3f861c29a8aa1439078aef4ed593d07a34b
+source=(https://github.com/Mbed-TLS/mbedtls/releases/download/$name-$version/$name-$version.tar.bz2
+        https://github.com/Mbed-TLS/mbedtls-framework/archive/$_framework/mbedtls-framework-$_framework.tar.gz
+        https://github.com/Mbed-TLS/TF-PSA-Crypto/archive/$_tfpsacrypto/TF-PSA-Crypto-$_tfpsacrypto.zip)
+
+build() {
+
+  rm -rf $name-$version/{framework,tf-psa-crypto}
+  
+  cp -r mbedtls-framework-$_framework $name-$version/framework
+  mv TF-PSA-Crypto-$_tfpsacrypto $name-$version/tf-psa-crypto
+  rm -rf $name-$version/tf-psa-crypto/framework
+  cp -r mbedtls-framework-$_framework $name-$version/tf-psa-crypto/framework
+
+  cd $name-$version
+  scripts/config.py set MBEDTLS_HAVE_SSE2
+  scripts/config.py set MBEDTLS_THREADING_C
+  scripts/config.py set MBEDTLS_THREADING_PTHREAD
+
+  cd ..
+
+  cmake -GNinja \
+    -Wno-dev \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_INSTALL_LIBDIR=lib \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_C_FLAGS_RELEASE="$CFLAGS" \
+    -DUSE_SHARED_MBEDTLS_LIBRARY=ON \
+    -DUSE_STATIC_MBEDTLS_LIBRARY=ON \
+    -DENABLE_PROGRAMS=OFF \
+    -DENABLE_TESTING=OFF \
+    -S $name-$version -B build
+
+  ninja -C build -j ${JOBS:-1}
+  DESTDIR=$PKG ninja -C build install
+}

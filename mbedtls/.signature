@@ -1,0 +1,7 @@
+untrusted comment: verify with /etc/ports/ohakn.pub
+RWQPl/pDOy0JghOgfapKgHNAEXf0LkX/hL31Mb2DjmCLpLgBBfZrnkSjCSpDBOOjynHld1WruTuDflu6Vy7s+bUWY/WdbGAjqAo=
+SHA256 (Pkgfile) = 9a1b53322151f3bf7810291699adca08ebb6e15b5c0a712dafea6f95d813a6f5
+SHA256 (.footprint) = be3fc2d8046042c68b1c66497b27d5b66e6bbb24b9ebbcaa09c2025a2b0a6cba
+SHA256 (mbedtls-3.6.5.tar.bz2) = 4a11f1777bb95bf4ad96721cac945a26e04bf19f57d905f241fe77ebeddf46d8
+SHA256 (mbedtls-framework-457996474728cb8e968ed21953b72f74d2f536b2.tar.gz) = c15bcc24fc43bdf325b0e04fa63270daf6e9488167b94b46547d8134efa9c906
+SHA256 (TF-PSA-Crypto-4587e3f861c29a8aa1439078aef4ed593d07a34b.zip) = 93727a772e6a27bc47fc179bf6706f33bdd7390c500514bee68ba36763c214a1

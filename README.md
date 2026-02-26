@@ -25,6 +25,7 @@ Not all ports in this repository uses best practices for building CRUX packages.
 | [libptytty](http://software.schmorp.de/pkg/libptytty.html) | Handles pty/tty/utmp/wtmp/lastlog handling in mostly OS-independent ways |
 | [libtree](https://github.com/haampie/libtree) | ldd as a tree |
 | [mangohud](https://github.com/flightlessmango/MangoHud) | A Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more |
+| [mbedtls](https://www.trustedfirmware.org/projects/mbed-tls/) | Portable TLS library and reference implementation of the PSA Cryptography API |
 | [nv-codec-headers](https://github.com/FFmpeg/nv-codec-headers) | FFmpeg version of headers required to interface with Nvidias codec APIs. |
 | [nvidia-vaapi-driver](https://github.com/elFarto/nvidia-vaapi-driver) | VA-API implementation that uses NVDEC as a backend |
 | [nvtop](https://github.com/Syllo/nvtop) | GPUs process monitoring for AMD, Intel and NVIDIA |
