@@ -3,6 +3,11 @@
 This repository contains my ports for the [CRUX](https://crux.nu/) Linux distribution.
 Some of them are already available in the official opt and contrib repositories but have modifications here.
 
+#### Usage
+
+Download the [public key](ohakn.pub) and [ports driver config](ohakn.git) from this repository to your `/etc/ports`
+directory then run `ports -u`. The ports will be available in `/etc/ports/ohakn`.
+
 #### Caveats
 
 Not all ports in this repository uses best practices for building CRUX packages.
