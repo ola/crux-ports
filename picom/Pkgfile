@@ -4,7 +4,7 @@
 # Depends on: uthash
 
 name=picom
-version=12.5
+version=13
 release=1
 source=(https://github.com/yshui/$name/archive/refs/tags/v$version.tar.gz)
 
