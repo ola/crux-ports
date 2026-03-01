@@ -6,12 +6,15 @@ Some of them are already available in the official opt and contrib repositories 
 #### Usage
 
 Download the [public key](ohakn.pub) and [ports driver config](ohakn.git) from this repository to your `/etc/ports`
-directory then run `ports -u`. The ports will be available in `/etc/ports/ohakn`.
+directory then run `ports -u`. The ports will be available in `/usr/ports/ohakn`.
 
 #### Caveats
 
 Not all ports in this repository uses best practices for building CRUX packages.
+They are specific to my own use cases and can have features removed, patches
+added and some are downgrades for dependency reasons.
 
+### Ports
 
 | Folder | Description |
 |--------|-------------|
@@ -23,6 +26,7 @@ Not all ports in this repository uses best practices for building CRUX packages.
 | [hidapi](https://github.com/libusb/hidapi) | Library for interfacing with USB and Bluetooth HID-Class devices |
 | [i2c-tools](https://mirrors.edge.kernel.org/pub/software/utils/i2c-tools) | Heterogeneous set of I2C tools and library |
 | [kcat](https://github.com/edenhill/kcat) | Generic command line non-JVM Apache Kafka producer and consumer |
+| [lact](https://github.com/ilya-zlobintsev/LACT) | GPU Configuration And Monitoring Tool |
 | [libcaf](https://actor-framework.readthedocs.io/) | C++ Actor Framework |
 | [libdatachannel](https://libdatachannel.org/) | Standalone implementation of WebRTC Data Channels, WebRTC Media Transport, and WebSockets in C++ |
 | [libfruit](https://github.com/google/fruit/wiki) | Fruit is a dependency injection framework for C++, loosely inspired by the Guice framework for Java. |
@@ -46,10 +50,10 @@ Not all ports in this repository uses best practices for building CRUX packages.
 | [redshift](https://github.com/jonls/redshift) | Adjusts the color temperature of your screen according to your surroundings |
 | [renderdoc](https://renderdoc.org/) | Frame-capture based graphics debugger for Vulkan, D3D11, D3D12, OpenGL, and OpenGL ES development |
 | [rxvt-unicode](http://software.schmorp.de/#rxvt-unicode) | rxvt fork with unicode and xft support |
+| [simde](https://github.com/simd-everywhere/simde) | Header-only library that provides fast portable implementations of SIMD intrinsics |
 | [unclutter-xfixes](https://github.com/Airblader/unclutter-xfixes/) | Hides the mouse cursor but using the x11-xfixes extension, rewrite of unclutter |
 | [uthash](https://troydhanson.github.io/uthash/) | C preprocessor implementations of a hash table and a linked list |
 | [websocketcpp](https://www.zaphoyd.com/projects/websocketpp/) | C++ websocket client/server library |
-| [vim](http://www.vim.org/) | Highly configurable text editor |
 | [xdotool](https://www.semicomplete.com/projects/xdotool/) | Simulate X11 keyboard input and mouse activity |
 | [xorg-xf86-input-wacom](https://github.com/linuxwacom/xf86-input-wacom) | X driver for configuring and running Wacom tablets |
 | [xournalpp](https://xournalpp.github.io/) | Handwriting notetaking software with PDF annotation support |

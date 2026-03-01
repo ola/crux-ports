@@ -1,0 +1,24 @@
+# Description: GPU Configuration And Monitoring Tool 
+# URL: https://github.com/ilya-zlobintsev/LACT
+# Maintainer: Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on: rust gtk4 libdrm hwdata
+# Optional: libadwaita vulkan-tools
+
+name=lact
+version=0.8.4
+release=1
+source=(https://github.com/ilya-zlobintsev/LACT/archive/refs/tags/v$version.tar.gz
+        lactd)
+
+build() {
+  cd LACT-$version
+
+  prt-get isinst libadwaita && PKGMK_LACT+='build-release-libadwaita' || PKGMK_LACT+='build-release'
+
+  make $PKGMK_LACT
+  DESTDIR=$PKG PREFIX=/usr make install
+
+  rm -rf $PKG/usr/lib
+  rm -rf $PKG/usr/share/metainfo
+  install -D -m 755 $SRC/lactd $PKG/etc/rc.d/lactd
+}
