@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/ohakn.pub
-RWQPl/pDOy0JgmNtje/TjrRaxBIA/pYlh/rvKv07RdsbIpaN9D8JouBxJCiwdiq54aj2s9+//uFRz0bwhLnPMw7fck1YOcQ66gc=
-SHA256 (Pkgfile) = 55ce768e6983b4eb69045960e3773ed3349aa07932350dfbd6201d91da0a35d6
-SHA256 (.footprint) = 3bd452a90795d1710a3f0f2b98b0de05750496e284e8b39954b705e7141fb335
-SHA256 (openrazer-3.11.0.tar.xz) = e9fef4a36d7ec45a08cb870f36a4721ed12db565a2f568663e04b784adf3d34b
+RWQPl/pDOy0JguTxPpoHEql9FXnSqWpe0Uwwczh5oqyS14fTSjcuaJ0RuZuHAFaKfRJd+vcyA9vMlZaKG2hFThpMCsaKbbBMiAA=
+SHA256 (Pkgfile) = a4257e6aa3cf5432028688373bfae78d4ed5e22c0802789432fbb45f98061539
+SHA256 (.footprint) = 166a54a8f1d4b9eaf993aaf95d6005eca3e1b18eb4eb263b6de00077aedb70db
+SHA256 (openrazer-3.12.0.tar.xz) = ab05858d46cfddd52f468c8d5578f475e5d2b29587808f20dbff83ce2e176e87
