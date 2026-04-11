@@ -4,13 +4,15 @@
 # Depends on:   python3 dbus
 
 name=openrazer
-version=3.12.0
+version=3.12.1
 release=1
 source=(https://github.com/$name/$name/releases/download/v$version/$name-$version.tar.xz)
 
 build() {
 
   cd $name-$version
+  
+  sed -i 's/GROUP:="plugdev"/GROUP:="input"/g' install_files/udev/99-razer.rules
 
   mkdir -p $PKG/lib/modules/`uname -r`/kernel/drivers/hid
   make driver
