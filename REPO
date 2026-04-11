@@ -52,9 +52,9 @@ f:d19851b77d9c9c051db69d3a62cb4616:hidapi/Pkgfile
 f:177a0792bff781e024e9b7f5911a943f:zig/.footprint
 f:9577637038073beb796442e200e5b070:zig/.signature
 f:3f11c04bff97a729bc4e5863669cbc9d:zig/Pkgfile
-f:87ec2e7ddf7cf39b6c5160387d3d24dc:openrazer/.footprint
-f:4b1f3d1e97abaa6475b076fe5eca7242:openrazer/.signature
-f:cc5a8e7c0b0c43a6eadf980329b0efd3:openrazer/Pkgfile
+f:f92aa302cb46786b509b655541ca98d5:openrazer/.footprint
+f:b8906a66b8c30c9ac9bdf9e262f154c1:openrazer/.signature
+f:bc3d718223632717198a2cdea6997e53:openrazer/Pkgfile
 f:de5bd234b6193eb80e728cf229d03fc4:libmxml/.footprint
 f:350c4f3653b79eeead80b9eab1e501c2:libmxml/.signature
 f:72015dfd317d8d0680473afe43d39ec9:libmxml/Pkgfile
@@ -85,9 +85,9 @@ f:73a57177b4307dbffed3950ea8a06623:picom/Pkgfile
 f:681bd9a5ed7c12fee3f8f245a8890ad1:nv-codec-headers/.footprint
 f:b109fa101f5d7029436a11ddeeac5c79:nv-codec-headers/.signature
 f:fab67bec21c72a579f755ba7e70e4136:nv-codec-headers/Pkgfile
-f:dea0b8e8bda45980b33b1a89074667c3:erlang/.footprint
-f:989e92219fdf43ffa87dc75f81c2cd6b:erlang/.signature
-f:c61427885283abbecac152dbcde5d209:erlang/Pkgfile
+f:57e8bac28a8d4c4f70769f70010f7ccd:erlang/.footprint
+f:de59f9a59a1fe938520adb5ffbfe94b4:erlang/.signature
+f:24d8c5a5cd98eb36f270187b08fdebfe:erlang/Pkgfile
 f:559ff7c01c11e9346fb3d0fc1765310c:googletest/.footprint
 f:7dacd02bea951c9aae67bde9fd190cf7:googletest/.signature
 f:345049219fe8af785e64ab899e082826:googletest/Pkgfile
