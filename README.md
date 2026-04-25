@@ -43,6 +43,7 @@ added and some are downgrades for dependency reasons.
 | [obs-vkcapture](https://github.com/nowrep/obs-vkcapture) | OBS plugin for Vulkan/OpenGL game capture on Linux |
 | [openrazer](https://openrazer.github.io/) | Open source driver and user-space daemon to control Razer lighting and other features |
 | [picom](https://github.com/yshui/picom) | A lightweight compositor for X11 |
+| [pipeweaver](https://github.com/pipeweaver/pipeweaver) | Tool to manage streaming audio through pipewire |
 | [polybar](https://github.com/jaagr/polybar) | A fast and easy-to-use status bar |
 | [portaudio](http://portaudio.com) | Portable cross-platform audio I/O library |
 | [premake](https://premake.github.io/) | Reads a scripted definition of a software project to generate project files for build tools. |

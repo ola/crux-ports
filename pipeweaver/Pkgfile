@@ -1,0 +1,18 @@
+# Description: Tool to manage streaming audio through pipewire
+# URL: https://github.com/pipeweaver/pipeweaver
+# Maintainer: Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on:  pipewire rust
+
+name=pipeweaver
+version=0.1.5
+release=1
+source=(https://github.com/pipeweaver/pipeweaver/archive/refs/tags/v$version.tar.gz)
+
+build() {
+  cd $name-$version
+
+  cargo build --release
+
+  install -m 755 -D target/release/$name-client $PKG/usr/bin/$name-client
+  install -m 755 -D target/release/$name-daemon $PKG/usr/bin/$name-daemon
+}
