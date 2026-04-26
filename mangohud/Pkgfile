@@ -4,14 +4,12 @@
 # Depends on:  meson ninja glslang dbus
 
 name=mangohud
-version=0.8.2
+version=0.8.3
 release=1
-source=(https://github.com/flightlessmango/MangoHud/archive/refs/tags/v$version.tar.gz 0001-check-HAVE_WAYLAND.patch)
+source=(https://github.com/flightlessmango/MangoHud/archive/refs/tags/v$version.tar.gz)
 
 build() {
   cd MangoHud-$version
-
-  patch -p1 -i ../0001-check-HAVE_WAYLAND.patch
 
   prt-get isinst wayland || PKGMK_MANGOHUD+=' -Dwith_wayland=disabled'
 

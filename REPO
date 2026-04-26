@@ -110,10 +110,9 @@ f:e27da6e3a9fc18d143608f2df7e6cefd:asio/Pkgfile
 f:00e63ca0ede87b6e76ce1d946677582f:libptytty/.footprint
 f:b3e2153189daf6b77dbe39979ff0e513:libptytty/.signature
 f:a0b1125935d6d0f1d09cdabdb3edf3e1:libptytty/Pkgfile
-f:ada453c9cefa8baaaaae6a916d986112:mangohud/.footprint
-f:f107917b27560d3957f5c17fcca3f469:mangohud/.signature
-f:82f4c8bb057fc3f58e918abb36ef115b:mangohud/Pkgfile
-f:2c16facbaa517482e5df023d95404358:mangohud/0001-check-HAVE_WAYLAND.patch
+f:41bd775aa7c2d611d39b9fb87db2ab2e:mangohud/.footprint
+f:55e8ca84abf2c575690cfde450f2ab0e:mangohud/.signature
+f:5035545cdcc5ede8ca0222e53a833541:mangohud/Pkgfile
 f:90d4edb90db26ddbd923cd6d8b10578c:xdotool/.footprint
 f:9e6d3bd1c4c632e7a4f547b424adf7cc:xdotool/.signature
 f:d07a1acf1c1390647e05a5abd660245b:xdotool/Pkgfile
