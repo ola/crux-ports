@@ -4,19 +4,16 @@
 # Depends on: cmake ninja v4l-utils ffmpeg mbedtls fdk-aac libgmp qt6 x264 luajit speexdsp pipewire pulseaudio libdatachannel asio simde
 
 name=obs-studio
-version=32.0.4
+version=32.1.2
 release=1
-browsercommit=a776dd6a1a0ded4a8a723f2f572f3f8a9707f5a8
-websocketcommit=1c9306b1e200704ebe192e06c893dfc06b097c43
+browsercommit=ea04212e4bbadd077f9e6038758c4e4779c24fa3
+websocketcommit=1fcb95b15aa88b1b7e9bda3f9c8650e314377169
 source=(https://github.com/obsproject/$name/archive/$version.tar.gz
         https://cdn-fastly.obsproject.com/downloads/cef_binary_6533_linux_x86_64.tar.xz
         https://github.com/obsproject/obs-browser/archive/$browsercommit.zip
-        https://github.com/obsproject/obs-websocket/archive/$websocketcommit.zip
-        https://github.com/obsproject/obs-studio/pull/12328.patch)
+        https://github.com/obsproject/obs-websocket/archive/$websocketcommit.zip)
 
 build() {
-  patch -Np1 -d $name-$version -i $SRC/12328.patch
-
   mkdir build
 
   rm -r $SRC/$name-$version/plugins/obs-browser

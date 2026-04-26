@@ -466,7 +466,11 @@ drwxrwxr-x	root/root	usr/share/obs/obs-studio/themes/Dark/
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/entry-clear.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/expand.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/filter.svg
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/headphones-off.svg
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/headphones.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/interact.svg
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/layout-horizontal.svg
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/layout-vertical.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/left.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/locked.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Dark/media-pause.svg
@@ -538,7 +542,11 @@ drwxrwxr-x	root/root	usr/share/obs/obs-studio/themes/Light/
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Light/entry-clear.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Light/expand.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Light/filter.svg
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Light/headphones-off.svg
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Light/headphones.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Light/interact.svg
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Light/layout-horizontal.svg
+-rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Light/layout-vertical.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Light/left.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Light/locked.svg
 -rw-rw-r--	root/root	usr/share/obs/obs-studio/themes/Light/media-pause.svg
