@@ -12,7 +12,6 @@ d:rxvt-unicode
 d:portaudio
 d:qrcodegencpp
 d:picom
-d:nv-codec-headers
 d:erlang
 d:googletest
 d:i2c-tools
@@ -23,7 +22,6 @@ d:obs-pipewire-audio-capture
 d:flameshot
 d:uthash
 d:asio
-d:nvidia-vaapi-driver
 d:libptytty
 d:mangohud
 d:xdotool
@@ -68,8 +66,8 @@ f:3e91c5f28686316fedcf14ff9d333ab8:renderdoc/.footprint
 f:a7e27b6dee0f53cafc821793fa960acf:renderdoc/.signature
 f:176b69fbec09570ac5a55b6134b78a3c:renderdoc/Pkgfile
 f:06da851ecb208c50aa4937c061fe2172:xournalpp/.footprint
-f:abf8526797a3a9cf16fef0bbf7d5c49a:xournalpp/.signature
-f:b5e177ba14673b29b858be050017b997:xournalpp/Pkgfile
+f:fe513bfee3eb8af076cdb53945352a77:xournalpp/.signature
+f:784b2ed462777bb21d873610da2217d3:xournalpp/Pkgfile
 f:377097316e3932eae5f2fb42f11488ab:rxvt-unicode/.footprint
 f:8e13fa31ed7b2cc24bcc819249ea7321:rxvt-unicode/.signature
 f:21bae5bf7bba703a15a4c2097399250a:rxvt-unicode/Pkgfile
@@ -82,9 +80,6 @@ f:3a9282246ae8c68cc8d322f65b4dafcf:qrcodegencpp/Pkgfile
 f:3ccb49c12228c7e5bbdea41215ddade8:picom/.footprint
 f:843c2fc7ff7490825696a2e7b24c389c:picom/.signature
 f:73a57177b4307dbffed3950ea8a06623:picom/Pkgfile
-f:681bd9a5ed7c12fee3f8f245a8890ad1:nv-codec-headers/.footprint
-f:b109fa101f5d7029436a11ddeeac5c79:nv-codec-headers/.signature
-f:fab67bec21c72a579f755ba7e70e4136:nv-codec-headers/Pkgfile
 f:57e8bac28a8d4c4f70769f70010f7ccd:erlang/.footprint
 f:de59f9a59a1fe938520adb5ffbfe94b4:erlang/.signature
 f:24d8c5a5cd98eb36f270187b08fdebfe:erlang/Pkgfile
@@ -112,9 +107,6 @@ f:409357bd6dc0dc18cd53d1fe82bad0c8:uthash/Pkgfile
 f:579ce4a37bfaeaac577320bb2a881d93:asio/.footprint
 f:850d68f6f9565b03ae37b08c85115c75:asio/.signature
 f:e27da6e3a9fc18d143608f2df7e6cefd:asio/Pkgfile
-f:53d2ad47abae8a88b4cfb2affafe7ec8:nvidia-vaapi-driver/.footprint
-f:d5b86cf00b1c76a4ff4ea02b545a6358:nvidia-vaapi-driver/.signature
-f:2287f5f7d93314fd140caf50a301014c:nvidia-vaapi-driver/Pkgfile
 f:00e63ca0ede87b6e76ce1d946677582f:libptytty/.footprint
 f:b3e2153189daf6b77dbe39979ff0e513:libptytty/.signature
 f:a0b1125935d6d0f1d09cdabdb3edf3e1:libptytty/Pkgfile
@@ -122,9 +114,9 @@ f:ada453c9cefa8baaaaae6a916d986112:mangohud/.footprint
 f:f107917b27560d3957f5c17fcca3f469:mangohud/.signature
 f:82f4c8bb057fc3f58e918abb36ef115b:mangohud/Pkgfile
 f:2c16facbaa517482e5df023d95404358:mangohud/0001-check-HAVE_WAYLAND.patch
-f:913d9fb8cd64f9f0de32e3c19963f69e:xdotool/.footprint
-f:22cfa2a0b8704bda9fd782b21be73c87:xdotool/.signature
-f:584437645093cbbcd70cc14da9b90d3c:xdotool/Pkgfile
+f:90d4edb90db26ddbd923cd6d8b10578c:xdotool/.footprint
+f:9e6d3bd1c4c632e7a4f547b424adf7cc:xdotool/.signature
+f:d07a1acf1c1390647e05a5abd660245b:xdotool/Pkgfile
 f:c4887793add59c669d270f1e4591ceca:xorg-xf86-input-wacom/.footprint
 f:06ebc4983a49a4a7316f1d2e808b5929:xorg-xf86-input-wacom/.signature
 f:4a29029670f6a23b8743b2c50059f9f5:xorg-xf86-input-wacom/Pkgfile
@@ -144,9 +136,9 @@ f:78885592d0ff1cd1554d082ad75c231d:premake/Pkgfile
 f:6ed088e6b12cbca4d0342b9398fa56ff:libfruit/.footprint
 f:80ef99ec284fce5006216ad1bf6af951:libfruit/.signature
 f:4a1a4c76609d1e00222a8e210d17648e:libfruit/Pkgfile
-f:172ea5588dc1a1e473eef43403b8b10f:obs-studio/.footprint
-f:184c55501cfb7813271a301ab8fc93cd:obs-studio/.signature
-f:8b28065730a8d42dc84b620e76d83b0a:obs-studio/Pkgfile
+f:ebbf5b8d68f9eaecfe0d7af3d948282b:obs-studio/.footprint
+f:11a119860bac0bd405b992fb7eee1d5d:obs-studio/.signature
+f:ba74e7145a632c36118770533055e0f4:obs-studio/Pkgfile
 f:ce8adaaec9d3d6dc41b23129d152c2ab:kcat/.footprint
 f:e13e10a782934852600f534fd333d38c:kcat/.signature
 f:afb00a9446ecf317524d2a0d5ae579d7:kcat/Pkgfile

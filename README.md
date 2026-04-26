@@ -35,8 +35,6 @@ added and some are downgrades for dependency reasons.
 | [libtree](https://github.com/haampie/libtree) | ldd as a tree |
 | [mangohud](https://github.com/flightlessmango/MangoHud) | A Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more |
 | [mbedtls](https://www.trustedfirmware.org/projects/mbed-tls/) | Portable TLS library and reference implementation of the PSA Cryptography API |
-| [nv-codec-headers](https://github.com/FFmpeg/nv-codec-headers) | FFmpeg version of headers required to interface with Nvidias codec APIs. |
-| [nvidia-vaapi-driver](https://github.com/elFarto/nvidia-vaapi-driver) | VA-API implementation that uses NVDEC as a backend |
 | [nvtop](https://github.com/Syllo/nvtop) | GPUs process monitoring for AMD, Intel and NVIDIA |
 | [obs-pipewire-audio-capture](https://github.com/dimtpap/obs-pipewire-audio-capture) | OBS plugin for audio device and application capture with Pipewire |
 | [obs-studio](https://obsproject.com/) | Software for video recording and live streaming |
