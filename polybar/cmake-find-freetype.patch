@@ -1,0 +1,35 @@
+From 455d63611a695ffe4fe372272be28f4f6d9b90d3 Mon Sep 17 00:00:00 2001
+From: "Cliff L. Biffle" <code@cliffle.com>
+Date: Thu, 24 Jul 2025 03:08:11 -0700
+Subject: [PATCH] Add Freetype to fix build on Arch (#3221)
+
+Fixes #3220
+---
+ cmake/libpoly.cmake | 1 +
+ src/CMakeLists.txt  | 1 +
+ 2 files changed, 2 insertions(+)
+
+diff --git a/cmake/libpoly.cmake b/cmake/libpoly.cmake
+index d7ec359ed..225dc1c64 100644
+--- a/cmake/libpoly.cmake
++++ b/cmake/libpoly.cmake
+@@ -47,6 +47,7 @@ endif()
+ 
+ find_package(Threads REQUIRED)
+ find_package(CairoFC REQUIRED)
++find_package(Freetype REQUIRED)
+ 
+ find_package(LibUV 1.3.0 REQUIRED)
+ 
+diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
+index 41906b861..ab9ecd552 100644
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -161,6 +161,7 @@ target_link_libraries(poly PUBLIC
+   Cairo::CairoFC
+   xpp
+   LibUV::LibUV
++  freetype
+   )
+ 
+ if (TARGET i3ipc++)

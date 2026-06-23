@@ -1,5 +1,6 @@
 untrusted comment: verify with /etc/ports/ohakn.pub
-RWQPl/pDOy0JgvRU81Y5740jb+rCvH3rMTlxk6y1+iN43YEsVe0W7eYSnRYTUKVBS6HoKjaK+rRgiQsGDMFyEtqfxTiw77m2cgk=
-SHA256 (Pkgfile) = 18ffdd538582e0812f861b331e36da21537635702d4f75930dada6dbba8ad313
+RWQPl/pDOy0JgnTmPd4U63n64FDJXsSKNnj9WdHFytnI4wqGiII9lN6sxO3bVPoIXl3vxWfNn/aeCh4pOisFL3O7wYNVosEx0AE=
+SHA256 (Pkgfile) = 8f000d43d49adf7478bb6b15c6d96a4a9170fa6e1e65606208f345d897f3b3c0
 SHA256 (.footprint) = 68ab23370c4b5a58bbe400243d46f7520d0bd3c2d7ce421b0efa55305ba5512e
 SHA256 (polybar-3.7.2.tar.gz) = e2feacbd02e7c94baed7f50b13bcbf307d95df0325c3ecae443289ba5b56af29
+SHA256 (cmake-find-freetype.patch) = fbd0ff540e769284b4abcee9b4067bee7b0bad1c2ee9cca9f146e2faaa89e45c

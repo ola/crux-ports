@@ -5,15 +5,20 @@
 
 name=polybar
 version=3.7.2
-release=1
+release=2
 
-source=(https://github.com/polybar/polybar/releases/download/${version}/polybar-${version}.tar.gz)
+source=(https://github.com/polybar/polybar/releases/download/${version}/polybar-${version}.tar.gz
+        cmake-find-freetype.patch)
 
 build() {
 
+  cd $name-$version
+  patch -p1 < ../cmake-find-freetype.patch
+
   mkdir -p "$SRC/$name-$version/build"
 
-  cd "$SRC/$name-$version/build" || exit 1
+  cd build
+
   cmake -DCMAKE_INSTALL_PREFIX=/usr \
         -DCMAKE_BUILD_TYPE=Release \
         -DBUILD_CONFIG=OFF \
