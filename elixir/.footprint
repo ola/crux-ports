@@ -33,7 +33,6 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/elixir/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.BadBooleanError.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.BadFunctionError.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.BadMapError.beam
--rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.BadStructError.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Base.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Behaviour.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Bitwise.beam
@@ -189,6 +188,7 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/elixir/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Module.Types.Helpers.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Module.Types.Of.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Module.Types.Pattern.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Module.Types.Traverse.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Module.Types.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.Module.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/Elixir.NaiveDateTime.beam
@@ -283,7 +283,6 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/elixir/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/elixir_fn.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/elixir_import.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/elixir_interpolation.beam
--rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/elixir_json.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/elixir_lexical.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/elixir_map.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/elixir/ebin/elixir_module.beam
@@ -469,6 +468,7 @@ drwxr-xr-x	root/root	usr/lib/elixir/lib/mix/ebin/
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Release.Init.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Release.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Run.beam
+-rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Source.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Test.Coverage.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.Test.beam
 -rw-r--r--	root/root	usr/lib/elixir/lib/mix/ebin/Elixir.Mix.Tasks.WillRecompile.beam
