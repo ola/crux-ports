@@ -4,7 +4,7 @@
 # Depends on: obs-studio
 
 name=obs-vkcapture
-version=1.5.5
+version=1.5.6
 release=1
 source=(https://github.com/nowrep/$name/archive/refs/tags/v$version.tar.gz)
 
