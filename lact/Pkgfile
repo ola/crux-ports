@@ -1,11 +1,11 @@
 # Description: GPU Configuration And Monitoring Tool 
 # URL: https://github.com/ilya-zlobintsev/LACT
 # Maintainer: Ola Håkansson <ola dot hakansson at gmail dot com>
-# Depends on: rust gtk4 libdrm hwdata libadwaita
+# Depends on: rust gtk4 libdrm hwdata libdisplay-info libadwaita 
 # Optional: vulkan-tools
 
 name=lact
-version=0.9.0
+version=0.9.1
 release=1
 source=(https://github.com/ilya-zlobintsev/LACT/archive/refs/tags/v$version.tar.gz
         lactd)
