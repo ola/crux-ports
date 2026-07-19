@@ -4,7 +4,7 @@
 # Depends on:  pipewire rust
 
 name=pipeweaver
-version=0.1.5
+version=0.1.9
 release=1
 source=(https://github.com/pipeweaver/pipeweaver/archive/refs/tags/v$version.tar.gz)
 
