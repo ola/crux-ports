@@ -26,6 +26,7 @@ added and some are downgrades for dependency reasons.
 | [hidapi](https://github.com/libusb/hidapi) | Library for interfacing with USB and Bluetooth HID-Class devices |
 | [i2c-tools](https://mirrors.edge.kernel.org/pub/software/utils/i2c-tools) | Heterogeneous set of I2C tools and library |
 | [kcat](https://github.com/edenhill/kcat) | Generic command line non-JVM Apache Kafka producer and consumer |
+| [keyd](https://github.com/rvaiya/keyd) | A flexible system wide daemon which remaps keys using kernel level input primitives |
 | [lact](https://github.com/ilya-zlobintsev/LACT) | GPU Configuration And Monitoring Tool |
 | [libcaf](https://actor-framework.readthedocs.io/) | C++ Actor Framework |
 | [libdatachannel](https://libdatachannel.org/) | Standalone implementation of WebRTC Data Channels, WebRTC Media Transport, and WebSockets in C++ |
