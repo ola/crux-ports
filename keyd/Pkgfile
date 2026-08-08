@@ -1,0 +1,23 @@
+# Description:  A flexible system wide daemon which remaps keys using kernel level input primitives
+# Note: The patch changes keyd to use input as group instad of keyd. Make sure to have uinput enabled in kernel
+# URL: https://github.com/rvaiya/keyd
+# Maintainer: Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on:
+# Optional: python python-xlib dbus-python3
+
+name=keyd
+version=2.6.0
+release=1
+_commit=7c0aecb
+source=(https://github.com/rvaiya/keyd/archive/refs/tags/v$version.tar.gz keyd-$version-crux.patch keyd)
+
+build() {
+  cd $name-$version
+
+  patch -p1 < ../keyd-$version-crux.patch
+
+  make COMMIT=$_commit PREFIX=/usr
+  make COMMIT=$_commit DESTDIR=$PKG PREFIX=/usr install
+
+  install -D -m755 $SRC/keyd $PKG/etc/rc.d/keyd
+}

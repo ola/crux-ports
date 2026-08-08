@@ -1,0 +1,70 @@
+diff --color -ruN keyd-2.6.0/Makefile keyd-2.6.0.patch/Makefile
+--- keyd-2.6.0/Makefile	2025-12-19 22:03:20.000000000 +0100
++++ keyd-2.6.0.patch/Makefile	2026-08-08 15:55:02.546625214 +0200
+@@ -8,8 +8,6 @@
+ SOCKET_PATH=/var/run/keyd.socket
+ 
+ CFLAGS:=-DVERSION=\"v$(VERSION)\ \($(COMMIT)\)\" \
+-	-I/usr/local/include \
+-	-L/usr/local/lib \
+ 	-Wall \
+ 	-Wextra \
+ 	-Wstrict-prototypes \
+@@ -48,17 +46,6 @@
+ 		scdoc < "$$f" | gzip > "$$target"; \
+ 	done
+ install:
+-
+-	@if [ -e /run/systemd/system -o "$(FORCE_SYSTEMD)" ]; then \
+-		sed -e 's#@PREFIX@#$(PREFIX)#' keyd.service.in > keyd.service; \
+-		mkdir -p $(DESTDIR)$(PREFIX)/lib/systemd/system/; \
+-		install -Dm644 keyd.service $(DESTDIR)$(PREFIX)/lib/systemd/system/keyd.service; \
+-		mkdir -p $(DESTDIR)$(PREFIX)/lib/sysusers.d/; \
+-		install -m644 data/sysusers.d $(DESTDIR)$(PREFIX)/lib/sysusers.d/keyd.conf; \
+-	else \
+-		echo "NOTE: systemd not found, you will need to manually add keyd to your system's init process."; \
+-	fi
+-
+ 	@if [ "$(VKBD)" = "usb-gadget" ]; then \
+ 		sed -e 's#@PREFIX@#$(PREFIX)#' src/vkbd/usb-gadget.service.in > src/vkbd/usb-gadget.service; \
+ 		install -Dm644 src/vkbd/usb-gadget.service $(DESTDIR)$(PREFIX)/lib/systemd/system/keyd-usb-gadget.service; \
+@@ -70,27 +57,18 @@
+ 	mkdir -p $(DESTDIR)$(PREFIX)/share/keyd/
+ 	mkdir -p $(DESTDIR)$(PREFIX)/share/keyd/layouts/
+ 	mkdir -p $(DESTDIR)$(PREFIX)/share/man/man1/
+-	mkdir -p $(DESTDIR)$(PREFIX)/share/doc/keyd/
+-	mkdir -p $(DESTDIR)$(PREFIX)/share/doc/keyd/examples/
+ 
+-	-groupadd keyd
+ 	install -m755 bin/* $(DESTDIR)$(PREFIX)/bin/
+-	install -m644 docs/*.md $(DESTDIR)$(PREFIX)/share/doc/keyd/
+-	install -m644 examples/* $(DESTDIR)$(PREFIX)/share/doc/keyd/examples/
+ 	install -m644 layouts/* $(DESTDIR)$(PREFIX)/share/keyd/layouts
+-	cp -r data/gnome-* $(DESTDIR)$(PREFIX)/share/keyd
+ 	install -m644 data/*.1.gz $(DESTDIR)$(PREFIX)/share/man/man1/
+ 	install -m644 data/keyd.compose $(DESTDIR)$(PREFIX)/share/keyd/
+-	install -m644 README.md $(DESTDIR)$(PREFIX)/share/doc/keyd
+ 
+ uninstall:
+-	-groupdel keyd
+ 	rm -rf $(DESTDIR)$(PREFIX)/bin/keyd \
+ 		$(DESTDIR)$(PREFIX)/bin/keyd-application-mapper \
+ 		$(DESTDIR)$(PREFIX)/share/doc/keyd/ \
+ 		$(DESTDIR)$(PREFIX)/share/man/man1/keyd*.gz \
+ 		$(DESTDIR)$(PREFIX)/share/keyd/ \
+-		$(DESTDIR)$(PREFIX)/lib/systemd/system/keyd-usb-gadget.service \
+ 		$(DESTDIR)$(PREFIX)/bin/keyd-usb-gadget.sh \
+ 		$(DESTDIR)$(PREFIX)/lib/systemd/system/keyd.service \
+ 		$(DESTDIR)$(PREFIX)/lib/sysusers.d/keyd.conf
+diff --color -ruN keyd-2.6.0/src/ipc.c keyd-2.6.0.patch/src/ipc.c
+--- keyd-2.6.0/src/ipc.c	2025-12-19 22:03:20.000000000 +0100
++++ keyd-2.6.0.patch/src/ipc.c	2026-08-08 15:33:37.686290105 +0200
+@@ -10,7 +10,7 @@
+ 
+ static void chgid(void)
+ {
+-	struct group *g = getgrnam("keyd");
++	struct group *g = getgrnam("input");
+ 
+ 	if (!g) {
+ 		fprintf(stderr,

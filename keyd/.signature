@@ -1,0 +1,7 @@
+untrusted comment: verify with /etc/ports/ohakn.pub
+RWQPl/pDOy0JgrM/xiYLI+JYU9v3Q88a3tKF5d53DatIsgNjx7yTVxsPtup/j+g1U32OW4M7QPVmwGVVgwPskhRS5cmOLGE4eQk=
+SHA256 (Pkgfile) = e0997d0fc43f00fca75aa1923c2afde5e4b3aba7995479d0eb35867feaae25a0
+SHA256 (.footprint) = 5372c5b9bef215038039ecc1aba2eb231c8cc1d8f484169149faaf6770e9d820
+SHA256 (v2.6.0.tar.gz) = 697089681915b89d9e98caf93d870dbd4abce768af8a647d54650a6a90744e26
+SHA256 (keyd-2.6.0-crux.patch) = 76d3b54cc2b2e055f583bbbe726c69b603921e2b4f70c1baec372d038397c143
+SHA256 (keyd) = dcf5ec5d21cb69cf53daf3518818e8400e548335f0cca4aadb4e2ce5d7a9131b
