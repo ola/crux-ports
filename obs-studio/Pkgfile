@@ -4,10 +4,10 @@
 # Depends on: cmake ninja v4l-utils ffmpeg mbedtls fdk-aac libgmp qt6 x264 luajit speexdsp pipewire pulseaudio libdatachannel asio simde
 
 name=obs-studio
-version=32.1.2
+version=32.2.2
 release=1
-browsercommit=ea04212e4bbadd077f9e6038758c4e4779c24fa3
-websocketcommit=1fcb95b15aa88b1b7e9bda3f9c8650e314377169
+browsercommit=a1624431ae60cd89560d3d12c8143b1b926b410a
+websocketcommit=1ef34bf48110c2a18184e50e41cd0b1a855e2147
 source=(https://github.com/obsproject/$name/archive/$version.tar.gz
         https://cdn-fastly.obsproject.com/downloads/cef_binary_6533_linux_x86_64.tar.xz
         https://github.com/obsproject/obs-browser/archive/$browsercommit.zip

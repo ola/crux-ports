@@ -340,6 +340,7 @@ drwxrwxr-x	root/root	usr/share/obs/obs-plugins/obs-filters/locale/
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-filters/luma_key_filter_v2.effect
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-filters/mask_alpha_filter.effect
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-filters/mask_color_filter.effect
+-rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-filters/sdr_on_hdr_filter.effect
 -rw-rw-r--	root/root	usr/share/obs/obs-plugins/obs-filters/sharpness.effect
 drwxrwxr-x	root/root	usr/share/obs/obs-plugins/obs-libfdk/
 drwxrwxr-x	root/root	usr/share/obs/obs-plugins/obs-libfdk/locale/
