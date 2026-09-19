@@ -34,6 +34,7 @@ added and some are downgrades for dependency reasons.
 | [libmxml](http://michaelrsweet.github.io/mxml/index.html) | Tiny XML library to read and write XML and XML-like data files |
 | [libptytty](http://software.schmorp.de/pkg/libptytty.html) | Handles pty/tty/utmp/wtmp/lastlog handling in mostly OS-independent ways |
 | [libtree](https://github.com/haampie/libtree) | ldd as a tree |
+| [linuxtrackx-ir](https://gitlab.com/fwfa123/linuxtrackx-ir) | TrackIR headtracking for Linux |
 | [mangohud](https://github.com/flightlessmango/MangoHud) | A Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more |
 | [mbedtls](https://www.trustedfirmware.org/projects/mbed-tls/) | Portable TLS library and reference implementation of the PSA Cryptography API |
 | [nvtop](https://github.com/Syllo/nvtop) | GPUs process monitoring for AMD, Intel and NVIDIA |

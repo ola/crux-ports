@@ -1,0 +1,25 @@
+# Description:  TrackIR headtracking for Linux
+# URL:          https://gitlab.com/fwfa123/linuxtrackx-ir
+# Maintainer:   Ola Håkansson <ola dot hakansson at gmail dot com>
+# Depends on:   ninja cmake qt6 libusb libmxml
+# Optional:     wine-staging v4l-utils
+
+name=linuxtrackx-ir
+version=2.2.0
+release=1
+source=(https://gitlab.com/fwfa123/linuxtrackx-ir/-/archive/v$version/linuxtrackx-ir-v$version.tar.bz2)
+
+build() {
+
+  cmake -GNinja \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DENABLE_LTR_32LIB_ON_X64=OFF \
+        -DENABLE_WIIMOTE=OFF \
+        -DENABLE_XPLANE=OFF \
+        -S $name-v$version \
+        -B $SRC/build
+
+  ninja -C build -j ${JOBS:-1}
+  DESTDIR=$PKG ninja -C build install
+}
