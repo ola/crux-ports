@@ -13,6 +13,7 @@ d:portaudio
 d:qrcodegencpp
 d:linuxtrackx-ir
 d:picom
+d:rofi
 d:erlang
 d:googletest
 d:i2c-tools
@@ -85,6 +86,9 @@ f:a946fe962bc7942234808b769ad713ae:linuxtrackx-ir/Pkgfile
 f:3ccb49c12228c7e5bbdea41215ddade8:picom/.footprint
 f:843c2fc7ff7490825696a2e7b24c389c:picom/.signature
 f:73a57177b4307dbffed3950ea8a06623:picom/Pkgfile
+f:c940d614be03419c109b3a127d66f659:rofi/.footprint
+f:f0705142e311974cb0b18a02d9be5440:rofi/.signature
+f:451a6d3087c780ae932070cdfc12f413:rofi/Pkgfile
 f:ae6e37fed2aefa252358fdda10160a60:erlang/.footprint
 f:d796e5c0c5c862a28802389dd562b6f4:erlang/.signature
 f:3bfa39de1d1b5bb1aaaaeeb78834ab1b:erlang/Pkgfile

@@ -50,6 +50,7 @@ added and some are downgrades for dependency reasons.
 | [qrcodegencpp](https://github.com/nayuki/QR-Code-generator) | C and C++ QR Code generator library with CMake and pkgconfig |
 | [redshift](https://github.com/jonls/redshift) | Adjusts the color temperature of your screen according to your surroundings |
 | [renderdoc](https://renderdoc.org/) | Frame-capture based graphics debugger for Vulkan, D3D11, D3D12, OpenGL, and OpenGL ES development |
+| [rofi](https://github.com/DaveDavenport/rofi) | A window switcher, application launcher and dmenu replacement |
 | [rxvt-unicode](http://software.schmorp.de/#rxvt-unicode) | rxvt fork with unicode and xft support |
 | [simde](https://github.com/simd-everywhere/simde) | Header-only library that provides fast portable implementations of SIMD intrinsics |
 | [unclutter-xfixes](https://github.com/Airblader/unclutter-xfixes/) | Hides the mouse cursor but using the x11-xfixes extension, rewrite of unclutter |
