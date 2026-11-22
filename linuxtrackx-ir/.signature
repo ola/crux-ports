@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/ohakn.pub
-RWQPl/pDOy0JgjuS6Pb9XO0mzZWnw/WbohJVjpYnQVdap/OEv7MO1phH9XXvtvtLHiGkLck20Cr2Ws43htBVb/DpwODKmTg4KwQ=
-SHA256 (Pkgfile) = 19f4caa8eec566422f61adcc774fad800c91c64482b8d58239ab6153aca6cedc
-SHA256 (.footprint) = ee476227e0322f968f32698b65eedaa6793a50edff81e13d8e8646cca6c5a97e
-SHA256 (linuxtrackx-ir-v2.2.0.tar.bz2) = 364da838339c78317226b03643cf9f86b82dfc33a2d510e7f46a810fdd2926da
+RWQPl/pDOy0Jgg6Y0R5/bs1fnIdtXlyl4ab1PPtdlEbgnbvEcZpLh+goGWoLj2TIfLs213aEdnVtGs2odnyynCgCHqcwIjMc+A0=
+SHA256 (Pkgfile) = 768fbc763ac975706ef73f67b299b6a55ff26551a4f1df78509d53ae4bd6f995
+SHA256 (.footprint) = 37096b31e05c6a20506a7b15523670c0d2802f7394dd30558e1e4453b883fe43
+SHA256 (linuxtrackx-ir-V3.0.1.tar.bz2) = 74ef56efe2ff558182714d75b582fa4d098669ebd7e513cf1bb207909a169ab8

@@ -79,6 +79,7 @@ drwxr-xr-x	root/root	usr/share/linuxtrack/help/ltr_gui/
 -rw-r--r--	root/root	usr/share/linuxtrack/help/ltr_gui/Antimicrox1.png
 -rw-r--r--	root/root	usr/share/linuxtrack/help/ltr_gui/Antimicrox2.png
 -rw-r--r--	root/root	usr/share/linuxtrack/help/ltr_gui/CamPreview.png
+-rw-r--r--	root/root	usr/share/linuxtrack/help/ltr_gui/CapFinetuning.png
 -rw-r--r--	root/root	usr/share/linuxtrack/help/ltr_gui/Controller.png
 -rw-r--r--	root/root	usr/share/linuxtrack/help/ltr_gui/DetAxis.png
 -rw-r--r--	root/root	usr/share/linuxtrack/help/ltr_gui/Extractor.png
@@ -86,6 +87,7 @@ drwxr-xr-x	root/root	usr/share/linuxtrack/help/ltr_gui/
 -rw-r--r--	root/root	usr/share/linuxtrack/help/ltr_gui/HotkeyAssign.png
 -rw-r--r--	root/root	usr/share/linuxtrack/help/ltr_gui/Model.png
 -rw-r--r--	root/root	usr/share/linuxtrack/help/ltr_gui/ModelCreate.png
+-rw-r--r--	root/root	usr/share/linuxtrack/help/ltr_gui/Tracking-DetAxis.png
 -rw-r--r--	root/root	usr/share/linuxtrack/help/ltr_gui/Tracking.png
 -rw-r--r--	root/root	usr/share/linuxtrack/help/ltr_gui/TrackingHotkeys.png
 -rw-r--r--	root/root	usr/share/linuxtrack/help/ltr_gui/Trackir.png
@@ -118,6 +120,7 @@ drwxr-xr-x	root/root	usr/share/linuxtrack/help/ltr_gui/
 -rw-r--r--	root/root	usr/share/linuxtrack/help/ltr_gui/misc.htm
 -rw-r--r--	root/root	usr/share/linuxtrack/help/ltr_gui/model_setup.htm
 -rw-r--r--	root/root	usr/share/linuxtrack/help/ltr_gui/news.htm
+-rw-r--r--	root/root	usr/share/linuxtrack/help/ltr_gui/sixdof_tuning.htm
 -rw-r--r--	root/root	usr/share/linuxtrack/help/ltr_gui/system.png
 -rw-r--r--	root/root	usr/share/linuxtrack/help/ltr_gui/trackir_permissions-1.png
 -rw-r--r--	root/root	usr/share/linuxtrack/help/ltr_gui/trackir_permissions-1a.png
